@@ -20,7 +20,7 @@ public class Service {
         PythonScriptsExecutor pythonScriptsExecutor = new PythonScriptsExecutor();
         String userDirectory = getUserDirectory();
 
-        String path = userDirectory + "\\scripts\\youtube_api.py";
+        String path = userDirectory + "/scripts/youtube_api.py";
         return pythonScriptsExecutor.runScript(path, youtubeUrl, keyword);
     }
 
