@@ -28,7 +28,7 @@ public class Service {
 
         String userDirectory = getUserDirectory();
 
-        String dictPath = userDirectory + "\\scripts\\dictionary";
+        String dictPath = userDirectory + "/scripts/dictionary";
 
         File dir = new File("c:/spellchecker/");
 
