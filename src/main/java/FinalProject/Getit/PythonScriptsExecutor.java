@@ -15,7 +15,7 @@ public class PythonScriptsExecutor {
         Process process;
         HashMap<String, String> allOccurrences = null;
         try {
-            process = Runtime.getRuntime().exec(String.format("python %s %s %s", scriptPath, youtubeUrl, keyword));
+            process = Runtime.getRuntime().exec(String.format("heroku run python %s %s %s", scriptPath, youtubeUrl, keyword));
             mProcess = process;
         } catch (Exception e) {
             System.err.println("Exception Raised" + e.toString());
