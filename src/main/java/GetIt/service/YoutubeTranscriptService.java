@@ -1,27 +1,25 @@
-package FinalProject.Getit;
+package GetIt.service;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-public class PythonScriptsExecutor {
-    Process mProcess;
+public class YoutubeTranscriptService {
+    private static final String userDirectory = Paths.get("")
+            .toAbsolutePath()
+            .toString();
+    private static final String scriptPath = userDirectory + "/scripts/youtube_api.py";
 
-    public Map<String, String> runScript(String scriptPath, String youtubeUrl, String keyword) {
-        Process process;
+    public Map<String, String> getYoutubeTranscript(String youtubeUrl) {
         HashMap<String, String> allOccurrences = null;
-        try {
-            process = Runtime.getRuntime().exec(String.format("python %s %s %s", scriptPath, youtubeUrl, keyword));
-            mProcess = process;
-        } catch (Exception e) {
-            System.err.println("Exception Raised" + e.toString());
-        }
-        InputStream stdout = mProcess.getInputStream();
-        BufferedReader reader = new BufferedReader(new InputStreamReader(stdout, StandardCharsets.UTF_8));
+        BufferedReader reader = PythonExecuter.runScript(scriptPath, youtubeUrl);
         String line;
         try {
             while ((line = reader.readLine()) != null) {
@@ -37,4 +35,5 @@ public class PythonScriptsExecutor {
 
         return allOccurrences;
     }
+
 }

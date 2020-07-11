@@ -1,10 +1,10 @@
-package FinalProject.Getit;
+package GetIt;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GetIt2020ApplicationTests {
+class GetItMainApplicationTests {
 
 	@Test
 	void contextLoads() {
