@@ -1,101 +1,113 @@
+$1,000
+$100,000
+&
 +
 -
-/
 0
+0.1
 1
-1.5.2
+1.1
 10
-19
+10%
+100
+1000
+1099
+12
+120,000
+127
+128
+13
+15
+1995
 2
-2.7
-200
-2011
-23
-2d
+20
+2019
+22
 3
+3.1
+3.14
+3.9
 30
-3000
+32
+32,000
+35
 4
-4.1.1
-40,000
 5
-50
+6
+7
 9
-90%
-AB
-AJAX
 API
-Ajax
-BS
-BTN
-Babel
-Burke
+Applications
+Augmented
+Block
+Bob
 C
-CC
-CSS
-Chrome
-Const
-D
-DOM
-Dom
-Explorer
-Facebook
-Firefox
-G
-God
-Google
-HTML
-HTTP
-HUD
-Holland
+CD
+Clause
+Drive
+ENTER
+Earth's
+Edition
+Enterprise
+F
+GUI
+Hamid
 I
 I'll
 I'm
 I've
-ID
-IDS
-IM
+IDEA
+II
+In
+IntelliJ
 Internet
-Ivar
+Iran
 J
-JSON
-JSX
-Jas
+JDK
+JVM
 Java
-JavaScript
-LMS
-Li
+Java.
+Javas
+John
+K
+L
+LS
+Lang
+Ling
+Linux
 M
-MRC
 Mac
-Markov
-Multi
-NPM
+Machine
+Maharani
+Maj
+March
+Marsh
+Mary
+Method
+Microsystems
+Oracle
 P
-Peterson
+PI
+Python
 R
-RC
-Raj
+Reverse
+Runtime
 S
-SFZ
-SM
-SVG
-Safari
-Script
-State
-Studio
-Styles
-T
-TN
-Trends
-Twitter
-UI
-UIs
-URL
-Visual
+SQL
+Shift
+Soviets
+Sun
+TV
+US
+V
+VPN
+Virtual
 Windows
-XML
-[Music]
+X
+X&Y
+XYZ
+Y
+YouTube
 a
 aa
 aaa
@@ -8499,7 +8511,6 @@ arguing
 arguli
 argulus
 argument
-argument's
 argumentation
 argumentations
 argumentative
@@ -11669,7 +11680,6 @@ backdowns
 backdrop
 backdrops
 backed
-backend
 backer
 backers
 backet
@@ -11800,7 +11810,6 @@ backsword
 backswordman
 backswordmen
 backswords
-backtick
 backtrack
 backtracked
 backtracking
@@ -16919,7 +16928,6 @@ blocks
 blocky
 blocs
 bloemfontein
-blog
 bloggs
 blois
 bloke
@@ -17102,6 +17110,7 @@ blowzes
 blowzier
 blowziest
 blowzy
+blu-ray
 blub
 blubbed
 blubber
@@ -20310,7 +20319,6 @@ building
 buildings
 builds
 built
-built-in
 builth
 buirdly
 bukshi
@@ -21215,6 +21223,7 @@ byssuses
 bystander
 bystanders
 byte
+bytecode
 bytes
 bytownite
 byway
@@ -21232,6 +21241,7 @@ byzantinists
 byzantium
 byzants
 c
+c-sharp
 ca
 caaba
 caaing
@@ -23874,7 +23884,6 @@ caschroms
 casco
 cascos
 case
-case-sensitive
 caseation
 casebook
 casebooks
@@ -31172,6 +31181,7 @@ comitatuses
 comitia
 comities
 comity
+comm
 comma
 command
 commandant
@@ -31973,6 +31983,7 @@ computators
 compute
 computed
 computer
+computer's
 computerate
 computerese
 computerisation
@@ -33328,7 +33339,6 @@ conspirer
 conspires
 conspiring
 conspiringly
-const
 constable
 constables
 constableship
@@ -33972,7 +33982,6 @@ contrivers
 contrives
 contriving
 control
-control-d
 controle
 controlee
 controllability
@@ -35814,6 +35823,7 @@ couriers
 courlan
 courlans
 course
+course.
 coursebook
 coursebooks
 coursed
@@ -37136,7 +37146,6 @@ crosier
 crosiered
 crosiers
 cross
-cross-platform
 crossandra
 crossandras
 crossband
@@ -39413,6 +39422,7 @@ dashiki
 dashikis
 dashing
 dashingly
+dashlane
 dashs
 dasipodidae
 dassie
@@ -39447,6 +39457,7 @@ dataria
 datarias
 dataries
 datary
+datatype
 date
 dateable
 dated
@@ -43345,8 +43356,6 @@ destructivity
 destructor
 destructors
 destructs
-destructure
-destructuring
 desuetude
 desuetudes
 desulphur
@@ -45223,6 +45232,7 @@ dipteroses
 dipterous
 diptych
 diptychs
+dir
 dirac
 dirdum
 dirdums
@@ -47229,7 +47239,6 @@ dissymmetric
 dissymmetrical
 dissymmetrically
 dissymmetry
-dist
 distaff
 distaffs
 distain
@@ -47752,9 +47761,11 @@ djinn
 djinni
 djinns
 dl
+dmg
 dna
 dnepropetrovsk
 do
+do-while
 doab
 doable
 doabs
@@ -48666,7 +48677,6 @@ douar
 douars
 douay
 double
-double-click
 doubled
 doubleness
 doubler
@@ -49480,6 +49490,7 @@ droopingly
 droops
 droopy
 drop
+drop-down
 dropflies
 dropfly
 drophead
@@ -50510,7 +50521,6 @@ dziggetais
 dzo
 dzos
 e
-e-commerce
 ea
 each
 eachwhere
@@ -52307,6 +52317,7 @@ emaciates
 emaciating
 emaciation
 emacs
+email
 emalangeni
 emanant
 emanate
@@ -55574,6 +55585,7 @@ erroneous
 erroneously
 erroneousness
 error
+error-handling
 errorist
 errorists
 errors
@@ -55649,7 +55661,6 @@ erythrophobia
 erythropoiesis
 erythropoietin
 es
-es6
 esau
 esc
 escadrille
@@ -58576,7 +58587,7 @@ eyties
 ezekiel
 ezra
 f
-f2
+f6
 fa
 fab
 fabaceous
@@ -61422,6 +61433,7 @@ fizeau
 fizgig
 fizgigs
 fizz
+fizzbuzz
 fizzed
 fizzer
 fizzers
@@ -62090,6 +62102,7 @@ floaters
 floatier
 floatiest
 floating
+floating-point
 floatingly
 floatings
 floatplane
@@ -63925,6 +63938,7 @@ fountains
 fountful
 founts
 four
+four-part
 fourchette
 fourchettes
 fourfold
@@ -64830,7 +64844,6 @@ frondiferous
 frondose
 fronds
 front
-front-end
 frontage
 frontager
 frontagers
@@ -72158,8 +72171,6 @@ gyved
 gyves
 gyving
 h
-h1
-h4
 ha
 haaf
 haafs
@@ -73168,7 +73179,6 @@ harbourless
 harbours
 harcourt
 hard
-hard-coded
 hard-coding
 hardback
 hardbacked
@@ -79647,6 +79657,7 @@ idyls
 ie
 ieuan
 if
+if-else
 iff
 iffiness
 iffy
@@ -81111,8 +81122,6 @@ imshies
 imshis
 imshy
 in
-in-depth
-in-memory
 ina
 inabilities
 inability
@@ -81955,6 +81964,7 @@ indecorousness
 indecorum
 indecorums
 indeed
+indeed.com
 indeeds
 indefatigable
 indefatigableness
@@ -83385,7 +83395,6 @@ inned
 inner
 innermost
 inners
-innertext
 innervate
 innervated
 innervates
@@ -84149,6 +84158,7 @@ inswing
 inswinger
 inswingers
 inswings
+int
 intact
 intacta
 intactness
@@ -84225,7 +84235,7 @@ intelligibility
 intelligible
 intelligibleness
 intelligibly
-intellisense
+intellij
 intelpost
 intelsat
 intemerate
@@ -86694,7 +86704,6 @@ iteration
 iterations
 iterative
 iteratively
-iterator
 iterum
 ithaca
 ithyphalli
@@ -86748,9 +86757,6 @@ izvestiya
 izzard
 izzards
 j
-j/s
-j6
-jQuery
 jab
 jabbed
 jabber
@@ -87171,7 +87177,6 @@ jarvey
 jarveys
 jarvie
 jarvies
-jas
 jasey
 jaseys
 jasmine
@@ -87226,9 +87231,9 @@ jauped
 jauping
 jaups
 java
+java.com
 javan
 javanese
-javascript
 javel
 javelin
 javelins
@@ -87274,6 +87279,7 @@ jazzing
 jazzman
 jazzmen
 jazzy
+jdk
 je
 jealous
 jealoushood
@@ -88104,7 +88110,6 @@ joystick
 joysticks
 jp
 jr
-js'
 ju
 juan
 juba
@@ -93577,7 +93582,6 @@ lifeboat
 lifeboatman
 lifeboatmen
 lifeboats
-lifecycle
 lifeful
 lifeguard
 lifeguards
@@ -94764,7 +94768,6 @@ lobworms
 local
 locale
 locales
-localhost
 localisation
 localisations
 localise
@@ -96375,7 +96378,6 @@ lyttas
 lyttleton
 lytton
 m
-m2
 ma
 maa
 maaed
@@ -98339,7 +98341,6 @@ marjoram
 marjorie
 marjory
 mark
-mark-up
 marked
 markedly
 marker
@@ -100831,7 +100832,6 @@ mestizo
 mestizos
 mesto
 met
-meta
 metabases
 metabasis
 metabatic
@@ -100860,7 +100860,6 @@ metacentric
 metachronism
 metachronisms
 metachrosis
-metadata
 metafiction
 metafictional
 metagalactic
@@ -102143,6 +102142,7 @@ mimsy
 mimulus
 mimuluses
 mimus
+min
 mina
 minacious
 minacity
@@ -104003,7 +104003,6 @@ moguls
 moh
 mohair
 mohairs
-mohammad
 mohammed
 mohammedan
 mohammedanise
@@ -105462,6 +105461,7 @@ mosey
 moseyed
 moseying
 moseys
+mosh
 moshav
 moshavim
 moshing
@@ -106173,6 +106173,7 @@ multarticulate
 multeities
 multeity
 multi
+multi-dimensional
 multiaccess
 multiarticulate
 multicamerate
@@ -107884,7 +107885,6 @@ nautics
 nautili
 nautilus
 nautiluses
-nav
 navaho
 navahos
 navaid
@@ -107903,7 +107903,6 @@ navarchy
 navarin
 navarins
 navarre
-navbar
 nave
 navel
 navels
@@ -109074,7 +109073,6 @@ nexus
 nexuses
 ney
 nez
-ng
 ngaio
 ngaios
 ngana
@@ -109664,7 +109662,6 @@ njamena
 nne
 nnw
 no
-no-no
 noachian
 noachic
 noah
@@ -110619,7 +110616,6 @@ nozzer
 nozzers
 nozzle
 nozzles
-npm
 nspcc
 nth
 nu
@@ -111265,6 +111261,7 @@ obituarist
 obituarists
 obituary
 object
+object-oriented
 objected
 objectification
 objectified
@@ -112364,7 +112361,6 @@ oiticica
 oiticicas
 ojibwa
 ojibwas
-ojs
 ok
 okapi
 okapis
@@ -113553,7 +113549,6 @@ orfeo
 orfes
 orff
 orford
-org
 organ
 organa
 organbird
@@ -118483,7 +118478,6 @@ parenchyma
 parenchymas
 parenchymatous
 parent
-parent-child
 parentage
 parentages
 parental
@@ -123237,6 +123231,7 @@ physicalist
 physicalists
 physicality
 physically
+physican
 physician
 physiciancies
 physiciancy
@@ -125449,7 +125444,6 @@ pluffing
 pluffs
 pluffy
 plug
-plug-in
 pluggable
 plugged
 plugger
@@ -135697,7 +135691,6 @@ reactuated
 reactuates
 reactuating
 read
-read-only
 readability
 readable
 readableness
@@ -135783,7 +135776,6 @@ reagents
 reak
 reaks
 real
-real-world
 reale
 realer
 realest
@@ -135919,7 +135911,6 @@ reappraises
 reappraising
 reaps
 rear
-rear-ended
 reardon
 reared
 rearer
@@ -137414,8 +137405,6 @@ reface
 refaced
 refaces
 refacing
-refactor
-refactoring
 refashion
 refashioned
 refashioning
@@ -139356,7 +139345,6 @@ repique
 repiqued
 repiques
 repiquing
-repl
 repla
 replace
 replaceable
@@ -142017,7 +142005,6 @@ riggings
 riggish
 riggs
 right
-right-click
 rightable
 righted
 righten
@@ -142456,7 +142443,6 @@ riyal
 riyals
 riza
 rizas
-rjs
 ro
 roach
 roached
@@ -144256,7 +144242,6 @@ rypeck
 rypecks
 ryper
 s
-s-pen
 sa
 saam
 saame
@@ -147337,6 +147322,7 @@ scopae
 scopas
 scopate
 scope
+scoped
 scopelid
 scopelidae
 scopelus
@@ -148986,6 +148972,7 @@ seleucid
 seleucidae
 seleucidan
 self
+self-explanatory
 selfed
 selfeffacing
 selfhood
@@ -151506,7 +151493,6 @@ shoring
 shorings
 shorn
 short
-short-cut
 shortage
 shortages
 shortarm
@@ -152033,11 +152019,9 @@ siddons
 siddur
 siddurim
 side
-side-by-side
 sidearm
 sidearms
 sideband
-sidebar
 sideboard
 sideboards
 sideburn
@@ -152234,6 +152218,7 @@ sigmoidoscope
 sigmoidoscopy
 sigmund
 sign
+sign-up
 signage
 signal
 signaled
@@ -156071,6 +156056,7 @@ somedeal
 somegate
 somehow
 someone
+someone's
 someplace
 somers
 somersault
@@ -159517,8 +159503,6 @@ stanchioning
 stanchions
 stanchless
 stand
-stand-alone
-standalone
 standard
 standardbred
 standardisation
@@ -159828,7 +159812,6 @@ stator
 stators
 statoscope
 statoscopes
-stats
 statu
 statua
 statuaries
@@ -163526,7 +163509,6 @@ sudder
 sudders
 sudds
 sudetenland
-sudo
 sudor
 sudoral
 sudoriferous
@@ -166597,6 +166579,7 @@ systoles
 systolic
 systyle
 systyles
+syu
 syver
 syvers
 syzygial
@@ -168883,7 +168866,6 @@ templar
 templars
 template
 templates
-templating
 temple
 templed
 temples
@@ -170709,7 +170691,6 @@ thiourea
 thir
 thiram
 third
-third-party
 thirdborough
 thirdboroughs
 thirded
@@ -170941,6 +170922,7 @@ threatful
 threating
 threats
 three
+three-dimensional
 threefold
 threefoldness
 threeness
@@ -172563,6 +172545,7 @@ toolrooms
 tools
 toolsmith
 toolsmiths
+tooltip
 toom
 toomed
 tooming
@@ -177302,7 +177285,6 @@ ukrainian
 ukrainians
 ukulele
 ukuleles
-ul
 ulan
 ulcer
 ulcerate
@@ -178468,7 +178450,6 @@ unclew
 unclewed
 unclewing
 unclews
-unclick
 unclimbable
 unclimbed
 unclinched
@@ -178980,7 +178961,6 @@ undelayed
 undelaying
 undelectable
 undelegated
-undelete
 undeleted
 undeliberate
 undeliberated
@@ -185133,6 +185113,7 @@ useless
 uselessly
 uselessness
 user
+username
 users
 uses
 ushant
@@ -185227,6 +185208,7 @@ utes
 utgard
 uti
 utica
+util
 utile
 utilisable
 utilisation
@@ -188672,7 +188654,6 @@ vrouw
 vrouws
 vrow
 vrows
-vs
 vu
 vug
 vuggy
@@ -190018,6 +189999,7 @@ webern
 webers
 webfoot
 webs
+websites
 webster
 websters
 webwheel

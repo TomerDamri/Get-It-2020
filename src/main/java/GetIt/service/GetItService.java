@@ -1,5 +1,7 @@
 package GetIt.service;
 
+import GetIt.model.response.GetOccurrencesResponse;
+import GetIt.model.response.GetTyposResponse;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.search.spell.PlainTextDictionary;
 import org.apache.lucene.search.spell.SpellChecker;
@@ -10,7 +12,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.logging.Logger;
@@ -25,32 +26,55 @@ public class GetItService {
     private static final YoutubeTranscriptService YOUTUBE_TRANSCRIPT_SERVICE = new YoutubeTranscriptService();
     private static final String dictionaryWithTranscriptPath = userDirectory + "/scripts/newDictionary.txt";
 
-    private static final int suggestionsNumber = 10;
+    private static final int suggestionsNumber = 3;
 
-    public List<Integer> getOccurrences(String keyword, String youtubeUrl) {
-        LOGGER.info(String.format("getting occurrences from %s for %s", youtubeUrl, keyword));
-        Map<String, String> map = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
-        List<Float> captions = new ArrayList<>();
-        for (String key : map.keySet()) {
-            if (key.contains(keyword)) {
-                captions.add(Float.valueOf(map.get(key)));
-            }
+    List<String> dictionaryWithTranscript;
+
+    Map<String, String> transcript;
+
+    String transcribedYoutubeUrl;
+
+    public GetOccurrencesResponse getOccurrences(String word, String youtubeUrl) {
+        LOGGER.info(String.format("getting occurrences from %s for %s", youtubeUrl, word));
+        if (!youtubeUrl.equals( transcribedYoutubeUrl)) {
+            transcript = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
+            transcribedYoutubeUrl = youtubeUrl;
         }
-        Set<Integer> occurrences = new HashSet<>();
-        for (Float time :captions) { {
-            occurrences.add(time.intValue());
-            }
-        }
-        List<Integer> res = new ArrayList<>(occurrences);
-        Collections.sort(res);
-        return res;
+
+        List<Integer> occurrences = getOccurrencesInTranscript(word);
+        return new GetOccurrencesResponse(occurrences);
     }
 
-    public List<String> getTypos(String word, String youtubeUrl) throws IOException {
-        LOGGER.info(String.format("getting typos from %s for %s", youtubeUrl, word));
-        createDictionaryWithTranscript(youtubeUrl);
+    List<Integer> getOccurrencesInTranscript(String word) {
+        List<Float> occurrencesAsFloat = new ArrayList<>();
+        for (String key : transcript.keySet()) {
+            if (key.contains(word)) {
+                occurrencesAsFloat.add(Float.valueOf(transcript.get(key)));
+            }
+        }
+        //use HashSet to avoid duplicates
+        Set<Integer> occurrencesAsInteger = new HashSet<>();
+        for (Float time : occurrencesAsFloat) {
+            occurrencesAsInteger.add(time.intValue());
+        }
 
-        return getTyposFromDictionary(word);
+        List<Integer> sortedOccurrences = new ArrayList<>(occurrencesAsInteger);
+        Collections.sort(sortedOccurrences);
+        return sortedOccurrences;
+    }
+
+    public GetTyposResponse getTypos(String word, String youtubeUrl) throws IOException {
+        LOGGER.info(String.format("getting typos from %s for %s", youtubeUrl, word));
+        if (!youtubeUrl.equals( transcribedYoutubeUrl)|| transcript == null || dictionaryWithTranscript == null) {
+            transcript = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
+            transcribedYoutubeUrl = youtubeUrl;
+            createDictionaryWithTranscript();
+        }
+        List<String> typos = null;
+        if (!dictionaryWithTranscript.contains(word)) {
+            typos = getTyposFromDictionary(word);
+        }
+        return new GetTyposResponse(typos);
     }
 
     private List<String> getTyposFromDictionary(String word) throws IOException {
@@ -70,8 +94,15 @@ public class GetItService {
 
     }
 
-    private void createDictionaryWithTranscript(String youtubeUrl) throws IOException {
-        List<String> dictionaryWithTranscript = getDictionaryWithTranscript(youtubeUrl);
+    private void createDictionaryWithTranscript() throws IOException { ;
+        //using set in order to avoid duplicates
+        Set<String> dictionaryAsSet = getOriginalDictionary();
+        dictionaryAsSet.addAll(convertYoutubeTranscriptToWords(transcript.keySet()));
+        //convert to list in order to sort the dictionary (ABC order)
+        List<String> dictionaryAsList = new ArrayList<>(dictionaryAsSet);
+        Collections.sort(dictionaryAsList);
+        dictionaryWithTranscript = dictionaryAsList;
+
         File newDictionary = new File(dictionaryWithTranscriptPath);
 
         FileOutputStream outputStream = new FileOutputStream(newDictionary);
@@ -83,25 +114,12 @@ public class GetItService {
         outputStream.close();
     }
 
-    private List<String> getDictionaryWithTranscript(String youtubeUrl) throws FileNotFoundException {
-        //using set in order to avoid duplicates
-        Set<String> dictionaryAsSet = getOriginalDictionary();
-        String path = userDirectory + "/scripts/youtube_api.py";
-        Map<String, String> youtubeTranscript = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
-        // TODO: 12/07/2020 - separate all the sentence to independent words
-        dictionaryAsSet.addAll(convertYoutubeTranscriptToWords(youtubeTranscript.keySet()));
-        //convert to list in order to sort the dictionary (ABC order)
-        List<String> dictionaryAsList = new ArrayList<>(dictionaryAsSet);
-        Collections.sort(dictionaryAsList);
-        return dictionaryAsList;
-    }
-
-    private Set<String> convertYoutubeTranscriptToWords(Set<String> youtubeTranscriptSentences){
+    private Set<String> convertYoutubeTranscriptToWords(Set<String> youtubeTranscriptSentences) {
         Set<String> youtubeTranscriptWords = new HashSet<>();
-        for (String sentence:youtubeTranscriptSentences) {
-             youtubeTranscriptWords.addAll(Arrays.asList(sentence.split(" ")));
+        for (String sentence : youtubeTranscriptSentences) {
+            youtubeTranscriptWords.addAll(Arrays.asList(sentence.split(" ")));
         }
-        return  youtubeTranscriptWords;
+        return youtubeTranscriptWords;
     }
 
     private Set<String> getOriginalDictionary() throws FileNotFoundException {

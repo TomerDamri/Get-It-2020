@@ -1,7 +1,9 @@
 package GetIt.controller;
 
-import GetIt.Request.GetOccurrencesRequest;
-import GetIt.Request.GetTyposRequest;
+import GetIt.model.response.GetOccurrencesResponse;
+import GetIt.model.response.GetTyposResponse;
+import GetIt.model.request.GetOccurrencesRequest;
+import GetIt.model.request.GetTyposRequest;
 import GetIt.service.GetItService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
-import java.util.List;
 
 @RestController
 @RequestMapping(path = "/Ctrl_F_App")
@@ -20,12 +21,12 @@ public class GetItController {
     private GetItService getItService;
 
     @PostMapping(consumes = "application/json", produces = "application/json")
-    public List<Integer> getOccurrences(@RequestBody GetOccurrencesRequest getOccurrencesRequest) {
+    public GetOccurrencesResponse getOccurrences(@RequestBody GetOccurrencesRequest getOccurrencesRequest) {
         return getItService.getOccurrences(getOccurrencesRequest.getWord(), getOccurrencesRequest.getYoutubeUrl());
     }
 
     @PostMapping("/word/typos")
-    public List<String> getWordTypos(@RequestBody GetTyposRequest getTyposRequest) throws IOException {
+    public GetTyposResponse getWordTypos(@RequestBody GetTyposRequest getTyposRequest) throws IOException {
         return getItService.getTypos(getTyposRequest.getWord(), getTyposRequest.getYoutubeUrl());
     }
 }

@@ -1,4 +1,4 @@
-package GetIt.Request;
+package GetIt.model.request;
 
 public abstract class BaseRequest {
     private String word;
