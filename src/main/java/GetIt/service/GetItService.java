@@ -13,10 +13,12 @@ import java.io.IOException;
 import java.lang.reflect.Array;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.logging.Logger;
 
 @org.springframework.stereotype.Service
 public class GetItService {
 
+    private final static Logger LOGGER = Logger.getLogger(Logger.class.getName());
     private static final String userDirectory = Paths.get("")
             .toAbsolutePath()
             .toString();
@@ -26,6 +28,7 @@ public class GetItService {
     private static final int suggestionsNumber = 10;
 
     public List<Float> getOccurrences(String keyword, String youtubeUrl) {
+        LOGGER.info(String.format("getting occurrences from %s for %s", youtubeUrl, keyword));
         String path = userDirectory + "/scripts/youtube_api.py";
         Map<String, String> map = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
         List<Float> captions = new ArrayList<>();
@@ -39,7 +42,7 @@ public class GetItService {
     }
 
     public List<String> getTypos(String word, String youtubeUrl) throws IOException {
-
+        LOGGER.info(String.format("getting typos from %s for %s", youtubeUrl, word));
         createDictionaryWithTranscript(youtubeUrl);
 
         return getTyposFromDictionary(word);
