@@ -1,6 +1,6 @@
 package GetIt.Request;
 
-public class BaseRequest {
+public abstract class BaseRequest {
     private String word;
     private String youtubeUrl;
 

@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.nio.file.Paths;
 import java.util.*;
 
@@ -79,11 +80,20 @@ public class GetItService {
         Set<String> dictionaryAsSet = getOriginalDictionary();
         String path = userDirectory + "/scripts/youtube_api.py";
         Map<String, String> youtubeTranscript = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
-        dictionaryAsSet.addAll(youtubeTranscript.keySet());
+        // TODO: 12/07/2020 - separate all the sentence to independent words
+        dictionaryAsSet.addAll(convertYoutubeTranscriptToWords(youtubeTranscript.keySet()));
         //convert to list in order to sort the dictionary (ABC order)
         List<String> dictionaryAsList = new ArrayList<>(dictionaryAsSet);
         Collections.sort(dictionaryAsList);
         return dictionaryAsList;
+    }
+
+    private Set<String> convertYoutubeTranscriptToWords(Set<String> youtubeTranscriptSentences){
+        Set<String> youtubeTranscriptWords = new HashSet<>();
+        for (String sentence:youtubeTranscriptSentences) {
+             youtubeTranscriptWords.addAll(Arrays.asList(sentence.split(" ")));
+        }
+        return  youtubeTranscriptWords;
     }
 
     private Set<String> getOriginalDictionary() throws FileNotFoundException {
@@ -98,25 +108,25 @@ public class GetItService {
         return dictionary;
     }
 
-    public List<String> getWordSuggestions(String word) throws IOException {
-
-        String dictPath = userDirectory + "/scripts/dictionary";
-
-        File dir = new File("c:/spellchecker/");
-
-        Directory directory = FSDirectory.open(dir.toPath());
-
-        File pathFile = new File(dictPath);
-
-        SpellChecker spellChecker = new SpellChecker(directory);
-
-        spellChecker.indexDictionary(
-                new PlainTextDictionary(pathFile.toPath()), new IndexWriterConfig(), false);
-
-        int suggestionsNumber = 10;
-
-        return Arrays.asList(spellChecker.
-                suggestSimilar(word, suggestionsNumber));
-    }
+//    public List<String> getWordSuggestions(String word) throws IOException {
+//
+//        String dictPath = userDirectory + "/scripts/dictionary";
+//
+//        File dir = new File("c:/spellchecker/");
+//
+//        Directory directory = FSDirectory.open(dir.toPath());
+//
+//        File pathFile = new File(dictPath);
+//
+//        SpellChecker spellChecker = new SpellChecker(directory);
+//
+//        spellChecker.indexDictionary(
+//                new PlainTextDictionary(pathFile.toPath()), new IndexWriterConfig(), false);
+//
+//        int suggestionsNumber = 10;
+//
+//        return Arrays.asList(spellChecker.
+//                suggestSimilar(word, suggestionsNumber));
+//    }
 
 }

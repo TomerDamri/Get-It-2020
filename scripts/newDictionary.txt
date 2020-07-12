@@ -1,99 +1,102 @@
-- SM which is short for small
-- are we gonna call this reset now let's
-0 so we successfully updated the state
-10 and react will automatically convert
-10 and we can also set font weight to
-4 so click look at the console so ignore
-50 save the changes and now we have a
-AB rendered now back in the console look
-AJAX call to get new data based on the
-BTN BTN - primary BTN - small and margin
-CC which is short for create class tap
-Chrome and Firefox and as a standalone
-D or ctrl T now we have multiple cursors
-Dom and this gives us an opportunity to
-Dom and update it accordingly
-Dom events for example here in our
-Dom it also has a copy of the old
-Dom let's do a consult that log of
-Dom let's take a look at one of our
-Dom on the top so here we call react Dom
-Dom react will then look at the virtual
-Dom so if you need to set this state
-Dom with the old one it figures out that
-HTML vocabulary so wherever we have a
-I increment the first counter you can
-I want to render a counters component
-I want you to look at this span here so
-I want you to take away here is that
-I'm gonna clear the console again now
-I'm gonna clear the console and click
-I'm gonna click the increment button and
-I'm gonna click this button we get this
-I'm gonna cut this code from here and
-I'm gonna delete the code that I wrote
-I'm gonna replace h1 with a span so I've
-I'm gonna set it to this the props dot
-I'm gonna set this to true for now I
-I'm gonna use in this course is Visual
-I've got a comprehensive react course
-ID and key while their values are
-IM RC which is short for import react
-J s on the top you can see the light for
++
+-
+/
+0
+1
+1.5.2
+10
+19
+2
+2.7
+200
+2011
+23
+2d
+3
+30
+3000
+4
+4.1.1
+40,000
+5
+50
+9
+90%
+AB
+AJAX
+API
+Ajax
+BS
+BTN
+Babel
+Burke
+C
+CC
+CSS
+Chrome
+Const
+D
+DOM
+Dom
+Explorer
+Facebook
+Firefox
+G
+God
+Google
+HTML
+HTTP
+HUD
+Holland
+I
+I'll
+I'm
+I've
+ID
+IDS
+IM
+Internet
+Ivar
+J
+JSON
 JSX
-JSX expressions are just like normal
-JSX expressions we don't have the
-Java Script class that has some state
-JavaScript here's one way to implement
-JavaScript if you have a return
-JavaScript object called props now we
-JavaScript object that maps to a Dom
-JavaScript objects you can return them
-JavaScript so the name of the attribute
-JavaScript there I cover classes in full
-JavaScript unlike other programming
-JavaScript will automatically put a
-Multi cursor editing press the escape
-NPM start so this will launch our
+Jas
+Java
+JavaScript
+LMS
+Li
+M
+MRC
+Mac
+Markov
+Multi
+NPM
+P
+Peterson
 R
-State from the counter component because
-Studio code or vs code chances are you
-Trends react is dominating the space of
-UIs in terms of implementation a
-URL save the changes this is what we get
-Windows and run this command NPM I which
+RC
+Raj
+S
+SFZ
+SM
+SVG
+Safari
+Script
+State
+Studio
+Styles
+T
+TN
+Trends
+Twitter
+UI
+UIs
+URL
+Visual
+Windows
+XML
 [Music]
 a
-a better solution is to use an inline
-a button okay so delete now see what
-a button or type something in an input
-a change we can make an AJAX request to
-a component and do something and the
-a component and we should not modify the
-a constant here call it classes set it
-a constructor and because we have added
-a constructor here we need to call the
-a count now one more thing before we
-a couple of bootstrap classes one is
-a couple of them beautiful finally you
-a couple of these then reset them delete
-a div so that's why the type of the
-a function is called this can reference
-a function reference so here's one
-a list of items in react let's save the
-a little bit differently it only shows
-a loop in our templates but in react in
-a new file counters the JSX in this
-a paragraph or an unordered list with a
-a perfect opportunity to use object
-a product here we have the quantity of
-a react developer you need to understand
-a refactoring command called extract -
-a reference to that object
-a simple console dot log app mount it
-a special attribute for uniquely
-a very powerful extension it has a lot
-a very simple navigation bar under brand
 aa
 aaa
 aachen
@@ -386,7 +389,6 @@ ablaut
 ablauts
 ablaze
 able
-able to access it in our counter
 abler
 ablest
 ablet
@@ -503,11 +505,6 @@ abounded
 abounding
 abounds
 about
-about a counter so with this change now
-about conditional rendering now to help
-about determining the class for this
-about rendering lists conditional
-about this we're going to look at that
 abouts
 above
 aboveground
@@ -976,9 +973,6 @@ acceptor
 acceptors
 accepts
 access
-access it so to recap the constructor is
-access to this so what is the solution
-access to this why is that well earlier
 accessaries
 accessary
 accessed
@@ -1129,7 +1123,6 @@ accorder
 accorders
 according
 accordingly
-accordingly so we lifted up the state
 accordion
 accordionist
 accordionists
@@ -1616,7 +1609,6 @@ acrylic
 acrylics
 acrylonitrile
 act
-act element which is a plain JavaScript
 acta
 actability
 actable
@@ -1655,7 +1647,6 @@ actinon
 actinotherapy
 actinozoa
 action
-action so back in the console I'm going
 actionable
 actionably
 actioned
@@ -1671,7 +1662,6 @@ activations
 activator
 activators
 active
-active application is essentially a tree
 actively
 activeness
 activex
@@ -1798,9 +1788,6 @@ adaw
 adaxial
 adays
 add
-add a new component to our application
-add a new file we call it counter the
-add another life circle hook here
 addax
 addaxes
 addebted
@@ -1834,7 +1821,6 @@ additament
 additaments
 addition
 additional
-additional message we add our logical
 additionally
 additions
 addititious
@@ -2311,7 +2297,6 @@ aduncous
 adust
 advance
 advanced
-advanced react course we also have
 advancement
 advancements
 advances
@@ -2679,7 +2664,6 @@ affect
 affectation
 affectations
 affected
-affected let me show you so if I go to
 affectedly
 affectedness
 affecter
@@ -2957,8 +2941,6 @@ agacant
 agacante
 agadic
 again
-again in the last section I talked about
-again we don't have the value property
 against
 agalactia
 agalloch
@@ -3197,7 +3179,6 @@ agnosticism
 agnostics
 agnus
 ago
-ago to wrap our h1 and button elements
 agog
 agoge
 agoges
@@ -4164,19 +4145,6 @@ alkyls
 alkyne
 alkynes
 all
-all about react next we're going to set
-all cases that is badge and m2 so badge
-all right let's start by creating a new
-all right now I want you to delete all
-all right save the changes now back in
-all right this is where the fun begins
-all right we are ready to start learning
-all the attributes that we set
-all the counters except the one with the
-all the data via props in situations
-all the plumbing is working before we
-all the rendered messages look at the
-all these zeros with index and the last
 alla
 allah
 allan
@@ -4570,10 +4538,6 @@ alpino
 alps
 already
 alright
-alright now let's add a button here so
-alright now let's continue to the next
-alright now let's create our first
-alright now let's take this to the next
 als
 alsace
 alsatia
@@ -4582,13 +4546,6 @@ alsatians
 alsike
 alsikes
 also
-also have buttons to change that
-also have on double-click if you're
-also have the old virtual Dom react will
-also note that here we won't have access
-also put parentheses around that this is
-also receive a certificate of completion
-also we don't need these two helper
 alsoon
 alstroemeria
 alstroemerias
@@ -4728,7 +4685,6 @@ alvin
 alvine
 alway
 always
-always referencing the current object so
 alwinton
 alycompaine
 alycompaines
@@ -5166,7 +5122,6 @@ amok
 amomum
 amomums
 among
-among our application again we don't
 amongst
 amontillado
 amontillados
@@ -5404,15 +5359,6 @@ amyotrophic
 amyotrophy
 amytal
 an
-an argument now when rendering a list of
-an argument to the actual event handler
-an array in this array we're going to
-an array of counter objects to our state
-an error function here in the body of
-an instance of a class is created this
-an instance of a component is created
-an instance of a counter component is
-an optimization technique so let me show
 ana
 anabaptise
 anabaptised
@@ -5796,58 +5742,6 @@ ancora
 ancress
 ancresses
 and
-and a number once again the first
-and a render method the state here is
-and also pass it to the constructor of
-and based on that it will update the
-and call this that set State so we get
-and call this the render tags so
-and change the IDS okay beautiful
-and close h1 now as I told you before
-and currently there are more than 2.7
-and false we get false what if you type
-and filter only the counters with value
-and finally in our render method instead
-and finally replace these hard-coded
-and handle events you learn about
-and here on line 19 I just want to
-and in our counter component because
-and inserted into the Dom there are a
-and m2 now depending on the value of the
-and modify this unclick expression so
-and move it inside of this function so
-and now our button looks different
-and of course instead of returning just
-and one last change we need to make here
-and operator first we have our condition
-and operator here and then whatever we
-and our counters component will handle
-and our props object is an empty object
-and pass an argument
-and recursively let me show you so here
-and rename this to value we should also
-and set it to a method in this class
-and set it to an error function like
-and simpler than adding a custom
-and start the application okay beautiful
-and tag three now here in a render
-and that black banner that we had on the
-and that is that we don't have a single
-and that's why I didn't want to confuse
-and that's why we have to import react
-and the last phase is the unmounting
-and the third life circle hook and the
-and then CC nav bar here in the render
-and then dist which is short for
-and then it will reach out to the real
-and then pick the properties we're
-and then reference it in our JSX
-and then remove this react will pass the
-and we also have this number on the
-and we'll leave it up to Babel to
-and we're relying entirely on the props
-and with this method we can set the
-and your property counters we set it to
 andalousian
 andalucian
 andalusia
@@ -6138,10 +6032,6 @@ anguished
 anguishes
 anguishing
 angular
-angular 2 or higher it should sound
-angular are similar in terms of their
-angular gives you which often breaks
-angular is a framework or a complete
 angularities
 angularity
 angulate
@@ -6515,11 +6405,6 @@ anorthite
 anorthosite
 anosmia
 another
-another example here I'm gonna type
-another import statement so import
-another method here let's just call it
-another one that is counter with ID too
-another prop we're gonna call that prop
 anotherguess
 anouilh
 anoura
@@ -7205,17 +7090,9 @@ anxious
 anxiously
 anxiousness
 any
-any configuration all the configuration
-any data that this component needs so in
-any event handlers here we don't have
-any helper methods to calculate values
-any more references to this that state
-any references to this that state and
-any valid JavaScript expressions so if
 anybody
 anyhow
 anymore
-anymore let's save the changes with this
 anyone
 anyplace
 anyroad
@@ -7640,9 +7517,7 @@ apotropaism
 apotropous
 apozem
 apozems
-app and give our application a name
-app component and that component is
-app for Safari and Internet Explorer so
+app
 appair
 appal
 appalachia
@@ -7722,7 +7597,6 @@ appellative
 appellatively
 appels
 append
-append pixels to yet actually this
 appendage
 appendages
 appendant
@@ -7814,22 +7688,7 @@ applicant
 applicants
 applicate
 application
-application and finally register service
-application back in the browser I'm
-application consists of a tree of
-application inside of this div we have
-application instead of rendering a
-application is essentially a tree of
-application so here in the terminal
-application such as a favorite icon and
-application up to this point so save and
-application we're going to build
 applications
-applications a modern look and feel now
-applications and you're going to see
-applications on your own and you will
-applications so if you're not familiar
-applications with react we build a bunch
 applicative
 applicator
 applicators
@@ -7843,8 +7702,6 @@ appliqued
 appliqueing
 appliques
 apply
-apply a class to this button so back in
-apply styles we define a property here
 applying
 appoggiatura
 appoggiaturas
@@ -7948,8 +7805,6 @@ apprizing
 apprizings
 appro
 approach
-approach to bind event handlers
-approach to choose is pure your personal
 approachability
 approachable
 approached
@@ -8515,14 +8370,7 @@ arduous
 arduously
 arduousness
 are
-are exactly the same objects that we
-are monkey patched so whenever you click
-are no changes perhaps we don't want to
-are part of the props the input to the
-are times that you want to pass complex
-are you ready now let's get started
 area
-area of our application now we don't
 areach
 aread
 areading
@@ -8651,8 +8499,7 @@ arguing
 arguli
 argulus
 argument
-argument here let's test the application
-argument your event handlers simply pass
+argument's
 argumentation
 argumentations
 argumentative
@@ -8987,10 +8834,6 @@ arrasene
 arrases
 arrau
 array
-array instead we're going to create a
-array of four objects
-array of three strings tag one tag two
-array otherwise we would have rendered
 arrayal
 arrayals
 arrayed
@@ -9285,19 +9128,6 @@ arytaenoids
 arytenoid
 arytenoids
 as
-as a prop and then read it via this but
-as a result of deleting a counter the
-as all the methods that modify the state
-as in short for event or product
-as links to our manifesto JSON file and
-as on reset on delete and on increment
-as opposed to being fixed with what
-as separate props both these are
-as we can see here the type of this
-as well as another console in the log to
-as well as the image URL let's say we
-as well as value and ID now one question
-as you can see here we are initializing
 asa
 asafetida
 asafoetida
@@ -10104,11 +9934,6 @@ asyntactic
 asystole
 asystolism
 at
-at testing that's a topic for my
-at the beginning of the course I told
-at the browser console you should see
-at the order in which these methods are
-at this point so this is a perfect
 ata
 atabal
 atabals
@@ -10532,14 +10357,8 @@ attraps
 attributable
 attributably
 attribute
-attribute so I'm going to delete it
-attribute to counter that ID using the
 attributed
 attributes
-attributes here and with this we can
-attributes here so I'm gonna set value
-attributes that we said here are passed
-attributes value and selected will be
 attributing
 attribution
 attributions
@@ -10910,7 +10729,6 @@ authorities
 authority
 authorizable
 authorization
-authorization deployment and more as I
 authorizations
 authorize
 authorized
@@ -11043,12 +10861,6 @@ automates
 automatic
 automatical
 automatically
-automatically call these methods we
-automatically detects the changes
-automatically extracted these two lines
-automatically put these parentheses for
-automatically reformat your code to do
-automatically reformatted this
 automaticity
 automatics
 automating
@@ -11686,7 +11498,6 @@ babee
 babeeism
 babees
 babel
-babel will compile this down to a call
 babeldom
 babelish
 babelism
@@ -11812,19 +11623,6 @@ bacilliform
 bacillus
 bacitracin
 back
-back here and modify this code our
-back in our counter component I'm gonna
-back in the browser I'm gonna delete the
-back in the browser I'm gonna increment
-back in the browser currently we have
-back in the browser here with the react
-back in the browser so currently we have
-back in the browser you can see we have
-back in the code the name of the class
-back to apt at Jas
-back to index j s you need to use plain
-back to our counter component here in
-back to the browser and open up the
 backache
 backaches
 backare
@@ -11871,7 +11669,7 @@ backdowns
 backdrop
 backdrops
 backed
-backend services authentication and
+backend
 backer
 backers
 backet
@@ -12002,7 +11800,7 @@ backsword
 backswordman
 backswordmen
 backswords
-backtick so let's open that up here so
+backtick
 backtrack
 backtracked
 backtracking
@@ -12099,10 +11897,6 @@ bade
 baden
 bader
 badge
-badge - primary now we could make this a
-badge and the other is badge - primary
-badge badge - pill and badge - secondary
-badge warning we'll get a yellow badge
 badged
 badger
 badgered
@@ -12813,7 +12607,6 @@ banksmen
 banlieue
 banned
 banner
-banner on the top so the output of that
 bannered
 banneret
 bannerets
@@ -12902,10 +12695,6 @@ baptizing
 bapu
 bapus
 bar
-bar another useful feature here is this
-bar here on the top and then I want to
-bar so let's go ahead and implement this
-bar so on the top we also don't need the
 barabbas
 baragouin
 baragouins
@@ -13401,8 +13190,6 @@ baseboards
 basecourt
 basecourts
 based
-based on the name of our event so the
-based on what we get from our props this
 basel
 baselard
 baseless
@@ -13450,9 +13237,6 @@ bashlyks
 basho
 basic
 basically
-basically a CSS library that gives our
-basically it's an object that includes
-basically returns a react element that
 basicity
 basics
 basidia
@@ -13603,7 +13387,6 @@ batatas
 batavia
 batavian
 batch
-batch classes so here we need the value
 batched
 batches
 batching
@@ -13872,9 +13655,6 @@ bbc
 bc
 bdellium
 be
-be rendered as well let's see this in
-be unique in this list that it's the
-be wondering how can we modify this
 beach
 beachcomber
 beachcombers
@@ -14068,12 +13848,6 @@ beautifier
 beautifiers
 beautifies
 beautiful
-beautiful and delete them perfect
-beautiful let's delete some of these and
-beautiful now as I told you in between
-beautiful now back to our code so
-beautiful now here in this method we
-beautiful now let's handle the click
 beautifully
 beautify
 beautifying
@@ -14110,17 +13884,6 @@ became
 becasse
 becasses
 because
-because JSX is not a templating engine
-because counter is a default export we
-because here the render method you're
-because in angular all browser events
-because in our handle delete method
-because it doesn't have any state it
-because that's a reserved keyword in
-because that's where we have used the
-because they are a little bit different
-because we are not using the counters
-because with this you would get better
 beccaccia
 beccafico
 beccaficos
@@ -14160,7 +13923,6 @@ beclouding
 beclouds
 become
 becomes
-becomes disabled also we're displaying
 becoming
 becomingly
 becomingness
@@ -14429,14 +14191,6 @@ befooled
 befooling
 befools
 before
-before a component is removed from the
-before because we cannot have markup
-before it's similar to displaying the
-before let's just add a console that log
-before nothing new so far and here I'm
-before our span I'm gonna render this
-before removing this counter from the
-before super so because we added a
 beforehand
 beforetime
 befortune
@@ -14491,7 +14245,6 @@ begin
 beginner
 beginners
 beginning
-beginning of the course so this is the
 beginnings
 begins
 begird
@@ -14584,7 +14337,6 @@ behest
 behests
 behight
 behind
-behind items in a shopping cart so
 behinds
 behold
 beholden
@@ -14836,7 +14588,6 @@ beloved
 beloves
 beloving
 below
-below that we should add our main
 belowstairs
 bels
 belshazzar
@@ -15540,11 +15291,6 @@ betula
 betulaceae
 betumbled
 between
-between non boolean values so let's go
-between the counters component and the
-between these curly braces we can add
-between this curly braces we can just
-between two values the first value is
 betweenity
 betweenness
 betweens
@@ -15893,7 +15639,6 @@ bifurcating
 bifurcation
 bifurcations
 big
-big badge here so this is one way to
 biga
 bigae
 bigamies
@@ -16505,7 +16250,6 @@ bisulcate
 bisulphate
 bisulphide
 bit
-bit of margin to let the UI breathe
 bitch
 bitched
 bitcheries
@@ -17137,7 +16881,6 @@ blizzards
 blizzardy
 bloat
 bloated
-bloated but various responsibilities
 bloatedness
 bloater
 bloaters
@@ -17176,6 +16919,7 @@ blocks
 blocky
 blocs
 bloemfontein
+blog
 bloggs
 blois
 bloke
@@ -17386,7 +17130,6 @@ bludges
 bludging
 bluding
 blue
-blue badge now this badge this span is
 blueback
 bluebacks
 bluebeard
@@ -17705,7 +17448,6 @@ bodoni
 bodrag
 bods
 body
-body of this function before our return
 bodybuilder
 bodybuilders
 bodybuilding
@@ -18215,7 +17957,6 @@ bookworms
 booky
 boole
 boolean
-boolean it's either true or false and
 boom
 boomed
 boomer
@@ -18296,7 +18037,6 @@ bootmaking
 boots
 bootses
 bootstrap
-bootstrap dot CSS so this is how we
 bootstrapped
 bootstrapping
 bootstraps
@@ -18909,8 +18649,6 @@ bracelets
 bracer
 bracers
 braces
-braces because we need to pass an
-braces next we get this that state but
 brach
 braches
 brachet
@@ -19343,7 +19081,6 @@ breadthwise
 breadwinner
 breadwinners
 break
-break the rules if you know what you're
 breakable
 breakableness
 breakables
@@ -19754,7 +19491,6 @@ bringers
 bringing
 bringings
 brings
-brings us to a very important rule of
 brinier
 briniest
 brininess
@@ -20119,7 +19855,6 @@ brougham
 broughams
 broughs
 brought
-brought up this little panel you can
 brouhaha
 brouhahas
 brow
@@ -20160,12 +19895,7 @@ brows
 browse
 browsed
 browser
-browser I'm gonna delete the first
-browser let's call this button we get
-browser let's click this button there
-browser when I click the increment
 browsers
-browsers in other words we no longer
 browses
 browsing
 browsings
@@ -20573,17 +20303,14 @@ buhrstone
 buhrstones
 buick
 build
-build complex user interfaces every
-build these components in isolation and
 builded
 builder
 builders
 building
-building applications with react unlike
-building fast and interactive user
 buildings
 builds
 built
+built-in
 builth
 buirdly
 bukshi
@@ -20801,8 +20528,6 @@ bunce
 bunced
 bunces
 bunch
-bunch of list items pretty
-bunch of other properties here so
 bunched
 bunches
 bunchier
@@ -21288,14 +21013,6 @@ busybody
 busying
 busyness
 but
-but a lot of people are not aware of
-but actually it exhibits patterns that
-but if you forget to add the props to
-but props then ID will get the same
-but some developers prefer to use
-but we are not seeing the changes in the
-but we have a new property called
-but when our code is compiled because
 butadiene
 butane
 butanol
@@ -21377,13 +21094,6 @@ buttocked
 buttocking
 buttocks
 button
-button for removing an item from this
-button so let's go back to our AB
-button so our virtual Dom is a tree of
-button so we have
-button to solve this problem we should
-button we have a property on click you
-button you can see our product object
 buttoned
 buttonhole
 buttonholed
@@ -21438,9 +21148,6 @@ buzzy
 bwana
 bwanas
 by
-by calling a method in the props object
-by default it will be set to true now
-by using object destructuring so here in
 byatt
 bycoket
 bycokets
@@ -21638,7 +21345,6 @@ cacciatore
 cachalot
 cachalots
 cache
-cache in a production environment so for
 cachectic
 cached
 caches
@@ -22043,10 +21749,8 @@ calculated
 calculates
 calculating
 calculation
-calculation of the classes is not
 calculational
 calculations
-calculations we can simply give it a
 calculative
 calculator
 calculators
@@ -22181,13 +21885,6 @@ calking
 calkins
 calks
 call
-call automatic semicolon insertion so in
-call it index the j/s here we need to
-call it nav bar the JSX
-call this a stateless functional
-call this dot set state this method
-call to react but create element now the
-call which means it's going to happen in
 calla
 callable
 callaghan
@@ -22200,12 +21897,6 @@ callas
 callboy
 callboys
 called
-called after our component is rendered
-called as part of a method in an object
-called first we have the constructor
-called once and it's the right place to
-called props and this is basically a
-called when an object of this type is
 caller
 callers
 callet
@@ -22223,7 +21914,6 @@ calligraphists
 calligraphy
 callimachus
 calling
-calling this method you're simply
 callings
 calliope
 calliper
@@ -22440,7 +22130,7 @@ came
 camel
 camelback
 camelbacks
-camelcase notation for example font
+camelcase
 cameleer
 cameleers
 cameleon
@@ -22607,28 +22297,6 @@ camstone
 camstones
 camus
 can
-can add that here badge - and here on
-can decide whether we should make an
-can define a constant and set it with
-can destructure
-can do something like this export
-can find a link in the video description
-can go to the console tab type dollar
-can immediately see a compilation error
-can modify this value in or handle
-can pass it to all the children using
-can render a list of items let me show
-can run NPM install bootstrap make sure
-can see here we are using es6 classes we
-can see our counter component rendered
-can see our hello world message let's
-can see the font is changed next we're
-can see we have four messages on the
-can set this that state to this the
-can set this to a numerical value like
-can share this date with the children of
-can split this page into components like
-can work with the instance of any
 can't
 canaan
 canaanite
@@ -22689,7 +22357,6 @@ cancellated
 cancellation
 cancellations
 cancelled
-cancelled lock here we need to update
 cancelli
 cancelling
 cancellous
@@ -22878,9 +22545,6 @@ cannoning
 cannonry
 cannons
 cannot
-cannot read properties state of
-cannot use a class property on an object
-cannot use lifecycle hooks in stateless
 canns
 cannula
 cannulae
@@ -24060,9 +23724,6 @@ carsick
 carsickness
 carson
 cart
-cart but in this application it behaves
-cart so as we add products to our
-cart so by the end of this crash course
 carta
 cartage
 cartages
@@ -24213,7 +23874,7 @@ caschroms
 casco
 cascos
 case
-case you can use inline stats so here in
+case-sensitive
 caseation
 casebook
 casebooks
@@ -24913,7 +24574,6 @@ causeways
 causey
 causeys
 causing
-causing this method to get bloated so
 caustic
 caustically
 causticities
@@ -25616,7 +25276,6 @@ cerris
 cerrises
 cert
 certain
-certain moments during the lifecycle of
 certainly
 certainties
 certainty
@@ -26060,21 +25719,11 @@ chanel
 chaney
 changchun
 change
-change detection algorithm it figures
-change the message to counter render now
-change the state of our components and
-change the value of count to 1 save the
-change this application such that if the
-change this expression to this the props
-change this to this the props that
 changeability
 changeable
 changeableness
 changeably
 changed
-changed and then it will update a part
-changed and where in the Dom it should
-changed so here has the argument to set
 changeful
 changefully
 changefulness
@@ -26086,15 +25735,6 @@ changeovers
 changer
 changers
 changes
-changes as you can see the prettier
-changes back in the browser I'm gonna
-changes back in the browser let's click
-changes back in the browser so here are
-changes in props and state objects
-changes now let's go back to our
-changes now you can see there's a bit of
-changes we still get the same output and
-changes you can see the result here so
 changing
 changingly
 changsha
@@ -26252,7 +25892,6 @@ characinidae
 characinoid
 characins
 character
-character is true C so in this case hi
 charactered
 characterful
 characteries
@@ -26590,7 +26229,6 @@ che
 cheadle
 cheam
 cheap
-cheap to create when we change the state
 cheapen
 cheapened
 cheapener
@@ -27133,7 +26771,6 @@ chikaras
 chilblain
 chilblains
 child
-child components so every react
 childbearing
 childbed
 childbirth
@@ -27155,10 +26792,6 @@ childlike
 childly
 childness
 children
-children and we use that when we want to
-children is essentially a react element
-children let's take a closer look so
-children prop now going forward we're
 chile
 chilean
 chileans
@@ -28011,8 +27644,6 @@ chromatosphere
 chromatype
 chromatypes
 chrome
-chrome developer tools here you can see
-chrome developer tools let's go to the
 chromed
 chromel
 chromene
@@ -29184,17 +28815,9 @@ clasping
 claspings
 clasps
 class
-class components now let's go to our
-class here we get a blue badge if we use
-class its class name because as I told
-class that we imported on the top from
-class we need to add a property call it
 classable
 classed
 classes
-classes dynamically
-classes in react now as you can tell as
-classes with what we have in this
 classic
 classical
 classicalism
@@ -29527,12 +29150,6 @@ cliched
 clicheed
 cliches
 click
-click the button and now we can see the
-click the increment button at this point
-click the increment button only this
-click the reset perfect
-click there you go
-click with this naming convention
 clicked
 clicker
 clickers
@@ -29842,7 +29459,6 @@ closets
 closeup
 closeups
 closing
-closing tag of an element so here
 closings
 closter
 closters
@@ -30520,18 +30136,6 @@ coddlers
 coddles
 coddling
 code
-code and babel will convert that code
-code as well as a bunch of other tools
-code completion so here's our counter
-code here in a render method just before
-code here we're gonna write it from
-code like this
-code like this now let's test this so
-code like this this that state that
-code okay so here's our new method now
-code so now each attribute or property
-code we are defining the class here and
-code we have this shortcut toggle
 codebook
 codebooks
 codeclination
@@ -31570,7 +31174,6 @@ comities
 comity
 comma
 command
-command prompt let's run create react
 commandant
 commandants
 commandantship
@@ -31961,7 +31564,6 @@ comparatives
 comparator
 comparators
 compare
-compare this element with the previous
 compared
 compares
 comparing
@@ -32074,11 +31676,7 @@ compilator
 compilators
 compilatory
 compile
-compile that JSX code into calls to
 compiled
-compiled to react elements so here
-compiled to react elements so how can we
-compiled to react elements which are
 compilement
 compilements
 compiler
@@ -32129,8 +31727,6 @@ complements
 complete
 completed
 completely
-completely internal to that component in
-completely isolated from the other
 completeness
 completes
 completing
@@ -32141,7 +31737,6 @@ completists
 completive
 completory
 complex
-complex markup we might have multiple
 complexed
 complexedness
 complexes
@@ -32217,85 +31812,10 @@ compo
 compone
 componency
 component
-component I'm gonna render a list of
-component a control component doesn't
-component and all is children are
-component and let react update the state
-component and make a couple more changes
-component and paste it right here that
-component and press tab done next type
-component and replace this counters
-component based architecture however
-component did mount this method is
-component did update
-component from the current folder
-component has its own local state so we
-component has its own state that is
-component here I've set select that to
-component here so let's cut this from
-component here we get this equal equal
-component here we have a reference to
-component here's our handle increment
-component is a controlled component
-component is called and then our app
-component is essentially a piece of the
-component is mounted so when a component
-component is rendered and placed in the
-component is the counters component so
-component is typically implemented as a
-component is what you see here let's
-component let me show you so if we go
-component let's delete the children done
-component let's go for a child component
-component look at the state for this
-component now both the counters and
-component on delete which is a function
-component on the top I MRC tab CC tab
-component raises the delete event and
-component so I can counter that JSX type
-component so back in index that J S on
-component so here in the source folder
-component so instead of using a class to
-component so let's expand this look at
-component that is our counter component
-component that owns a piece of this
-component that there is nothing wrong
-component that's why we have to pass ID
-component this
-component this component represents the
-component this is where we're using the
-component to its parent that is our app
-component via props this is because we
-component we cannot access the state of
-component we don't have any props so our
-component we have SFZ for creating a
-component we have an array of for
-component we want to reference this the
-component which is one of the built-in
-component which we refer to as the root
-component with app component now let's
-component you can see this CSS file is
 componental
 componential
 componentry
 components
-components and then compose them to
-components beautiful now let's take this
-components cannot access that state it's
-components each tweet component can
-components folder slash nav bar and then
-components if you have worked with
-components in sync
-components look at the first message our
-components on our page let's look at
-components render data handle events and
-components slash counter I note that
-components so if I change the value of
-components so in this section we're
-components that share the same data and
-components together to build complex
-components you need
-components you're going to learn how to
 compony
 comport
 comported
@@ -32311,8 +31831,6 @@ composer
 composers
 composes
 composing
-composing components more specifically
-composing components to build complex
 compositae
 composite
 composited
@@ -32581,8 +32099,6 @@ concents
 concentus
 concepcion
 concept
-concept of loops because JSX is really
-concept of raising and handling events
 conceptacle
 concepti
 conception
@@ -33677,7 +33193,6 @@ considerations
 considerative
 consideratively
 considered
-considered false see any numbers but
 considering
 consideringly
 considerings
@@ -33748,12 +33263,6 @@ consolatory
 consolatrix
 consolatrixes
 console
-console because we have four counter
-console dot log saying here we are in
-console dot log with a message like
-console here the console I'm gonna write
-console tab and type dollar R look we
-console that log of counter to make sure
 consoled
 consolement
 consolements
@@ -33819,6 +33328,7 @@ conspirer
 conspires
 conspiring
 conspiringly
+const
 constable
 constables
 constableship
@@ -33831,10 +33341,6 @@ constance
 constancies
 constancy
 constant
-constant call it counters we set it to a
-constant call it counters we're gonna
-constant called count now I'm gonna
-constant that's when we use the let
 constantan
 constantia
 constantine
@@ -33945,17 +33451,6 @@ constructively
 constructiveness
 constructivism
 constructor
-constructor and for every event handler
-constructor and rebinding every event
-constructor in this child class first we
-constructor is called
-constructor of the parent class using
-constructor this constructor as you have
-constructor this is a method that is
-constructor we can convert this function
-constructor we do have access to our
-constructor we set this state directly
-constructor you have to call the base
 constructors
 constructs
 constructure
@@ -33994,8 +33489,6 @@ consuls
 consulship
 consulships
 consult
-consult blog event handler called now we
-consult log and show you this got props
 consulta
 consultancies
 consultancy
@@ -34080,8 +33573,6 @@ contain
 containable
 contained
 container
-container for our react application so
-container for our reactor application as
 containerisation
 containerise
 containerised
@@ -34185,7 +33676,6 @@ contendings
 contends
 contenement
 content
-content let me show you so back in the
 contentation
 contented
 contentedly
@@ -34220,7 +33710,6 @@ contesting
 contestingly
 contests
 context
-context of our counter example but what
 contexts
 contextual
 contextualisation
@@ -34284,7 +33773,6 @@ continuedness
 continuer
 continuers
 continues
-continues now we get to the third
 continuing
 continuities
 continuity
@@ -34484,12 +33972,12 @@ contrivers
 contrives
 contriving
 control
+control-d
 controle
 controlee
 controllability
 controllable
 controlled
-controlled component so whenever the
 controller
 controllers
 controllership
@@ -34580,8 +34068,6 @@ conventicler
 conventiclers
 conventicles
 convention
-convention we put all our components
-convention we use for that is handle
 conventional
 conventionalise
 conventionalised
@@ -34643,9 +34129,7 @@ conversion
 conversions
 converso
 convert
-convert this into what we call true C or
 converted
-converted to a call to react that create
 convertend
 convertends
 converter
@@ -35558,7 +35042,6 @@ correspondent
 correspondently
 correspondents
 corresponding
-corresponding span so it matches the one
 correspondingly
 corresponds
 corresponsive
@@ -36028,7 +35511,6 @@ cou
 coucal
 coucals
 couch
-couch here whatever we type in between
 couchant
 couche
 couched
@@ -36103,14 +35585,6 @@ counselors
 counselorship
 counsels
 count
-count is five let's execute this one
-count plus 1 so we get the current count
-count plus plus plus it's not gonna work
-count property here we would write code
-count property so it will reach out to a
-count property so let's simplify this
-count property you want to add badge
-count we set it to this that state so
 countable
 countdown
 counted
@@ -36121,51 +35595,6 @@ countenancers
 countenances
 countenancing
 counter
-counter - app
-counter ID on the console now we need to
-counter ID parameter here so we know
-counter class that extends the component
-counter component all the attributes
-counter component also we should set the
-counter component and finally at this
-counter component and have a single
-counter component has a value this value
-counter component here in the render
-counter component in the render method
-counter component instead of
-counter component is going to be a
-counter component now we need to change
-counter component one more time in the
-counter component so you can see with
-counter component will raise this event
-counter component you can see the value
-counter component you would name it like
-counter element will get the output of
-counter for now I'm going to set this to
-counter in this array instead we need to
-counter initialized to 0
-counter is one beautiful let's try
-counter is self closed but sometimes we
-counter look at its props we have this
-counter module now here let's render if
-counter note that the value is currently
-counter number and then render counter
-counter object and finally we replace
-counter object if you look at one of
-counter object is carrying all the data
-counter object so this is not undefined
-counter object that we have in the state
-counter object that we passed from its
-counter object that we receive as an
-counter object we don't have to come
-counter object we'll have to come back
-counter react we'll compare this virtual
-counter so as you have learned before we
-counter that value then perhaps we're
-counter to this array or removing an
-counter unmount now back in the browser
-counter we will see the unmount message
-counter you can see the idea of that
 counteract
 counteracted
 counteracting
@@ -36283,32 +35712,6 @@ counterproposal
 counterpunch
 counterrevolution
 counters
-counters and also like an app component
-counters and then in index at j/s
-counters array let's test the
-counters as well as the methods that
-counters component here in the render
-counters component instead of
-counters component is handling that
-counters component once again here in
-counters component so let's go to our
-counters component to the counter
-counters component we need to add a new
-counters component when you expand that
-counters component which will also
-counters dot index off we pass our
-counters from the counters module and
-counters here on the navigation bar so
-counters let's add that here we also
-counters like this save the changes and
-counters look at the props now we have a
-counters property first we add
-counters property of this object so we
-counters rendered and the last part
-counters so expand this here's our first
-counters so save the changes now let's
-counters to our counters component
-counters use the filter method to get
 countersank
 counterscarp
 counterscarps
@@ -36411,10 +35814,6 @@ couriers
 courlan
 courlans
 course
-course in that course we'll talk about
-course this does not make sense in the
-course we'll build and deploy a real
-course you'll be able to build react
 coursebook
 coursebooks
 coursed
@@ -36932,8 +36331,6 @@ crare
 crares
 crases
 crash
-crash course first i'm gonna give you a
-crash course so please support me by
 crashed
 crasher
 crashes
@@ -37066,13 +36463,7 @@ creasing
 creasy
 creatable
 create
-create a new component for our
-create a new counters array and give it
-create element that's why we have to
-create in this case h1 but when we have
-create react app you don't have to do
 created
-created so in the constructor at this
 creates
 creatic
 creatin
@@ -37745,6 +37136,7 @@ crosier
 crosiered
 crosiers
 cross
+cross-platform
 crossandra
 crossandras
 crossband
@@ -38249,6 +37641,7 @@ ctenophorans
 ctenophore
 ctenophores
 ctesiphon
+ctrl
 cuadrilla
 cub
 cuba
@@ -38778,12 +38171,7 @@ curred
 currencies
 currency
 current
-current counter object and with this
 currently
-currently available as an extension for
-currently our count is 1 that's why we
-currently our handle increment method
-currently there are more than 40,000
 currentness
 currents
 curricle
@@ -38981,7 +38369,6 @@ customising
 customization
 customizations
 customize
-customize this configuration for your
 customized
 customizes
 customizing
@@ -39161,7 +38548,6 @@ cyclandelate
 cyclanthaceae
 cyclanthaceous
 cycle
-cycle hook that is component will
 cycled
 cycler
 cycles
@@ -39842,7 +39228,6 @@ danewort
 dang
 danged
 danger
-danger to make it red BTN - SM to make
 dangereuses
 dangerous
 dangerously
@@ -40046,9 +39431,6 @@ dasyuridae
 dasyurus
 dat
 data
-data needs to be modified this component
-data that we give to a component whereas
-data to your components as well as raise
 database
 databases
 datable
@@ -40315,7 +39697,6 @@ dealerships
 dealfish
 dealfishes
 dealing
-dealing with a list of products in a
 dealings
 deallocate
 deallocated
@@ -40519,7 +39900,6 @@ debtor
 debtors
 debts
 debug
-debug your react applications if you
 debugged
 debugger
 debuggers
@@ -41349,7 +40729,6 @@ deems
 deemster
 deemsters
 deep
-deep understanding of react components
 deepen
 deepened
 deepening
@@ -41413,8 +40792,6 @@ defats
 defatted
 defatting
 default
-default black banner that comes with
-default class counter and then we can
 defaulted
 defaulter
 defaulters
@@ -41576,9 +40953,6 @@ definability
 definable
 definably
 define
-define a property called it styles
-define an element so const element const
-define this component we can use a
 defined
 definement
 definer
@@ -41589,7 +40963,6 @@ definiendum
 definiens
 definientia
 defining
-defining a method here and the naming
 definite
 definitely
 definiteness
@@ -42017,16 +41390,6 @@ delegation
 delegations
 delenda
 delete
-delete a counter these lifecycle hooks
-delete a counter we need to delete it
-delete and on increment we pick all of
-delete so now that we're passing a
-delete so our components can raise
-delete the first counter the total
-delete we should move this date as well
-delete what we have on line 9 but going
-delete what we have on line 9 save the
-delete which does not exist in this
 deleted
 deleterious
 deleteriously
@@ -42527,7 +41890,6 @@ demonstrableness
 demonstrably
 demonstrandum
 demonstrate
-demonstrate that this is actually
 demonstrated
 demonstrates
 demonstrating
@@ -43062,8 +42424,6 @@ dependency
 dependent
 dependents
 depending
-depending on our state this method will
-depending on the value of the count
 dependingly
 depends
 depersonalisation
@@ -43985,7 +43345,8 @@ destructivity
 destructor
 destructors
 destructs
-destructuring that you learned about in
+destructure
+destructuring
 desuetude
 desuetudes
 desulphur
@@ -44022,8 +43383,6 @@ detaching
 detachment
 detachments
 detail
-detail and in that section we're going
-detail but to help you get started
 detailed
 detailing
 details
@@ -44099,7 +43458,6 @@ determinative
 determinatives
 determine
 determined
-determined by what is returned from the
 determinedly
 determiner
 determiners
@@ -44331,12 +43689,9 @@ developable
 develope
 developed
 developer
-developer tools so here on the console
 developers
-developers to read and understand your
 developing
 development
-development server on port 3000 and open
 developmental
 developmentally
 developments
@@ -44527,7 +43882,6 @@ dexamphetamine
 dexedrine
 dexiotropic
 dexter
-dexter j s and if you're curious how i
 dexterities
 dexterity
 dexterous
@@ -44722,8 +44076,6 @@ diallers
 dialling
 diallings
 dialog
-dialog box in those cases you use the
-dialog box so let me show you how to do
 dialogic
 dialogise
 dialogised
@@ -45083,7 +44435,6 @@ dicyclic
 dicynodont
 dicynodonts
 did
-did mount react will call these methods
 didactic
 didactical
 didactically
@@ -45223,11 +44574,6 @@ differences
 differencies
 differency
 different
-different applications so as you see
-different from handling events in
-different from what I'm gonna show you
-different objects if a function is
-different topic we cannot talk about it
 differentia
 differentiable
 differentiae
@@ -45894,8 +45240,6 @@ directive
 directives
 directivity
 directly
-directly in other words we don't write
-directly you can do so in constructor
 directness
 directoire
 director
@@ -47435,9 +46779,6 @@ displanted
 displanting
 displants
 display
-display nav bar rendered now one thing
-display the number of counters on the
-display the total number of counters on
 displayable
 displayed
 displayer
@@ -47888,6 +47229,7 @@ dissymmetric
 dissymmetrical
 dissymmetrically
 dissymmetry
+dist
 distaff
 distaffs
 distain
@@ -48024,7 +47366,6 @@ distressfulness
 distressing
 distressingly
 distributable
-distributable then CSS and finally
 distributaries
 distributary
 distribute
@@ -48185,9 +47526,6 @@ diurnals
 diuturnal
 diuturnity
 div
-div or the container for our react
-div that is not doing anything here in
-div we only have the h1 and the button
 diva
 divagate
 divagated
@@ -48417,12 +47755,6 @@ dl
 dna
 dnepropetrovsk
 do
-do a consult that log of previous props
-do any kind of cleanup so if you have
-do handle increment for argument's sake
-do next
-do something like this return this that
-do that we add curly braces and in
 doab
 doable
 doabs
@@ -48552,9 +47884,6 @@ documentarist
 documentarists
 documentary
 documentation
-documentation and search for nav bar on
-documentation that's an entirely
-documentation you will see a few more
 documentations
 documented
 documenting
@@ -48620,11 +47949,8 @@ doeks
 doer
 doers
 does
-does is it serves assets from a local
-does not take any parameters but
 doeskin
 doesn't
-doesn't really have anything so a bunch
 doest
 doeth
 doff
@@ -48739,7 +48065,6 @@ doilies
 doily
 doin
 doing
-doing and you may want to apply your
 doings
 doit
 doited
@@ -48787,9 +48112,6 @@ doling
 dolium
 doll
 dollar
-dollar R so note that as I select each
-dollar R what is this well I'm going to
-dollar r dot render I'm gonna call the
 dollarisation
 dollarization
 dollars
@@ -48955,13 +48277,6 @@ domos
 domy
 don
 don't
-don't have to clone the other counter
-don't have to do this angular
-don't have to worry about this let's do
-don't know when this is an asynchronous
-don't need curly braces around it okay
-don't need this so delete now one more
-don't see that on the view instead we
 dona
 donah
 donahs
@@ -48997,10 +48312,6 @@ dondered
 dondering
 donders
 done
-done also we don't need the state here
-done now here we have multiple cursors
-done so this is our mounting phase
-done with this component now let's use
 donee
 donees
 donegal
@@ -49311,7 +48622,6 @@ dostoevsky
 dostoyevski
 dostoyevsky
 dot
-dot render as the first argument we pass
 dotage
 dotages
 dotal
@@ -49356,6 +48666,7 @@ douar
 douars
 douay
 double
+double-click
 doubled
 doubleness
 doubler
@@ -49515,7 +48826,6 @@ dowl
 dowland
 dowlas
 down
-down using props so back in AB component
 downa
 downbeat
 downbeats
@@ -49556,7 +48866,6 @@ download
 downloaded
 downloading
 downloads
-downloads very very popular extension so
 downlooked
 downmost
 downpatrick
@@ -50610,7 +49919,6 @@ dumaist
 dumaists
 dumas
 dumb
-dumb we want to render this so
 dumbarton
 dumbbell
 dumbbells
@@ -50873,8 +50181,6 @@ durham
 durian
 durians
 during
-during the lifecycle of a component then
-during their lifecycle the first phase
 durion
 durions
 durkheim
@@ -51056,10 +50362,6 @@ dymchurch
 dynamic
 dynamical
 dynamically
-dynamically how to apply CSS classes
-dynamically so let's add a property in
-dynamically so we start with curly
-dynamically we also have this delete
 dynamics
 dynamise
 dynamised
@@ -51208,13 +50510,9 @@ dziggetais
 dzo
 dzos
 e
-e-commerce application so as you add
+e-commerce
 ea
 each
-each component is a piece of UI we can
-each counter component so back in our
-each counter has its own state beautiful
-each item in this list because if the
 eachwhere
 eadem
 eadish
@@ -51273,8 +50571,6 @@ earldom
 earldoms
 earless
 earlier
-earlier at the beginning of the course I
-earlier we passed the state of the
 earlies
 earliest
 earliness
@@ -51901,12 +51197,10 @@ edite
 edited
 edith
 editing
-editing so we can select a piece of code
 editio
 edition
 editions
 editor
-editor but format unsaved set this to
 editorial
 editorialisation
 editorialise
@@ -52342,7 +51636,6 @@ eisteddfodau
 eisteddfodic
 eisteddfods
 either
-either in the counters array or just a
 ejaculate
 ejaculated
 ejaculates
@@ -52352,7 +51645,6 @@ ejaculations
 ejaculative
 ejaculatory
 eject
-eject by running npm run eject we'll
 ejecta
 ejectamenta
 ejected
@@ -52723,16 +52015,6 @@ elegizing
 elegy
 eleison
 element
-element and his children with the
-element and set it to a JSX expression
-element and the Dom we can do something
-element has two children a span and a
-element it's not a real Dom element it's
-element react will then compare this
-element so that is updating our virtual
-element the first argument to this
-element the name of the attribute is not
-element with the class container and
 elemental
 elementalism
 elementally
@@ -52741,8 +52023,6 @@ elementarily
 elementariness
 elementary
 elements
-elements don't have a property called on
-elements to a child component such as a
 elemi
 elench
 elenchi
@@ -52940,7 +52220,6 @@ elpees
 els
 elsan
 else
-else in the Dom is updated only that
 elsewhere
 elsewhither
 elsewise
@@ -53688,7 +52967,6 @@ emptive
 emptor
 empts
 empty
-empty now let's investigate how this
 emptying
 emptyings
 emptysis
@@ -53769,7 +53047,6 @@ emydes
 emys
 en
 enable
-enable formatting unsaved so whenever
 enabled
 enabler
 enablers
@@ -53846,9 +53123,7 @@ encamps
 encanthis
 encanthises
 encapsulate
-encapsulate related values so instead of
 encapsulated
-encapsulated these two lines in a
 encapsulates
 encapsulating
 encapsulation
@@ -53999,7 +53274,6 @@ encounter
 encountered
 encountering
 encounters
-encounters component so these two
 encourage
 encouraged
 encouragement
@@ -54091,8 +53365,6 @@ encystment
 encystments
 encysts
 end
-end of this section you will have a very
-end up with memory leaks
 endamage
 endamaged
 endamagement
@@ -54631,7 +53903,6 @@ enjoyable
 enjoyableness
 enjoyably
 enjoyed
-enjoyed this tutorial please like it and
 enjoyer
 enjoyers
 enjoying
@@ -54952,7 +54223,6 @@ entendu
 entente
 ententes
 enter
-enter the password
 entera
 enterable
 enteral
@@ -55050,10 +54320,7 @@ enticing
 enticingly
 enticings
 entire
-entire DOM is of data when a component
-entire component tree is rear-ended we
 entirely
-entirely controlled by its parent so
 entireness
 entires
 entirety
@@ -55898,7 +55165,6 @@ equable
 equableness
 equably
 equal
-equal counter ID
 equaled
 equaling
 equalisation
@@ -55927,7 +55193,6 @@ equalling
 equally
 equalness
 equals
-equals zero we're gonna append badge -
 equanimities
 equanimity
 equanimous
@@ -56309,8 +55574,6 @@ erroneous
 erroneously
 erroneousness
 error
-error cannot assign to read-only
-error function and this will solve our
 errorist
 errorists
 errors
@@ -56386,7 +55649,7 @@ erythrophobia
 erythropoiesis
 erythropoietin
 es
-es6 modules don't worry just code along
+es6
 esau
 esc
 escadrille
@@ -56619,13 +55882,11 @@ essene
 essenes
 essenism
 essential
-essential because of something that we
 essentialism
 essentialist
 essentialists
 essentiality
 essentially
-essentially plain JavaScript objects we
 essentialness
 essentials
 esses
@@ -57491,15 +56752,6 @@ evens
 evensong
 evensongs
 event
-event handler handle increment we set
-event handler here let's do a simple
-event handler in this method we're
-event handler take care of incrementing
-event handlers to this but you might
-event here so let's get rid of this
-event so here we want to add on click
-event this is a very common pattern that
-event we're gonna call that event on
 eventer
 eventers
 eventful
@@ -57510,7 +56762,6 @@ eventing
 eventration
 eventrations
 events
-events and this is the naming convention
 eventual
 eventualise
 eventualised
@@ -57523,7 +56774,6 @@ eventualized
 eventualizes
 eventualizing
 eventually
-eventually produce a complex Markov
 eventuate
 eventuated
 eventuates
@@ -57550,8 +56800,6 @@ evertor
 evertors
 everts
 every
-every component you have to add a
-every time
 everybody
 everyday
 everydayness
@@ -57559,7 +56807,6 @@ everyman
 everyone
 everyplace
 everything
-everything is working so let's increment
 everyway
 everywhen
 everywhence
@@ -57701,8 +56948,6 @@ exactions
 exactitude
 exactitudes
 exactly
-exactly happens under the hood when we
-exactly the same this looks like
 exactment
 exactments
 exactness
@@ -57757,14 +57002,8 @@ examining
 examplar
 examplars
 example
-example let's add an image here we want
-example let's look at our increment
-example of a component let's see what
-example one common use case is to set
-example we are interested in the total
 exampled
 examples
-examples if you scroll down you can see
 exampling
 exams
 exanimate
@@ -58302,7 +57541,6 @@ existentialist
 existentialists
 existentially
 existing
-existing one should be done inside of
 exists
 exit
 exitance
@@ -58725,7 +57963,6 @@ exportable
 exportation
 exportations
 exported
-exported it on the same line so here we
 exporter
 exporters
 exporting
@@ -58778,20 +58015,6 @@ expresses
 expressible
 expressing
 expression
-expression and pass the idea of this
-expression but maybe you want to apply
-expression is something that produces a
-expression it looks at the first operand
-expression now it's more readable and it
-expression now the way we do this is by
-expression okay so delete now the
-expression that's perfectly fine so now
-expression this is a react element so
-expression we no longer have the ID
-expression we're gonna pass an error
-expression which gets compiled to a
-expression which is a react element so
-expression works under the hood so here
 expressional
 expressionism
 expressionist
@@ -58800,7 +58023,6 @@ expressionists
 expressionless
 expressionlessly
 expressions
-expressions must have one parent element
 expressive
 expressively
 expressiveness
@@ -58941,7 +58163,6 @@ extemporizes
 extemporizing
 extemporizingly
 extend
-extend our via application and add
 extendability
 extendable
 extended
@@ -58960,16 +58181,12 @@ extensile
 extensimeter
 extensimeters
 extension
-extension so I don't have to modify it
 extensional
 extensionality
 extensionally
 extensionist
 extensionists
 extensions
-extensions panel on the left and search
-extensions tab under installed you can
-extensions that make it easier to build
 extensities
 extensity
 extensive
@@ -59359,6 +58576,7 @@ eyties
 ezekiel
 ezra
 f
+f2
 fa
 fab
 fabaceous
@@ -59412,7 +58630,6 @@ faburdens
 facade
 facades
 face
-face so in this face we have one life
 faced
 facedness
 faceless
@@ -59812,8 +59029,6 @@ fallows
 falls
 falmouth
 false
-false see a string that has at least one
-false see an empty string is considered
 falsehood
 falsehoods
 falsely
@@ -59859,8 +59074,6 @@ fameless
 fames
 familial
 familiar
-familiar to us to describe what the UI
-familiar with so here let's handle the
 familiarisation
 familiarise
 familiarised
@@ -60435,7 +59648,6 @@ favorer
 favorers
 favoring
 favorite
-favorite icon manifests that JSON
 favorites
 favoritism
 favorless
@@ -60553,8 +59765,6 @@ featly
 featous
 feats
 feature
-feature is not available at the time of
-feature is not limited to react we have
 featured
 featuredness
 featureless
@@ -60673,7 +59883,6 @@ feer
 feers
 fees
 feet
-feet now feed includes several tweet
 feetless
 feeze
 feezed
@@ -61252,7 +60461,6 @@ feverishness
 feverous
 fevers
 few
-few special methods that we can add to
 fewer
 fewest
 fewmet
@@ -61451,7 +60659,6 @@ fiefdom
 fiefdoms
 fiefs
 field
-field angular is notified it runs its
 fielded
 fielder
 fielders
@@ -61600,7 +60807,6 @@ filching
 filchingly
 filchings
 file
-file this is a very simple template it
 filed
 filemot
 filename
@@ -61608,7 +60814,6 @@ filenames
 filer
 filers
 files
-files panel we've got the source folder
 filet
 fileted
 fileting
@@ -61767,10 +60972,6 @@ finalized
 finalizes
 finalizing
 finally
-finally back here let's call this that
-finally let's add the counters element
-finally let's change this to zero save
-finally let's get rid of these counters
 finals
 finance
 financed
@@ -61789,11 +60990,6 @@ finched
 finches
 finchley
 find
-find a shortcut here under the go menu
-find that section confusing I highly
-find the index of the counter that we
-find the link on the top right corner of
-find this a little bit noisy because in
 finder
 finders
 finding
@@ -61873,7 +61069,6 @@ finings
 finis
 finises
 finish
-finish this lecture back in our counters
 finished
 finisher
 finishers
@@ -62052,10 +61247,6 @@ firrings
 firry
 firs
 first
-first argument to this method is the
-first counter gun another one beautiful
-first previous props so this is the
-first react app
 firsthand
 firstling
 firstlings
@@ -63439,7 +62630,6 @@ focimeter
 focimeters
 focis
 focus
-focus on something really simple so we
 focused
 focuses
 focusing
@@ -63547,7 +62737,6 @@ foldboat
 foldboats
 folded
 folder
-folder here in index dot HTML earlier I
 folderol
 folderols
 folders
@@ -63665,8 +62854,6 @@ fone
 fonly
 fons
 font
-font size 10 pixels or just a numerical
-font size is now 30 in this section
 fontainebleau
 fontal
 fontanel
@@ -63822,16 +63009,6 @@ foppishly
 foppishness
 fops
 for
-for I don't want any links or drop down
-for all our counters because we want to
-for describing what the UI should look
-for example in our feed the application
-for example let's imagine here we're
-for example we could have an address
-for global and here's the package we're
-for performance and maintainability but
-for prettier prettier code formatter
-for simple react snippets
 fora
 forage
 foraged
@@ -64399,7 +63576,6 @@ formally
 formant
 formants
 format
-format count now save the changes so
 formate
 formated
 formates
@@ -64613,7 +63789,6 @@ foru
 forum
 forums
 forward
-forward I prefer to stick to the
 forwarded
 forwarder
 forwarders
@@ -64750,7 +63925,6 @@ fountains
 fountful
 founts
 four
-four directive we use that to implement
 fourchette
 fourchettes
 fourfold
@@ -64912,7 +64086,6 @@ fragilely
 fragileness
 fragility
 fragment
-fragment now save the changes back in
 fragmental
 fragmentarily
 fragmentariness
@@ -64958,7 +64131,6 @@ framers
 frames
 framework
 frameworks
-frameworks like angular in angular we
 framing
 framings
 framlingham
@@ -65641,16 +64813,6 @@ frolicsome
 frolicsomely
 frolicsomeness
 from
-from a function you can pass them to a
-from code that Visual Studio calm so
-from one version to another so that's
-from other languages so depending on how
-from the base component in react so we
-from the counters component to its
-from the react module we can manually
-from the server however if the value is
-from this array of counters that we have
-from this component to its parent that
 fromage
 frome
 fromenties
@@ -65668,7 +64830,7 @@ frondiferous
 frondose
 fronds
 front
-front-end developer you should have
+front-end
 frontage
 frontager
 frontagers
@@ -66101,19 +65263,7 @@ funambulists
 funboard
 funboards
 function
-function and also exporting it now we
-function and in that function this is
-function and in the body of this
-function at runtime
-function here so in unclick instead of
-function let me show you how to do this
-function that is returned from the bind
-function using props to our child
-function we're gonna call this that
-function you can also use them as the
 functional
-functional components and lifecycle
-functional components because here we
 functionalism
 functionalist
 functionalists
@@ -66129,8 +65279,6 @@ functioned
 functioning
 functionless
 functions
-functions don't remind that this keyword
-functions when they're dealing with
 fund
 fundable
 fundament
@@ -66318,7 +65466,6 @@ furry
 furs
 furth
 further
-further below here in the body section
 furtherance
 furtherances
 furthered
@@ -66440,7 +65587,6 @@ futons
 futtock
 futtocks
 future
-future we had a new property to this
 futureless
 futures
 futurism
@@ -68068,7 +67214,6 @@ generate
 generated
 generates
 generating
-generating the import statement and the
 generation
 generationism
 generations
@@ -68646,20 +67791,12 @@ gestures
 gesturing
 gesundheit
 get
-get bad classes always use descriptive
-get changed in this phase we have two
-get each counter and reset its value to
-get frustrated if what you see is
-get new data from the server if there
-get the instance of our first counter
 geta
 getas
 getaway
 getaways
 gethsemane
 gets
-gets compiled to calls to react that
-gets that virtual Dom and render it in
 gettable
 getter
 gettered
@@ -68667,7 +67804,6 @@ gettering
 getterings
 getters
 getting
-getting a string and mapping it with j6
 gettings
 getty
 gettysburg
@@ -69184,18 +68320,14 @@ giulini
 giust
 giusto
 give
-give this method a name let's call that
-give you a quick overview of all the
 giveaway
 giveaways
 given
-given ID so C goes to C that ID does not
 givenchy
 givenness
 giver
 givers
 gives
-gives us a template for defining a
 giveth
 giving
 givings
@@ -70011,11 +69143,6 @@ gnotobiotics
 gnu
 gnus
 go
-go back to our counter component here's
-go to app component so app not Jas what
-go to navbar component this is where we
-go to the code menu preferences color
-go to this new folder react app and run
 goa
 goad
 goaded
@@ -70211,20 +69338,6 @@ gogol
 goidel
 goidelic
 going
-going forward we don't need this
-going to be the wrapper or the container
-going to clarify this props includes
-going to create our first component
-going to do in this lecture so I'm gonna
-going to explore react components in
-going to install create - react - app
-going to install is prettier so search
-going to look at composing components in
-going to pass here so we start with the
-going to remove a counter from this
-going to talk about raising and handling
-going to use frequently in react
-going to use the error function syntax
 goings
 goiter
 goitre
@@ -70392,23 +69505,6 @@ gonion
 gonk
 gonks
 gonna
-gonna delete the style attribute done
-gonna do an ajax call and get new data
-gonna get an error because react
-gonna get an error let me show you so
-gonna implement handle reset we set it
-gonna increment the first counter
-gonna look at is component did mount
-gonna look at setting attributes
-gonna pass a reference to the counter
-gonna put this on a new line so you can
-gonna return the labeled zero otherwise
-gonna right click on our badge inspect
-gonna set this to this that handle
-gonna temporarily clean up this code so
-gonna use note we're only gonna use one
-gonna use this shortcut and this brings
-gonna use this syntax but if this
 gonococcal
 gonococci
 gonococcic
@@ -70697,7 +69793,6 @@ gossypine
 gossypium
 gossypol
 got
-got equal equal dollar zero similarly we
 goteborg
 goth
 gotham
@@ -71491,8 +70586,6 @@ greatened
 greatening
 greatens
 greater
-greater than 0 so we get counters filter
-greater than zero so currently we have
 greatest
 greatly
 greatness
@@ -72449,7 +71542,6 @@ guesstimated
 guesstimates
 guesstimating
 guesswork
-guesswork to remember what name we used
 guest
 guested
 guesthouse
@@ -73066,6 +72158,8 @@ gyved
 gyves
 gyving
 h
+h1
+h4
 ha
 haaf
 haafs
@@ -73840,27 +72934,12 @@ handkerchief
 handkerchiefs
 handkerchieves
 handle
-handle increment I'm gonna change one of
-handle increment handle reset and handle
-handle increment let's do a console that
-handle increment like this so this that
-handle increment note that we are not
-handle increment right back in the
-handle increment we set that to the
-handle increment with an argument let's
-handle on increment and we set this to
-handle reset on increment we set this to
-handle the click event we're gonna set
 handleable
 handlebar
 handlebars
 handled
-handled the on delete event now we
 handler
-handler clicked so in this
-handler manually so going forward I'm
 handlers
-handlers to Dom elements we simply
 handles
 handless
 handline
@@ -74019,10 +73098,8 @@ happed
 happen
 happened
 happening
-happening here is that this counter
 happenings
 happens
-happens when I save the changes the
 happenstance
 happenstances
 happier
@@ -74091,6 +73168,7 @@ harbourless
 harbours
 harcourt
 hard
+hard-coded
 hard-coding
 hardback
 hardbacked
@@ -74409,10 +73487,6 @@ harvey
 harwich
 harz
 has
-has a bunch of methods that we're going
-has a counters property which is an
-has a value as opposed to a counter has
-has an array of counters and each
 hasdrubal
 hash
 hashana
@@ -74626,42 +73700,6 @@ havana
 havanas
 havant
 have
-have a class called app that extends
-have a comprehensive course called
-have a dialog box component and you want
-have a new virtual Dom that has one less
-have a page like this now right click
-have a parent-child relationship between
-have a quick look at app that Jas so you
-have a shortcut for creating these
-have a single function that returns the
-have a special prop called
-have a test file that is app that tests
-have a tree of components which will
-have a value property and will later use
-have access to the state property why
-have an array of items and be rendering
-have app nav bar counters as well as
-have const and let again in the next
-have counter objects like this each
-have hard-coded this value potentially
-have in is folder
-have in the counters array that we have
-have in this array here is the
-have index the CSS you also have logo
-have its own local state it receives all
-have seen before this is not allowed
-have the label right after that I want
-have the public assets of our
-have the value property but in order to
-have the value property just like before
-have this method here because this
-have to call the constructor of the
-have to explicitly tell react what is
-have to worry about this but if you look
-have to write code and query and
-have two in the navigation bar
-have two operas that are both true C in
 havel
 havelock
 havelocks
@@ -74831,7 +73869,6 @@ he'd
 he'll
 he's
 head
-head over to babel j s dot io / repl or
 headache
 headaches
 headachier
@@ -75592,7 +74629,6 @@ helpdesk
 helpdesks
 helped
 helper
-helper method like render tags in this
 helpers
 helpful
 helpfully
@@ -75959,49 +74995,7 @@ herdsmen
 herdwick
 herdwicks
 here
-here and close it at the end
-here and paste it in app to j s and
-here and set a new prop like selected we
-here and this point method will return a
-here are angular and view so if you want
-here each tag is a string and that
-here go to view page source under body
-here in app component you're passing our
-here in between curly braces so this dot
-here in our navbar component we have a
-here in the components folder let's add
-here in the console you can see our
-here in the counters component as I told
-here in this class we're gonna add a
-here is BS code we're gonna install two
-here is an example let's imagine we want
-here is one thing you need to know about
-here is that we have passed value and ID
-here let's lock this that state that
-here now in between these curly braces
-here now in the components folder let's
-here on line 23 this is where we have
-here or we can call a function that
-here the second lifecycle hooks we're
-here this that state that counters the
-here value and ID now we can pass
-here we add our nav bar component now
-here we are bubbling that event to our
-here we cannot call handle increment and
-here we have a compilation error because
-here we have an integrated terminal we
-here we have three true C operands and
-here we no longer have a state property
-here we render this the props the total
-here we start by adding a new property
-here you can see we have a new tab react
-here you have a red underline JSX
-here's a visualization of our component
-here's one way to do this we can define
-here's our componentry one more time
-here's our new layout we have the
-here's our props object you can see we
-here's the extension I'm talking about
+here's
 hereabout
 hereabouts
 hereafter
@@ -76507,8 +75501,6 @@ heysham
 heywood
 hezekiah
 hi
-hi guys thank you for watching my react
-hi my name is mohammad ani and i'm going
 hiant
 hiatus
 hiatuses
@@ -76731,7 +75723,6 @@ highlighters
 highlighting
 highlights
 highly
-highly encourage you to do so is to
 highman
 highmen
 highmost
@@ -78063,9 +77054,6 @@ hookier
 hookiest
 hooking
 hooks
-hooks constructor render and component
-hooks in the next section we're going to
-hooks so they allow us to hook into
 hookup
 hookups
 hookworm
@@ -78136,7 +77124,6 @@ hopbines
 hopdog
 hopdogs
 hope
-hope you have learned a lot in this
 hoped
 hopeful
 hopefully
@@ -78665,8 +77652,6 @@ hovers
 hovertrain
 hovertrains
 how
-how I edited both these instances at the
-how to render a list of items so let's
 howard
 howards
 howbeit
@@ -78680,9 +77665,6 @@ howel
 howell
 howes
 however
-however all our counters are initialized
-however if that function is called as a
-however the objects in this new array
 howf
 howff
 howffs
@@ -80462,7 +79444,6 @@ idant
 idants
 ide
 idea
-idea of a product how can we do this
 ideaed
 ideal
 idealess
@@ -80522,9 +79503,7 @@ identifier
 identifiers
 identifies
 identify
-identify each counter we should also
 identifying
-identifying elements so now
 identikit
 identikits
 identities
@@ -80668,12 +79647,6 @@ idyls
 ie
 ieuan
 if
-if that's the case we want to render an
-if this array has at least one element
-if we do that we'll get an error because
-if we go to our new counters array get
-if you're not strong in JavaScript and
-if you're using Chrome or Firefox simply
 iff
 iffiness
 iffy
@@ -80983,9 +79956,6 @@ imaginative
 imaginatively
 imaginativeness
 imagine
-imagine each row we have here represents
-imagine these are the items on a
-imagine we want to render a list of tags
 imagined
 imaginer
 imaginers
@@ -81742,13 +80712,8 @@ impledged
 impledges
 impledging
 implement
-implement the handle delete method in
-implement this well once again in JSX
 implemental
 implementation
-implementation of our counter component
-implementation of our event handler
-implementation our counter component is
 implementations
 implemented
 implementer
@@ -81843,29 +80808,18 @@ imponents
 impones
 imponing
 import
-import a couple of objects from react
-import bootstrap CSS in our application
-import is react dumb and we're going to
-import our counter class
-import the react object on the top even
-import this from react - dumb now let's
-import this in index j s so let's open
 importable
 importance
 importances
 importancy
 important
-important topics that you'll use quite a
 importantly
 importation
 importations
 imported
-imported into our component here we also
-imported this react object on the top
 importer
 importers
 importing
-importing the counters is greyed out
 importless
 imports
 importunacies
@@ -82063,7 +81017,6 @@ improvable
 improvableness
 improvably
 improve
-improve this code look we have this
 improved
 improvement
 improvements
@@ -82158,53 +81111,8 @@ imshies
 imshis
 imshy
 in
-in 2011 and currently it's the most
-in JSX is class name here I'm gonna use
-in between curly braces so we write code
-in case you're interested to enroll you
-in chrome developer tools so here in our
-in class components in functional
-in my react course so save the changes
-in order the second lifecycle phase is
-in other words we cannot change the
-in our app component look at our render
-in our counter component here the render
-in our render method we add curly braces
-in react basically we need to add a new
-in react to solve this problem we need
-in terminal but if you look here in vs
-in the DOM properly
-in the Dom and once again this is the
-in the browser and refresh it this is
-in the browser you can see our badge its
-in the browser you can see the warning
-in the code if I empty this array and
-in the console when we click the
-in the counters component and this
-in the counters component let's add a
-in the future but at the time of
-in the future this can be set to a
-in the last lecture we set the key
-in the last lecture you learned that the
-in the last section I talked about the
-in the last section we worked with
-in the last section where I talked about
-in the last section you learned that
-in the render method we don't need the
-in the state object let me show you so
-in the video description thank you so
-in this case the first operand is true
-in this component we are simply bubbling
-in this event handler we don't have
-in this function we can call this that
-in this lecture I'm going to introduce
-in this lecture so back in our counters
-in this lecture you're going to learn
-in this lecture you're gonna learn how
-in this method let's verify that so
-in this method you want to check the
-in this section you learn a lot about
-in this section you learned the essence
+in-depth
+in-memory
 ina
 inabilities
 inability
@@ -82618,12 +81526,8 @@ inclosure
 inclosures
 includable
 include
-include a light component which we can
-include this in the course now we also
 included
 includes
-includes a bunch of metadata attributes
-includes any data that this component
 includible
 including
 inclusion
@@ -82901,26 +81805,8 @@ incredulousness
 incremate
 incremation
 increment
-increment C it gets highlighted because
-increment and add a parameter call it e
-increment button as we have done here
-increment button now let's type the
-increment button of the first counter
-increment button so once again you can
-increment button we no longer see
-increment button we want to pass the
-increment clicked and then finally we
-increment it and then set it now let's
-increment it because this is a local
-increment method so this was one simple
-increment method which no longer exists
-increment our first counter now you can
-increment so one more time this the
-increment we can reference this the do
 incremental
 incremented
-incremented because react is aware of
-incremented but react is not aware of
 incrementing
 increments
 increscent
@@ -83169,13 +82055,8 @@ indeterminist
 indeterminists
 indew
 index
-index J s so on the top we can type in
-index dot HTML I showed you this at the
-index dot HTML now if you look at this
-index j as you can see our route
 indexation
 indexed
-indexed ojs which is the entry point for
 indexer
 indexers
 indexes
@@ -83207,7 +82088,6 @@ indican
 indicant
 indicants
 indicate
-indicate some kind of warning otherwise
 indicated
 indicates
 indicating
@@ -84371,13 +83251,9 @@ initialising
 initialization
 initializations
 initialize
-initialize our counter components so I'm
-initialize the properties in this class
 initialized
-initialized to four beautiful so here in
 initializes
 initializing
-initializing the count property to zero
 initialled
 initialling
 initially
@@ -84509,6 +83385,7 @@ inned
 inner
 innermost
 inners
+innertext
 innervate
 innervated
 innervates
@@ -84651,8 +83528,6 @@ inphase
 inpouring
 inpourings
 input
-input if we need to modify that input
-input to this component inside of this
 inputs
 inputted
 inputter
@@ -84853,8 +83728,6 @@ inshrined
 inshrines
 inshrining
 inside
-inside the main element now you can see
-inside this element we're going to add
 insider
 insiders
 insides
@@ -84968,7 +83841,6 @@ inspanned
 inspanning
 inspans
 inspect
-inspect this so here we have this div
 inspected
 inspecting
 inspectingly
@@ -85026,10 +83898,6 @@ instability
 instable
 instal
 install
-install a lightweight development server
-install at the beginning of the course
-install in this video so version 4.1.1
-install it and then you will have to
 installant
 installants
 installation
@@ -85079,14 +83947,6 @@ instaurations
 instaurator
 instaurators
 instead
-instead of having a class that extends
-instead of referencing the handle
-instead of referencing this that handled
-instead of rendering a counter component
-instead of returning a plain text we can
-instead of the counter component you
-instead we want to render our navigation
-instead you want to render an expression
 instep
 insteps
 instigate
@@ -85365,6 +84225,7 @@ intelligibility
 intelligible
 intelligibleness
 intelligibly
+intellisense
 intelpost
 intelsat
 intemerate
@@ -85617,8 +84478,6 @@ interdisciplinary
 interess
 interest
 interested
-interested in like total counters with
-interested in the first one is on reset
 interestedly
 interestedness
 interesting
@@ -85628,7 +84487,6 @@ interests
 interface
 interfaced
 interfaces
-interfaces it was developed at Facebook
 interfacial
 interfacing
 interfacings
@@ -85878,8 +84736,6 @@ intermundane
 intermure
 intern
 internal
-internal application and contains other
-internal to that component similarly
 internalisation
 internalise
 internalised
@@ -86307,13 +85163,6 @@ intituled
 intitules
 intituling
 into
-into a call to react or create element
-into a react element and with this we
-into a separate method now we need to
-into an error function once again in the
-into code that browsers can understand
-into the Dom and it's the perfect place
-into what we call a stateless functional
 intoed
 intolerability
 intolerable
@@ -86800,7 +85649,6 @@ inviolateness
 invious
 invisibility
 invisible
-invisible to other components now
 invisibleness
 invisibles
 invisibly
@@ -87393,43 +86241,6 @@ irvingite
 irvingites
 irwin
 is
-is AB component so I'm gonna select all
-is M - - so of margin to save the
-is a JSX expression it's not a string
-is a great opportunity for initializing
-is a new feature in modern JavaScript
-is another way to solve this problem
-is automatically generated by create
-is because it needs to uniquely identify
-is considered true C so essentially we
-is currently disconnected from the value
-is developed by Burke Holland and
-is different from this the props that
-is done for you however if you want to
-is going to appear so this div is the
-is going to look like so this markup
-is gone
-is greater than zero and then and then
-is h1 tags so as you can see using JSX
-is hello world here I want to display a
-is how we render
-is mounted that means that component is
-is no update on this part of the Dom now
-is not applied to this counter
-is on a separate line now back in the
-is our message please create a new tag
-is part of the counters component so
-is part of the virtual gun now we want
-is rendered all is children are also
-is rendered we basically get a react
-is short for install - G which is short
-is something that you see in a lot of
-is that we don't have a single source of
-is the mounting phase and this is when
-is the output of a JSX
-is updated which means we have new state
-is what we have in the dawn now every
-is working our badge is blue beautiful
 isaac
 isabel
 isabella
@@ -87804,24 +86615,9 @@ isthmuses
 istiophorus
 istle
 it
-it here again note that here we are not
-it includes children like navigation bar
-it really easy to build and debug react
-it small and M - - to add a bit of
-it so save the changes we need to go to
-it to a JSX expression so h1 hello world
-it up to the parent of this component
-it will call component will unmount
-it will override those properties if
 it'd
 it'll
 it's
-it's 5 so we can write code like this if
-it's a JSX expression which eventually
-it's content is updated however if I
-it's more meaningful to say a counter
-it's not specific to react now let me
-it's the virtual DOM and this object you
 ita
 itacism
 itacolumite
@@ -87875,8 +86671,6 @@ itchweed
 itchweeds
 itchy
 item
-item as simple as that
-item you need to set the key attribute
 itemed
 iteming
 itemisation
@@ -87890,7 +86684,6 @@ itemized
 itemizes
 itemizing
 items
-items in the shopping cart it shows the
 iterance
 iterant
 iterate
@@ -87901,7 +86694,7 @@ iteration
 iterations
 iterative
 iteratively
-iterator should have a unique key
+iterator
 iterum
 ithaca
 ithyphalli
@@ -87921,11 +86714,7 @@ itinerates
 itinerating
 ito
 its
-its parent so let's go ahead and do this
-its value is 1 and that's why we have
 itself
-itself doesn't have to do the
-itself we never have to touch this so
 itsy
 itty
 iv
@@ -87959,7 +86748,9 @@ izvestiya
 izzard
 izzards
 j
-j/s instead of importing
+j/s
+j6
+jQuery
 jab
 jabbed
 jabber
@@ -88380,6 +87171,7 @@ jarvey
 jarveys
 jarvie
 jarvies
+jas
 jasey
 jaseys
 jasmine
@@ -88436,7 +87228,7 @@ jaups
 java
 javan
 javanese
-javascript engine tries to evaluate this
+javascript
 javel
 javelin
 javelins
@@ -89312,6 +88104,7 @@ joystick
 joysticks
 jp
 jr
+js'
 ju
 juan
 juba
@@ -89641,9 +88434,6 @@ jus
 jussive
 jussives
 just
-just a plain JavaScript object that
-just like how we raised the undelete
-just like our handle delete method you
 juste
 justed
 justes
@@ -90492,8 +89282,6 @@ kewpie
 kex
 kexes
 key
-key down on key press on key up all
-key property to counter dot ID save the
 keyboard
 keyboarder
 keyboarders
@@ -90527,8 +89315,6 @@ keystones
 keystroke
 keystrokes
 keyword
-keyword and then close it at the end of
-keyword so if this that state that count
 keywords
 kg
 khachaturian
@@ -90838,7 +89624,6 @@ kinchin
 kinchins
 kincob
 kind
-kind of component as a controlled
 kinda
 kinder
 kindergarten
@@ -91298,7 +90083,6 @@ knells
 knelt
 knesset
 knew
-knew of a constant or variable so here I
 knick
 knicker
 knickerbocker
@@ -91408,10 +90192,6 @@ knouted
 knouting
 knouts
 know
-know about a counter and also if in the
-know how to compile this long expression
-know so at some point in the future the
-know that this react tutorial is part of
 knowable
 knowableness
 knowe
@@ -91873,8 +90653,6 @@ labefactations
 labefaction
 labefactions
 label
-label delete save the changes back in
-label there are polluting a render
 labeled
 labeler
 labelers
@@ -92679,7 +91457,6 @@ language
 languaged
 languageless
 languages
-languages you can apply the logical and
 langue
 langued
 languedocian
@@ -93038,8 +91815,6 @@ lassos
 lassu
 lassus
 last
-last reference so here we're using
-last section I told you that arrow
 lastage
 lastages
 lasted
@@ -93074,9 +91849,6 @@ latens
 latent
 latently
 later
-later in the future we're going to get
-later in the section so delete it and
-later or 10 milliseconds later we don't
 lateral
 lateralisation
 laterality
@@ -93597,12 +92369,8 @@ lear
 learier
 leariest
 learn
-learn how to pass data between your
-learn so when building applications with
 learnable
 learned
-learned before is called only once when
-learned that functions in JavaScript are
 learnedly
 learnedness
 learner
@@ -94281,32 +93049,7 @@ lest
 lester
 lesvo
 let
-let me quickly refresh your memory so
-let me show you save the changes back in
-let me show you so back in the code we
-let's add a button with a few classes
-let's add a new folder components by
-let's call these counters ok now in the
-let's change both instances to span done
-let's click the reset button look
-let's define a constant element and set
-let's do a console that log of this that
-let's do a simple console dot log AB
-let's extract these two lines in a
-let's get started
-let's go back to the console as you can
-let's go back to vs code and see what we
-let's go to our counter component do the
-let's just log this on the console one
-let's log this element on the console so
-let's look at the render method this is
-let's not worry about it
-let's open up chrome developer tools
-let's remove this line and type this
-let's run create react app and give our
-let's say please create a new tag save
-let's simplify this code we don't need
-let's take a look at the first counter
+let's
 letch
 letched
 letches
@@ -94426,7 +93169,6 @@ leveed
 leveeing
 levees
 level
-level instead of hard-coding
 leveled
 leveler
 levelers
@@ -94681,10 +93423,6 @@ librarian
 librarians
 librarianship
 libraries
-libraries and frameworks for building
-libraries for building user interfaces
-libraries so if you don't have node on
-libraries we need so it's going to
 library
 librate
 librated
@@ -94839,10 +93577,7 @@ lifeboat
 lifeboatman
 lifeboatmen
 lifeboats
-lifecycle hooks but they are rarely used
-lifecycle hooks render and component did
-lifecycle hooks that I've listed here
-lifecycle hooks these are all very
+lifecycle
 lifeful
 lifeguard
 lifeguards
@@ -94868,7 +93603,6 @@ lifetime
 lifetimes
 liffey
 lift
-lift the state up so in this case we
 liftable
 liftboy
 liftboys
@@ -94876,7 +93610,6 @@ lifted
 lifter
 lifters
 lifting
-lifting the state and with this
 liftman
 liftmen
 lifts
@@ -94949,8 +93682,6 @@ lightsome
 lightsomely
 lightsomeness
 lightweight
-lightweight and cross-platform editor if
-lightweight in-memory representation of
 lightweights
 lightyears
 lignaloes
@@ -94987,18 +93718,6 @@ ligure
 ligures
 likable
 like
-like 2 plus to save the changes we get 4
-like before we are not going to update
-like there are no tags how can we
-like this Const we add curly braces
-like this dollar zero dot click we can
-like this in Java
-like this no parameters goes to this
-like this that handle delete however if
-like this this to reference the current
-like this we can convert this component
-like to improve if you look at the
-like we have CC for creating a class
 likeable
 liked
 likelier
@@ -95021,7 +93740,6 @@ likewalks
 likewise
 likin
 liking
-liking this video and sharing it with
 likings
 likins
 lilac
@@ -95217,8 +93935,6 @@ lindsay
 lindsey
 lindy
 line
-line 10 simply append warning or primary
-line let's delete that also I would like
 lineage
 lineages
 lineal
@@ -95248,7 +93964,6 @@ lineolate
 liner
 liners
 lines
-lines right click
 linesman
 linesmen
 lineup
@@ -95557,8 +94272,6 @@ lissomly
 lissomness
 lissotrichous
 list
-list of tags it doesn't have to be
-list we also have another button for
 listable
 listed
 listel
@@ -95592,8 +94305,6 @@ listless
 listlessly
 listlessness
 lists
-lists and each item in a given list
-lists here just a simple navigation bar
 liszt
 lit
 litanies
@@ -95790,7 +94501,6 @@ littermates
 litters
 littery
 little
-little bit cleaner so we don't want to
 littleborough
 littlehampton
 littleness
@@ -96052,11 +94762,9 @@ lobus
 lobworm
 lobworms
 local
-local state it doesn't make sense to
-local state of the counter component
-local state which is completely
 locale
 locales
+localhost
 localisation
 localisations
 localise
@@ -96087,7 +94795,6 @@ located
 locates
 locating
 location
-location so we'll have a different
 locations
 locative
 locatives
@@ -96229,7 +94936,6 @@ lofting
 lofts
 lofty
 log
-log this that state that count we're
 logan
 loganberries
 loganberry
@@ -96294,7 +95000,6 @@ loglines
 loglog
 loglogs
 logo
-logo let's import nav bar from the
 logodaedalus
 logodaedaluses
 logodaedaly
@@ -96443,7 +95148,6 @@ longe
 longed
 longeing
 longer
-longer have to work with the Dom API in
 longeron
 longerons
 longes
@@ -96509,23 +95213,12 @@ loofas
 loofs
 looing
 look
-look at another example so true and high
-look at applying styles so for the most
-look at index that j/s you can see we're
-look at the counters component you can
-look at the mounting phase I'm gonna add
-look at this class here we have a render
-look at this later in the future so now
-look at this refactor menu note the
-look like this ok so back in index to
-look nothing is happening here so there
 lookalike
 lookalikes
 looked
 looker
 lookers
 looking
-looking at the result I want to quickly
 lookings
 lookism
 lookout
@@ -96715,7 +95408,6 @@ lossmakers
 lossy
 lost
 lot
-lot in real-world applications by the
 lota
 lotah
 lotahs
@@ -97683,6 +96375,7 @@ lyttas
 lyttleton
 lytton
 m
+m2
 ma
 maa
 maaed
@@ -98352,7 +97045,6 @@ maiming
 maimings
 maims
 main
-main element with the class container
 mainbrace
 mainbraces
 maine
@@ -98394,7 +97086,6 @@ mainstreeting
 maintain
 maintainability
 maintainable
-maintainable we don't have to do all the
 maintained
 maintainer
 maintainers
@@ -98465,9 +97156,6 @@ makable
 makar
 makars
 make
-make an additional ajax request this is
-make an additional call to the server of
-make changes to keep the Dom in sync
 makeable
 makebate
 makebates
@@ -98478,7 +97166,6 @@ maker
 makerfield
 makers
 makes
-makes our code cleaner and more
 makeshift
 makeshifts
 maketh
@@ -98488,7 +97175,6 @@ makeweights
 makimono
 makimonos
 making
-making sure that the view is in sync
 makings
 mako
 makos
@@ -98905,7 +97591,6 @@ managed
 management
 managements
 manager
-manager or NPM to install third-party
 manageress
 manageresses
 managerial
@@ -99173,7 +97858,6 @@ manipulable
 manipular
 manipulatable
 manipulate
-manipulate the Dom or attach the event
 manipulated
 manipulates
 manipulating
@@ -99386,9 +98070,6 @@ maoriland
 maoris
 maoritanga
 map
-map method now as the argument we need
-map method of a race we can use the map
-map we get each counter and map it to a
 maplaquet
 maple
 maples
@@ -99399,7 +98080,6 @@ mappemonds
 mapper
 mappers
 mapping
-mapping it to a plain JavaScript object
 mappings
 mappist
 mappists
@@ -99553,7 +98233,6 @@ margenting
 margents
 margery
 margin
-margin around this button and the
 marginal
 marginalia
 marginalise
@@ -99660,6 +98339,7 @@ marjoram
 marjorie
 marjory
 mark
+mark-up
 marked
 markedly
 marker
@@ -100656,7 +99336,6 @@ maxwellian
 maxwells
 maxy
 may
-may break in the future so let's see how
 maya
 mayakovski
 mayakovsky
@@ -100804,7 +99483,6 @@ mcqueen
 md
 mdv
 me
-me show you here I'm going to do a
 mea
 meacock
 mead
@@ -101529,7 +100207,6 @@ memorized
 memorizes
 memorizing
 memory
-memory we have the old virtual Dom as
 memos
 memphian
 memphis
@@ -102146,7 +100823,6 @@ messrs
 messuage
 messuages
 messy
-messy we don't want to redefine another
 mestee
 mestees
 mestiza
@@ -102155,6 +100831,7 @@ mestizo
 mestizos
 mesto
 met
+meta
 metabases
 metabasis
 metabatic
@@ -102183,6 +100860,7 @@ metacentric
 metachronism
 metachronisms
 metachrosis
+metadata
 metafiction
 metafictional
 metagalactic
@@ -102436,33 +101114,6 @@ methinks
 methionine
 metho
 method
-method I'm gonna temporarily add a
-method as you can see will return a new
-method as you can tell is responsible
-method here we have a nav bar and a
-method in class so let's go ahead with
-method in this class call it format
-method is div now this dollar our
-method is h1 which determines the type
-method is telling react that the state
-method it would be nicer if we
-method okay so save the changes now back
-method on top of all these counters
-method or a render function where we
-method right so here you want to add
-method so our app is going to be
-method so since we no longer have the
-method something like this for now we
-method these two first lines are purely
-method to map each element in this array
-method to our counters component and
-method we can have our if and else
-method we can simply render the children
-method we can tell so one solution is to
-method we have access to a product
-method we simply define a function that
-method we simply return the mark-up that
-method we want to render these tags
 methodic
 methodical
 methodically
@@ -102488,8 +101139,6 @@ methodologist
 methodologists
 methodology
 methods
-methods in the class either so let's
-methods one of them is the bind method
 methody
 methos
 methotrexate
@@ -103140,7 +101789,6 @@ miffs
 miffy
 mig
 might
-might be breaking changes and you might
 mightful
 mightier
 mightiest
@@ -103382,7 +102030,6 @@ millinery
 milling
 millings
 million
-million downloads we use this extension
 millionaire
 millionaires
 millionairess
@@ -105234,8 +103881,6 @@ moderatorships
 moderatrix
 moderatrixes
 modern
-modern JavaScript compiler so babel will
-modern JavaScript features that you're
 moderner
 modernest
 modernisation
@@ -105285,13 +103930,7 @@ modifier
 modifiers
 modifies
 modify
-modify or mutate the state such as
-modify our counter component to raise an
-modify the data via props so it's
-modify the render method to return a
-modify them so we set counters of zero
 modifying
-modifying the state should be done by
 modigliani
 modii
 modillion
@@ -105333,12 +103972,7 @@ modulations
 modulator
 modulators
 module
-module in this module on the top we need
-module the other object we need to
 modules
-modules so if you're not familiar with
-modules there we define a class and
-modules which is where we have all the
 moduli
 modulo
 modulus
@@ -105369,6 +104003,7 @@ moguls
 moh
 mohair
 mohairs
+mohammad
 mohammed
 mohammedan
 mohammedanise
@@ -106563,8 +105198,6 @@ mordent
 mordents
 mordred
 more
-more time let's click this you can see
-more time now the count is six so have
 moreau
 morecambe
 moreen
@@ -107088,8 +105721,6 @@ mounters
 mountie
 mounties
 mounting
-mounting face we're going to look at is
-mounting phase we have three lifecycle
 mountings
 mountjoy
 mounts
@@ -107184,7 +105815,6 @@ movableness
 movables
 movably
 move
-move on to update the state next we need
 moveability
 moveable
 moveableness
@@ -107286,8 +105916,6 @@ mucate
 mucates
 mucedinous
 much
-much and have a great day
-much easier than writing plain react
 muchel
 muchly
 muchness
@@ -107648,9 +106276,6 @@ multiphase
 multiplane
 multiplanes
 multiple
-multiple components that are in sync as
-multiple counter components each
-multiple counter components first on the
 multiplepoinding
 multiples
 multiplet
@@ -108343,7 +106968,6 @@ muzzling
 muzzy
 mx
 my
-my complete 10 hour react course in that
 mya
 myal
 myalgia
@@ -108810,10 +107434,6 @@ namaskar
 namaskars
 namby
 name
-name of our event is on delete you're
-name of our event now as an argument we
-name of our prop right save the changes
-name of the event here is case-sensitive
 nameable
 named
 nameless
@@ -108825,7 +107445,6 @@ nameplates
 namer
 namers
 names
-names that determine the intention of
 namesake
 namesakes
 nametape
@@ -109265,7 +107884,7 @@ nautics
 nautili
 nautilus
 nautiluses
-nav bar component here we have a
+nav
 navaho
 navahos
 navaid
@@ -109284,10 +107903,7 @@ navarchy
 navarin
 navarins
 navarre
-navbar component so how can we display
-navbar components have the same parent
-navbar counters and for instances of the
-navbar profile trends and feet here's a
+navbar
 nave
 navel
 navels
@@ -109314,14 +107930,6 @@ navigated
 navigates
 navigating
 navigation
-navigation bar
-navigation bar and our counters
-navigation bar component now let's go
-navigation bar component so we can pass
-navigation bar on the top and below that
-navigation bar showing the number of
-navigation bar so a new file let's save
-navigation bar well in situations like
 navigational
 navigations
 navigator
@@ -109473,7 +108081,6 @@ necessarianism
 necessarians
 necessaries
 necessarily
-necessarily a bad thing because you get
 necessariness
 necessary
 necessitarian
@@ -109589,17 +108196,6 @@ neddy
 neds
 nee
 need
-need is a code editor the code editor
-need on delete and on increment so on
-need this helper method
-need to display the total number of
-need to do is install bootstrap in case
-need to go back to our plain old
-need to increment the value of the count
-need to pass a reference to this method
-need to pass arguments with our events
-need to pass either the counter ID or a
-need to set to a plain JavaScript object
 needed
 needer
 needers
@@ -109634,9 +108230,6 @@ needling
 needly
 needment
 needs
-needs in this example all we need is a
-needs to raise an event and have its
-needs via props and you're going to see
 needy
 neeld
 neele
@@ -110364,15 +108957,6 @@ neville
 nevis
 nevus
 new
-new application in name let's call it
-new array and here I'm gonna use this
-new array without a given counter and
-new constant index and we set it to
-new instance of the handle increment
-new method handle delete this is our
-new prop on delete which is a function
-new react app now I want you to install
-new react element then react will
 newark
 newbie
 newbies
@@ -110484,21 +109068,13 @@ newtonic
 newtons
 newts
 next
-next I'm gonna show you how to write
-next level I want to add a delete button
-next level I want to add a navigation
-next section
-next section we're going to look at
-next to each counter so here in our
-next to the navigation bar we have this
-next we're going to look at rendering
-next we're gonna look at rendering lists
 nextly
 nextness
 nexus
 nexuses
 ney
 nez
+ng
 ngaio
 ngaios
 ngana
@@ -111088,9 +109664,7 @@ njamena
 nne
 nnw
 no
-no js' now in this course we're not
-no longer exists in this class now it's
-no matter how that function is called
+no-no
 noachian
 noachic
 noah
@@ -111564,7 +110138,6 @@ nopals
 nope
 nopes
 nor
-nor HTML this is what we call JSX
 nora
 noradrenalin
 noradrenaline
@@ -111756,14 +110329,6 @@ nostrum
 nostrums
 nosy
 not
-not a templating engine it's just a
-not allow you to change any properties
-not changed per house we don't want to
-not going to use that children props so
-not going to use that often 90% of the
-not styles
-not sure you need to find it yourself
-not visible to the outside so you might
 nota
 notabilia
 notabilities
@@ -111818,8 +110383,6 @@ notching
 notchings
 notchy
 note
-note that here I'm using camel notation
-note that when I delete this first
 notebook
 notebooks
 notecase
@@ -111841,10 +110404,6 @@ noteworthily
 noteworthiness
 noteworthy
 nothing
-nothing else in the Dom is affected
-nothing is happening here why is that
-nothing is happening well technically
-nothing less nothing more for this very
 nothingarian
 nothingarianism
 nothingarians
@@ -112027,45 +110586,6 @@ novosibirsk
 novum
 novus
 now
-now finally let's look at the unmount
-now finally on line nine where you're
-now here I'm on Mac I'm not entirely
-now here in vs code the first thing we
-now here we are working with the first
-now here we could have a complex object
-now if these classes are unfamiliar to
-now in this particular example we didn't
-now just like before I am RC on the top
-now just note that this key should only
-now let's change both of them to count
-now let's duplicate this multiple times
-now let's look at the update phase so
-now let's remove hello world here we
-now let's remove this stuff props from
-now let's see how you can handle events
-now let's see these lifecycle hooks in
-now let's take this application to the
-now let's test this so back in the
-now let's use to create react app
-now one thing you need to know about the
-now save the changes back in the console
-now sometimes you don't want an extra
-now that we have access to the current
-now that you have seen a complete
-now the value is updated to two if we
-now this code also generates the state
-now to make this code work we have to
-now we can lock this on the console ok
-now we can pass this object here so this
-now we don't have to worry about this
-now we don't need this Styles property
-now we get a blue batch awesome but
-now we get each tag and map it to a list
-now we have multiple cursors
-now we need to update the state just
-now we're gonna get to them shortly now
-now when babel sees this it will compile
-now you can see each counter has a title
 nowaday
 nowadays
 noway
@@ -112099,6 +110619,7 @@ nozzer
 nozzers
 nozzle
 nozzles
+npm
 nspcc
 nth
 nu
@@ -112274,9 +110795,6 @@ numbat
 numbats
 numbed
 number
-number gets updated on the navigation
-number of counters is updated
-number so total counters we set it to
 numbered
 numberer
 numberers
@@ -112747,28 +111265,6 @@ obituarist
 obituarists
 obituary
 object
-object and storing it in a separate
-object because this will make the
-object call it count and set it to zero
-object destructuring
-object destructuring 2d structure this
-object destructuring to read the value
-object dot state dot count now save the
-object here it will pass a reference to
-object here with the value of four
-object here's one way to do this we can
-object in our event handler it's time to
-object includes everything we need to
-object oriented programming in
-object right now one more time back in
-object should have an ID property and
-object so instead of hard-coding this
-object so one more time in app component
-object than the one in the state we
-object that we have in the state so
-object that we're importing from that
-object the type of this element is div
-object to display data and notify
 objected
 objectification
 objectified
@@ -112809,9 +111305,6 @@ objectless
 objector
 objectors
 objects
-objects here because we're not going to
-objects so they could have an ID
-objects so they have properties and
 objet
 objets
 objuration
@@ -113248,7 +111741,6 @@ occured
 occurred
 occurrence
 occurrences
-occurrences you keep pressing command +
 occurrent
 occurrents
 occurring
@@ -113646,31 +112138,6 @@ oestruses
 oeuvre
 oeuvres
 of
-of a component or give it new props
-of a component we get a new react
-of components so we can compose
-of counters via props so we should
-of every word after is uppercase now we
-of every word after should be uppercase
-of independent isolated and reusable
-of its built-in tools node package
-of meta tags in the head section as well
-of our element and the third argument is
-of react components more specifically
-of referencing this that handle
-of shortcuts to quickly generate code
-of stateless functional components on
-of the Dom in memory which were referred
-of the count property itself so we can
-of the counter was previously 4 but now
-of the counter we can read that from
-of the props object it's purely input to
-of the real Dom to keep it in sync with
-of the state is changed and based on
-of the things that confuses beginners to
-of this component is going to change
-of this object changes react will get a
-of this red underline because we're
 ofay
 ofays
 off
@@ -113897,22 +112364,12 @@ oiticica
 oiticicas
 ojibwa
 ojibwas
+ojs
 ok
-ok so here we have a JSX expression the
-ok so this is the case for an empty
 okapi
 okapis
 okavango
 okay
-okay also I highly encourage you to use
-okay beautiful back in the browser so
-okay beautiful now finally we need to
-okay beautiful now the next thing you
-okay beautiful our new project is ready
-okay so here's the new virtual Dom we
-okay so let's revert this back save the
-okay so let's revert this back we're
-okay so we can add our curly braces here
 okayama
 okayed
 okaying
@@ -114211,17 +112668,6 @@ omrahs
 oms
 omsk
 on
-on Mac or alt control eye on Windows if
-on Mac we go to the code menu on the top
-on a given condition so we have only a
-on click event we set this to curly
-on delete with this that props that ID
-on the console see what's going on here
-on the navigation bar which is like
-on the page what are various components
-on the right side look this code is
-on the top even though we're not going
-on this panel you can see the tree of
 onager
 onagers
 onagra
@@ -114271,12 +112717,6 @@ ondines
 onding
 ondings
 one
-one in the navigation bar if I increment
-one it will figure out what is changed
-one more time back in the browser now if
-one of our counters is removed so then
-one of the questions that I often get is
-one of these classes dynamically
 onefold
 onegin
 oneiric
@@ -114298,7 +112738,6 @@ onerously
 onerousness
 oners
 ones
-ones if you look at the react
 oneself
 onetime
 oneupmanship
@@ -114327,7 +112766,6 @@ onlooker
 onlookers
 onlooking
 only
-only one counter with value greater than
 onned
 onning
 ono
@@ -114525,7 +112963,6 @@ opener
 openers
 openest
 opening
-opening and closing tags maybe we want
 openings
 openly
 openness
@@ -114537,9 +112974,6 @@ operable
 operagoer
 operagoers
 operand
-operand in JavaScript number zero is
-operand is also true C so the evaluation
-operand is true C so the evaluation of
 operandi
 operands
 operant
@@ -114737,7 +113171,6 @@ opportunistic
 opportunists
 opportunities
 opportunity
-opportunity to use the bind method so
 oppos
 opposability
 opposable
@@ -114888,11 +113321,6 @@ opuscules
 opusculum
 opuses
 or
-or Babel for compiling or JavaScript
-or false
-or new props so we can compare this new
-or the real Dom this virtual DOM is
-or we could take this to the next level
 ora
 orach
 orache
@@ -115125,7 +113553,7 @@ orfeo
 orfes
 orff
 orford
-org and download and install the latest
+org
 organ
 organa
 organbird
@@ -115809,19 +114237,14 @@ otary
 otello
 othello
 other
-other is CC for generating a class
-other words if we go to our counters
 othergates
 otherguess
 otherness
 others
-others if you want to learn more from me
 otherwhere
 otherwhile
 otherwhiles
 otherwise
-otherwise we want to display a message
-otherwise you want to return the value
 otherworld
 otherworldliness
 otherworldly
@@ -115899,23 +114322,6 @@ oundle
 ouph
 ouphe
 our
-our JSX
-our app component this app component is
-our application don't worry about the
-our badge is currently blue but let's
-our components and react will
-our components go through a few phases
-our components so on the top we have the
-our count is zero that's why we have a
-our counter object perfect so you can
-our counters I'm gonna go back to index
-our delete button we need to change this
-our div with the ID root and inside of
-our element object as a second argument
-our files panel here we have after CSS
-our first counter so we get that counter
-our render method is cleaner it's not
-our tags beautiful however if you look
 ourali
 ouralis
 ourang
@@ -115941,7 +114347,6 @@ oustiti
 oustitis
 ousts
 out
-out what is changed and it will update
 outact
 outacted
 outacting
@@ -116396,7 +114801,6 @@ outpriced
 outprices
 outpricing
 output
-output of this component so if you need
 outputs
 outputted
 outputting
@@ -117897,7 +116301,6 @@ overveiled
 overveiling
 overveils
 overview
-overview of all these new features so
 overviews
 overviolent
 overwash
@@ -117960,7 +116363,6 @@ overwresting
 overwrestle
 overwrests
 overwrite
-overwrite the counters property with
 overwrites
 overwriting
 overwritten
@@ -118057,7 +116459,6 @@ owls
 owlspiegle
 owly
 own
-own local state our counters component
 owned
 owner
 ownerless
@@ -118292,7 +116693,6 @@ pacing
 pacino
 pack
 package
-package to create a new react
 packaged
 packager
 packagers
@@ -118459,8 +116859,6 @@ paginated
 paginates
 paginating
 pagination
-pagination searching sorting calling
-pagination sorting and searching so I
 paginations
 paging
 pagings
@@ -119710,7 +118108,6 @@ paragrammatist
 paragrammatists
 paragrams
 paragraph
-paragraph we're returning a JSX
 paragraphed
 paragrapher
 paragraphers
@@ -119826,7 +118223,6 @@ parament
 paramese
 parameses
 parameter
-parameter for now let's just do a
 parameters
 parametric
 parametrical
@@ -120087,11 +118483,7 @@ parenchyma
 parenchymas
 parenchymatous
 parent
-parent class using the super keyword so
-parent look the value is zero but we
-parent so we are not handling that event
-parent take care of modifying the data
-parent which is the app component now we
+parent-child
 parentage
 parentages
 parental
@@ -120100,9 +118492,7 @@ parented
 parenteral
 parenterally
 parentheses
-parentheses then we use curly braces for
 parenthesis
-parenthesis right in front of the return
 parenthesise
 parenthesised
 parenthesises
@@ -120417,8 +118807,6 @@ parsonical
 parsonish
 parsons
 part
-part it's best to use classes this is
-part of its parent so we need to pass it
 partake
 partaken
 partaker
@@ -120622,14 +119010,6 @@ pasquinades
 pasquinading
 pasquins
 pass
-pass a reference to that method via
-pass an argument like 1 we need to pass
-pass an error function and here we call
-pass an object and set the properties on
-pass something between the opening and
-pass the count property and I want to
-pass the counter object itself this
-pass this code through babel which is a
 passable
 passableness
 passably
@@ -120682,7 +119062,6 @@ passim
 passimeter
 passimeters
 passing
-passing a reference to it this is
 passings
 passion
 passional
@@ -121072,11 +119451,9 @@ patterer
 patterers
 pattering
 pattern
-pattern back in vs code let's go to
 patterned
 patterning
 patterns
-patterns that you see in a lot of
 patters
 patterson
 pattes
@@ -122608,7 +120985,6 @@ perez
 perfay
 perfays
 perfect
-perfect so now let's go ahead and update
 perfecta
 perfectas
 perfectation
@@ -123068,7 +121444,6 @@ permissible
 permissibly
 permission
 permissions
-permissions properly you need to put
 permissive
 permissively
 permissiveness
@@ -123982,7 +122357,6 @@ pharyngotomy
 pharynx
 pharynxes
 phase
-phase and this is when a component is
 phased
 phaseless
 phaseolin
@@ -125179,8 +123553,6 @@ pie
 piebald
 piebalds
 piece
-piece is to update the state so we call
-piece of code is executed only once when
 pieced
 pieceless
 piecemeal
@@ -126173,7 +124545,6 @@ placentiform
 placer
 placers
 places
-places let's give this component a name
 placet
 placets
 placid
@@ -126242,11 +124613,6 @@ plaidman
 plaidmen
 plaids
 plain
-plain JavaScript code if you type true
-plain JavaScript code that browsers can
-plain JavaScript object so even though
-plain JavaScript object that includes
-plain text here we could return maybe a
 plainclothes
 plained
 plainer
@@ -127083,7 +125449,7 @@ pluffing
 pluffs
 pluffy
 plug
-plug-in automatically reformatted this
+plug-in
 pluggable
 plugged
 plugger
@@ -127117,7 +125483,6 @@ plumbery
 plumbic
 plumbiferous
 plumbing
-plumbing is gonna work before updating
 plumbism
 plumbisolvent
 plumbite
@@ -127522,8 +125887,6 @@ poing
 poinsettia
 poinsettias
 point
-point our app is mounted and is in the
-point we do have access to this so let
 pointe
 pointed
 pointedly
@@ -127537,7 +125900,6 @@ pointillist
 pointilliste
 pointillists
 pointing
-pointing to localhost port 3000 now
 pointings
 pointless
 pointlessly
@@ -128554,7 +126916,6 @@ popsies
 popsy
 populace
 popular
-popular javascript library for building
 popularisation
 popularisations
 popularise
@@ -130109,7 +128470,6 @@ preferability
 preferable
 preferably
 preference
-preference but you see a lot of examples
 preferences
 preferential
 preferentialism
@@ -130709,7 +129069,6 @@ presignifying
 presley
 presold
 press
-press command + D on mac or control-d on
 pressburger
 pressed
 presser
@@ -130858,7 +129217,6 @@ pretorians
 pretorius
 pretors
 prettier
-prettier extension that I told you to
 pretties
 prettiest
 prettification
@@ -130870,7 +129228,6 @@ prettifying
 prettily
 prettiness
 pretty
-pretty close to this button we can add a
 prettyish
 prettyism
 prettyisms
@@ -130931,11 +129288,7 @@ previewing
 previews
 previn
 previous
-previous one it figures out what is
-previous props and previous state let's
-previous props that counter that value
 previously
-previously we used on Ivar but now we
 previousness
 previse
 prevised
@@ -131076,7 +129429,6 @@ primaries
 primarily
 primariness
 primary
-primary classes that we want to have in
 primatal
 primate
 primates
@@ -131308,8 +129660,6 @@ privacies
 privacy
 privat
 private
-private and internal to a component it's
-private to that component so other
 privateer
 privateered
 privateering
@@ -131413,8 +129763,6 @@ probit
 probits
 probity
 problem
-problem save the changes back to the
-problem with our implementation so if we
 problematic
 problematical
 problematically
@@ -131640,7 +129988,6 @@ product
 productibility
 productile
 production
-production environment you can always
 productional
 productions
 productive
@@ -131649,7 +129996,6 @@ productiveness
 productivities
 productivity
 products
-products in a shopping cart in our map
 proem
 proembryo
 proembryos
@@ -131870,7 +130216,6 @@ prohibitorum
 prohibitory
 prohibits
 project
-project so here in the terminal or
 projected
 projectile
 projectiles
@@ -131887,7 +130232,6 @@ projectivity
 projector
 projectors
 projects
-projects that are created we create
 projecture
 projectures
 prokaryon
@@ -132191,7 +130535,6 @@ proos
 prootic
 prootics
 prop
-prop so here inside this div right
 propaedeutic
 propaedeutical
 propagable
@@ -132257,25 +130600,7 @@ properness
 propers
 propertied
 properties
-properties in this class if that's the
-properties of the counter object if in
-properties of the props object we're
-properties of this object will be merged
-properties that are based on standard
 property
-property and
-property and this is a pattern that you
-property but currently there is a
-property in our counter objects now back
-property in our props object so we need
-property in this video we don't care
-property is gone we're gonna read the
-property of each counter object that we
-property of the state since the state
-property so here's one solution to bind
-property then you would use that here
-property value of object so react does
-property which is initialized based on
 prophage
 prophages
 prophase
@@ -132412,26 +130737,6 @@ proprioceptors
 proproctor
 proproctors
 props
-props and state so in this lecture I'm
-props and that's what we're going to do
-props argument in this particular
-props as a parameter to this constructor
-props dot something so here in the
-props is an empty object but our state
-props is an object with two properties
-props object as an argument to this
-props object has two properties ID and
-props object that we're passing to this
-props of a component changes as an
-props property so console that log of
-props that ID now the tiny issue we have
-props that on delete and this the props
-props that on delete because that's the
-props that on increment so that's the
-props that value so this panel makes it
-props the children as simple as that
-props to the counter component so here
-props with the old props and if there is
 proptosis
 propugnation
 propulsion
@@ -134464,7 +132769,6 @@ pustule
 pustules
 pustulous
 put
-put this side-by-side and compare them
 putamen
 putamina
 putative
@@ -135182,8 +133486,6 @@ quantities
 quantitive
 quantitively
 quantity
-quantity delete them
-quantity note that if the quantity
 quantivalence
 quantivalences
 quantivalent
@@ -135490,7 +133792,6 @@ questing
 questingly
 questings
 question
-question I get quite a lot so on the top
 questionability
 questionable
 questionableness
@@ -135547,8 +133848,6 @@ quichua
 quichuan
 quichuas
 quick
-quick 3 minute introduction to what
-quick tip I'm gonna select these two
 quickbeam
 quickbeams
 quicken
@@ -135563,8 +133862,6 @@ quickie
 quickies
 quicklime
 quickly
-quickly figure out what element is
-quickly in the next section I'm gonna
 quickness
 quicks
 quicksand
@@ -135915,12 +134212,10 @@ quotations
 quotative
 quotatives
 quote
-quote with braces and the last lecture
 quoted
 quoter
 quoters
 quotes
-quotes here in the intellisense you can
 quoteworthy
 quoth
 quotha
@@ -136491,16 +134786,13 @@ rainwear
 rainy
 raisable
 raise
-raise and handle events how to have
 raiseable
 raised
-raised by this component and here are
 raiser
 raisers
 raises
 raisin
 raising
-raising an event and is parent that is
 raisins
 raison
 raisonne
@@ -136761,7 +135053,6 @@ randiest
 randing
 randolph
 random
-random 200 by 200 pixel image now back
 randomisation
 randomisations
 randomise
@@ -137359,7 +135650,6 @@ reached
 reacher
 reachers
 reaches
-reaches zero this decrement button
 reaching
 reachless
 reacquaint
@@ -137373,37 +135663,6 @@ reacquired
 reacquires
 reacquiring
 react
-react app and it may change or disappear
-react app now this is going to install
-react app whenever you save the changes
-react application
-react application has at least one
-react application together this
-react applications are components the
-react applications this tool is
-react as well as all the third-party
-react dev tools in your toolbox it makes
-react dot fragment now if you're curious
-react element is h4 so back in our
-react element that element is this div
-react element that is returned from this
-react element which is a simple plain
-react element which is essentially a
-react is a JavaScript library for
-react is and why you should learn it and
-react is what is the difference between
-react keeps a lightweight representation
-react more specifically you're going to
-react on your resume at the heart of all
-react or angular well both react and
-react project we want to replace this
-react so over the next two sections
-react tab so here's our counters
-react that create element now back to
-react we need to use other libraries for
-react we'll figure out what is changed
-react will automatically update the Dom
-react will then schedule a call to the
 reactance
 reactances
 reactant
@@ -137420,7 +135679,6 @@ reactionary
 reactionist
 reactionists
 reactions
-reactions in vs code so open up the
 reactivate
 reactivated
 reactivates
@@ -137434,12 +135692,12 @@ reactivity
 reactor
 reactors
 reacts
-reacts to the state change and updates
 reactuate
 reactuated
 reactuates
 reactuating
 read
+read-only
 readability
 readable
 readableness
@@ -137525,10 +135783,7 @@ reagents
 reak
 reaks
 real
-real application your tags might be
-real browser Dom and update the
-real dumb accordingly so here even
-real-world applications now let's get
+real-world
 reale
 realer
 realest
@@ -137566,7 +135821,6 @@ realized
 realizer
 realizers
 realizes
-realizes that our span is modified
 realizing
 reallocate
 reallocated
@@ -137581,8 +135835,6 @@ reallots
 reallotted
 reallotting
 really
-really easy to visualize what's going on
-really have to use the children we could
 realm
 realmless
 realms
@@ -137667,6 +135919,7 @@ reappraises
 reappraising
 reaps
 rear
+rear-ended
 reardon
 reared
 rearer
@@ -137718,7 +135971,6 @@ reascensions
 reascent
 reascents
 reason
-reason react has a very small API to
 reasonable
 reasonableness
 reasonably
@@ -137982,7 +136234,6 @@ recalescent
 recalesces
 recalescing
 recall
-recall super save the changes back in
 recallable
 recalled
 recalling
@@ -138063,8 +136314,6 @@ receivable
 receival
 receivals
 receive
-receive as a parameter so let's define a
-receive from the outside for example we
 received
 receiver
 receivers
@@ -138361,7 +136610,6 @@ recommencements
 recommences
 recommencing
 recommend
-recommend you to watch my JavaScript
 recommendable
 recommendably
 recommendation
@@ -138541,7 +136789,6 @@ recorders
 recordership
 recorderships
 recording
-recording this basically what this file
 recordings
 recordist
 recordists
@@ -139167,7 +137414,8 @@ reface
 refaced
 refaces
 refacing
-refactoring first we're going to delete
+refactor
+refactoring
 refashion
 refashioned
 refashioning
@@ -139191,25 +137439,15 @@ refel
 refelled
 refelling
 refer
-refer to these methods as lifecycle
 referable
 referee
 refereed
 refereeing
 referees
 reference
-reference is in our handle increment
-reference this by default returns a
-reference to the window object but if
-reference to this counter object I'm
-reference to this function to our child
 referenced
 references
-references to the props we don't want to
 referencing
-referencing the current counter object
-referencing this dot props
-referencing this the do handle increment
 referenda
 referendary
 referendum
@@ -140210,7 +138448,6 @@ relationists
 relationless
 relations
 relationship
-relationship between two components and
 relationships
 relatival
 relative
@@ -140379,7 +138616,6 @@ reliver
 relives
 reliving
 reload
-reload vs code the other extension we're
 reloaded
 reloading
 reloads
@@ -140425,7 +138661,6 @@ remainders
 remained
 remaining
 remains
-remains unchanged
 remake
 remakes
 remaking
@@ -140696,8 +138931,6 @@ removal
 removals
 remove
 removed
-removed from the Dom such as when we
-removed from the dump otherwise we'll
 removedness
 remover
 removers
@@ -140732,8 +138965,6 @@ renaissance
 renaissances
 renal
 rename
-rename class to class name and we're
-rename this count property to value so
 renamed
 renames
 renaming
@@ -140752,33 +138983,11 @@ rencounters
 rend
 rended
 render
-render a bunch of list items here well
-render a list of items here for each
-render after comes here it can be plain
-render content we can use the logical
-render method I'm gonna show you the
-render method is going to be called this
-render method let's add a div this is
-render method now back in the browser we
-render method of this component here
-render method so sometime in the future
-render method you can see we get every
-render that here now back to our new
-render the tag as simple as that so this
 renderable
 rendered
-rendered method is that when a component
-rendered now I just need to clarify that
-rendered recursively so we have app
-rendered that doesn't mean that the
 renderer
 renderers
 rendering
-rendering a react component instead of
-rendering a single counter component in
-rendering as well as handling events and
-rendering okay with this we no longer
-rendering the tags let's imagine you
 renderings
 renders
 rendezvous
@@ -141054,8 +139263,6 @@ repealers
 repealing
 repeals
 repeat
-repeat badge - in a couple of places we
-repeat props dot props the HUD props
 repeatability
 repeatable
 repeated
@@ -141122,7 +139329,6 @@ repetends
 repetiteur
 repetiteurs
 repetition
-repetition of this that state the count
 repetitional
 repetitionary
 repetitions
@@ -141150,9 +139356,9 @@ repique
 repiqued
 repiques
 repiquing
+repl
 repla
 replace
-replace all of those with nothing and
 replaceable
 replaced
 replacement
@@ -141218,7 +139424,6 @@ replum
 reply
 replying
 repo
-repo here we can type modern JavaScript
 repoint
 repointed
 repointing
@@ -141312,7 +139517,6 @@ representamens
 representant
 representants
 representation
-representation of these components in a
 representational
 representationalism
 representationism
@@ -141331,9 +139535,6 @@ representment
 representments
 representor
 represents
-represents our virtual Dom now react
-represents that Dom element in memory so
-represents this black banner on the top
 repress
 repressed
 represses
@@ -141779,12 +139980,10 @@ reservists
 reservoir
 reservoirs
 reset
-reset the quantity of all items to zero
 resets
 resetter
 resetters
 resetting
-resetting the quantity of all the items
 resettle
 resettled
 resettlement
@@ -142067,7 +140266,6 @@ responses
 responsibilities
 responsibility
 responsible
-responsible for rendering this black
 responsibly
 responsions
 responsive
@@ -142095,7 +140293,6 @@ restaging
 restante
 restart
 restarted
-restarted so you don't have to go back
 restarting
 restarts
 restate
@@ -142214,8 +140411,6 @@ resubmits
 resubmitted
 resubmitting
 result
-result but as I told you earlier there
-result of that is a react element which
 resultant
 resultants
 resultative
@@ -142701,15 +140896,6 @@ returfed
 returfing
 returfs
 return
-return 0 as a plain text next we're
-return a JSX expression here because as
-return a mark up like this this is
-return a single element from the render
-return either
-return h1 with 0 as the inner text so
-return some text like there are no tags
-return the second operand let's take a
-return undefined and that's the reason
 returnable
 returned
 returnee
@@ -142717,11 +140903,8 @@ returnees
 returner
 returners
 returning
-returning multiple root elements from
 returnless
 returns
-returns a react element that's why we
-returns a value for example let's add a
 retuse
 retying
 retype
@@ -142756,7 +140939,6 @@ reurging
 reus
 reusable
 reuse
-reuse on other pages or even in
 reused
 reuses
 reusing
@@ -143835,15 +142017,7 @@ riggings
 riggish
 riggs
 right
-right after h1 I'm going to add a button
-right after our increment button I want
-right here we set this to this that
-right now here in this JSX expression
-right now note that in this generated
-right place to make Ajax calls and get
-right side you can see the props and
-right the condition let's say this that
-right-click this and inspect it in
+right-click
 rightable
 righted
 righten
@@ -144282,7 +142456,7 @@ riyal
 riyals
 riza
 rizas
-rjs in this course we're not gonna look
+rjs
 ro
 roach
 roached
@@ -144847,8 +143021,6 @@ roosters
 roosting
 roosts
 root
-root I told you that this is the
-root this is where our react application
 rootage
 rootages
 rooted
@@ -146084,6 +144256,7 @@ rypeck
 rypecks
 ryper
 s
+s-pen
 sa
 saam
 saame
@@ -147005,9 +145178,6 @@ sambucas
 sambur
 samburs
 same
-same here in the render method and
-same syntax we can set additional
-same time this is called multi cursor
 samekh
 samel
 samely
@@ -147915,16 +146085,6 @@ savarins
 savate
 savates
 save
-save the changes
-save the changes back in the browser
-save the changes back in the browser you
-save the changes now back in the browser
-save the changes now we have an h1 here
-save the changes now we see one here
-save the changes now you can see our
-save the changes this is what we get a
-save the changes to make sure everything
-save the changes we get this message
 saved
 saveloy
 saveloys
@@ -148038,7 +146198,6 @@ saxophones
 saxophonist
 saxophonists
 say
-say that argument is a product object
 sayable
 sayer
 sayers
@@ -149453,8 +147612,6 @@ scrappy
 scraps
 scrat
 scratch
-scratch in the next lecture similarly we
-scratch so by the end of watching the
 scratchcard
 scratchcards
 scratched
@@ -149641,7 +147798,6 @@ scrimshawing
 scrimshaws
 scrine
 scrip
-scrip note that this is neither a drink
 scripophile
 scripophiles
 scripophily
@@ -149698,7 +147854,6 @@ scroggiest
 scroggy
 scrogs
 scroll
-scroll down expand our route div expand
 scrollability
 scrollable
 scrolled
@@ -150171,8 +148326,6 @@ searce
 searced
 searces
 search
-search for react developer tools when
-search for that component in the search
 searchable
 searched
 searcher
@@ -150376,8 +148529,6 @@ sectile
 sectilities
 sectility
 section
-section i want to give you a quick
-section so import react from react so
 sectional
 sectionalisation
 sectionalise
@@ -150538,22 +148689,6 @@ sedulousness
 sedum
 sedums
 see
-see a lot in real-world applications so
-see all our counter components similarly
-see bootstrap so let's go to this folder
-see clearly now let's add a couple more
-see first the constructor of our app
-see four so the issue we are facing here
-see here this react element is part of
-see here we have several references to
-see it's value is 5 so we have modified
-see its content so here we have a div
-see of God simple react snippets this is
-see one here let's change this to 0 save
-see our entire component tree is
-see that it thinks you have a return
-see the value is not updated so the
-see using an arrow function is cleaner
 seeable
 seeably
 seecatch
@@ -150806,13 +148941,8 @@ seldomness
 seldseen
 sele
 select
-select another counter and click the
-select the counters component on the
-select the first one you know that in
-select this expression press command + D
 selectable
 selected
-selected h1 and I'm pressing command + D
 selectee
 selectees
 selecting
@@ -150982,7 +149112,6 @@ semicircularly
 semicirque
 semicirques
 semicolon
-semicolon here so if you add a div on
 semicolons
 semicoma
 semicomas
@@ -151357,8 +149486,6 @@ separable
 separableness
 separably
 separate
-separate method now let me show you a
-separate method so the details of
 separated
 separately
 separateness
@@ -151870,7 +149997,6 @@ servantships
 serve
 served
 server
-server so we can do an ajax call and
 serveries
 servers
 servery
@@ -151886,7 +150012,6 @@ serviceless
 serviceman
 servicemen
 services
-services and so on but this is not
 servicewoman
 servicewomen
 servicing
@@ -151962,13 +150087,6 @@ sestinas
 sestine
 sestines
 set
-set it to an object the properties of
-set it to counter that selector and over
-set it to something like this HTTP pick
-set its value to this that state that
-set state with this new array so save
-set this - BTN be TN - secondary add BTN
-set this to this that state that
 seta
 setaceous
 setae
@@ -151994,11 +150112,7 @@ setters
 setterwort
 setterworts
 setting
-setting attribute is pretty
-setting element to a string this is JSX
-setting the class and style attributes
 settings
-settings I want you to add this setting
 settle
 settleable
 settled
@@ -152047,7 +150161,6 @@ seventy
 sever
 severable
 several
-several more examples of this throughout
 severalfold
 severally
 severals
@@ -152498,7 +150611,6 @@ shard
 sharded
 shards
 share
-share it with others are you excited now
 shareable
 sharebone
 sharecropped
@@ -153366,9 +151478,6 @@ shopped
 shopper
 shoppers
 shopping
-shopping cart we can change their
-shopping cart we can see the total
-shopping cart when we click the handle
 shoppy
 shops
 shopwalker
@@ -153397,7 +151506,7 @@ shoring
 shorings
 shorn
 short
-short-cut doesn't work for you go to the
+short-cut
 shortage
 shortages
 shortarm
@@ -153415,8 +151524,6 @@ shortcoming
 shortcomings
 shortcrust
 shortcut
-shortcut on Mac is ctrl shift + R so I'm
-shortcut to generate this line earlier
 shortcuts
 shorted
 shorten
@@ -153465,10 +151572,6 @@ shotts
 shough
 shoughs
 should
-should be font size not font weight so
-should be lowercase and the first letter
-should be pretty straightforward so here
-should have a key that is unique only in
 shoulder
 shouldered
 shouldering
@@ -153510,8 +151613,6 @@ shovers
 shoves
 shoving
 show
-show the previous state previous state
-show you how to implement this concept
 showbiz
 showbizzy
 showboat
@@ -153932,10 +152033,11 @@ siddons
 siddur
 siddurim
 side
+side-by-side
 sidearm
 sidearms
 sideband
-sidebar profile and whatnot so we'll
+sidebar
 sideboard
 sideboards
 sideburn
@@ -154428,11 +152530,9 @@ simial
 simian
 simians
 similar
-similar method as a wrapper just to pass
 similarities
 similarity
 similarly
-similarly we can pass this array to our
 similative
 simile
 similes
@@ -154499,17 +152599,10 @@ simpering
 simperingly
 simpers
 simple
-simple element in the Dom will render
-simple h1 with the text hello world now
-simple react snippet so here on the
-simple starter template so we want to
-simple stateless components what I
-simple syntax that will eventually get
 simpled
 simpleminded
 simpleness
 simpler
-simpler as you will see in a few seconds
 simplers
 simples
 simplesse
@@ -154532,7 +152625,6 @@ simplified
 simplifier
 simplifiers
 simplifies
-simplifies our code similarly if you
 simplify
 simplifying
 simpling
@@ -154545,10 +152637,6 @@ simplistically
 simplists
 simplon
 simply
-simply pass the ID as another attribute
-simply receives data and methods to
-simply render an h4 that includes this
-simply return it in our method finally
 simps
 simpson
 sims
@@ -154603,7 +152691,6 @@ sinarquists
 sinatra
 sinbad
 since
-since we no longer have the state in
 sincere
 sincerely
 sincereness
@@ -154666,10 +152753,6 @@ singing
 singingly
 singings
 single
-single components when a real-world
-single if statement without an else part
-single reference to the props object
-single source of truth I'll show you
 singled
 singlehanded
 singlehandedly
@@ -157283,74 +155366,6 @@ sny
 snye
 snyes
 so
-so I'm gonna delete this image element
-so a button with a few classes BTN BTN -
-so all these react elements have
-so basically what we're doing is we're
-so both these expressions are selected
-so classes plus equal now note that
-so counter with a capital C now to stop
-so delete here's our increment button
-so earlier we passed a couple of props
-so every react component has a property
-so far in this application we have
-so first we need to add curly braces
-so h1 let's say hello world and we close
-so here I'm going to define a new
-so here I'm gonna define a constant
-so here at sign version 1.5.2 now if
-so here in counters component this is
-so here in the app class first let's
-so here in the counter component we want
-so here in the counter component we're
-so here on the right side under user
-so here we have three folders node
-so here's the mark-up I'm gonna copy
-so if we use a lowercase C here we're
-so if you look at our navbar components
-so if you wanted to call this file
-so if you're working on a complex page
-so import counter from period slash
-so in our components will always use JSX
-so in react we do not modify the state
-so in the last lecture you learned that
-so in this lecture we want to render in
-so it will look at the second operand
-so key we set this to a dynamic value
-so let's delete it so here's our
-so let's delete this line next we're
-so let's go back here go to
-so let's go to index J s here we need to
-so let's go to the console tab click
-so let's go to this folder counter app
-so let's start by adding a new file here
-so on Mac its command + P on Windows I'm
-so on reset reset this to this that
-so on you also have this search bar here
-so once again we add curly braces and
-so our implementation is working but
-so temporarily I'm gonna comment out
-so that's why when the page loads we get
-so the JavaScript engine tries to
-so the first letter of the first word
-so these are the three events that are
-so this got props dot counter it passed
-so this is the layout that I'm looking
-so this is what I want you to understand
-so this method returns a new function
-so this simple application exhibits
-so this that get badge classes and then
-so to recap whenever you need to pass an
-so to render elements conditionally we
-so we can increment each counter
-so we can replace these two divs with
-so we define a constant call it navbar
-so we don't have quotes here right now
-so we have a function with no parameters
-so we have two more references here
-so we pick that the second one is
-so what we type is reflected in both
-so when you create an application using
 soak
 soakage
 soakaway
@@ -157977,9 +155992,6 @@ solus
 solute
 solutes
 solution
-solution but writing code like this is
-solution we can temporarily define
-solution wild react is a library it only
 solutional
 solutionist
 solutionists
@@ -157995,8 +156007,6 @@ solvating
 solvation
 solvay
 solve
-solve this problem let me show you so
-solve this problem we should put a
 solved
 solvency
 solvent
@@ -158054,8 +156064,6 @@ sombreros
 sombring
 sombrous
 some
-some photos / 200 this will generate a
-some react code from scratch
 somebodies
 somebody
 someday
@@ -158077,14 +156085,9 @@ somersetting
 somerton
 somerville
 something
-something similar in the elements tab
-something you probably haven't seen
 somethings
 sometime
 sometimes
-sometimes a component may not have a
-sometimes in real-world applications we
-sometimes when working with a more
 someway
 someways
 somewhat
@@ -158523,7 +156526,6 @@ sorrows
 sorry
 sorryish
 sort
-sort of timers or listeners we can clean
 sortable
 sortation
 sortations
@@ -158651,8 +156653,6 @@ soupy
 sour
 sourberry
 source
-source of truth and that's the topic for
-source of truth let me show you this
 sourced
 sources
 sourcing
@@ -158838,7 +156838,6 @@ sozzling
 sozzly
 spa
 space
-space in between the span and the button
 spacebar
 spacecraft
 spaced
@@ -158955,9 +156954,6 @@ spamming
 spammy
 spams
 span
-span and the button let's delete those
-span element let me show you so here I'm
-span is updated nothing else will be
 spanaemia
 spancel
 spancelled
@@ -159232,7 +157228,6 @@ spearworts
 speary
 spec
 special
-special property in react component and
 specialisation
 specialisations
 specialise
@@ -160592,7 +158587,6 @@ sprayey
 spraying
 sprays
 spread
-spread operator to clone this that state
 spreader
 spreaders
 spreading
@@ -161201,7 +159195,6 @@ stabilizers
 stabilizes
 stabilizing
 stable
-stable version once you do that open up
 stabled
 stableman
 stablemate
@@ -161524,7 +159517,8 @@ stanchioning
 stanchions
 stanchless
 stand
-stand-alone function without an object
+stand-alone
+standalone
 standard
 standardbred
 standardisation
@@ -161768,30 +159762,11 @@ statable
 statal
 statant
 state
-state and set it to an object state is a
-state directly in other words we are not
-state in our counter component but when
-state includes data that is local or
-state it may get all the data that it
-state method we pass an object and the
-state of AB component is changed so our
-state of this counter component is not
-state of this react element and the
-state should be the one modifying it in
-state that count if it equals zero we're
-state that counters so now this counters
-state the counters of zero save the
-state the tags that length equals zero
-state then it will figure out what part
-state with the old state or the new
 statecraft
 stated
 statedly
 statehood
 stateless
-stateless functional component in the
-stateless functional component so this
-stateless functional components just
 statelessness
 statelier
 stateliest
@@ -161799,12 +159774,7 @@ statelily
 stateliness
 stately
 statement
-statement I'm gonna define a constant
-statement and nothing in front of it
-statement let's do a consult blog and
-statement with nothing in front of it to
 statements
-statements so if this that state the
 staten
 stater
 stateroom
@@ -161858,6 +159828,7 @@ stator
 stators
 statoscope
 statoscopes
+stats
 statu
 statua
 statuaries
@@ -161907,7 +159878,6 @@ stawing
 staws
 stay
 stayed
-stayed for this component so in this
 stayer
 stayers
 staying
@@ -163163,7 +161133,6 @@ storages
 storax
 storaxes
 store
-store them here and then call this that
 stored
 storefront
 storehouse
@@ -163347,8 +161316,6 @@ straightens
 straighter
 straightest
 straightforward
-straightforward but let's look at
-straightforward right save the changes
 straightforwardly
 straightforwardness
 straighting
@@ -163774,7 +161741,6 @@ strimmers
 strindberg
 strine
 string
-string is unique so we can use the same
 stringed
 stringencies
 stringency
@@ -164186,7 +162152,6 @@ stupendousness
 stupent
 stupes
 stupid
-stupid but this is actually the pattern
 stupider
 stupidest
 stupidities
@@ -164245,7 +162210,6 @@ stying
 stylar
 stylate
 style
-style to a specific element now in JSX
 styled
 styleless
 styles
@@ -165562,8 +163526,7 @@ sudder
 sudders
 sudds
 sudetenland
-sudo in the front of this command so
-sudo with this will run this command
+sudo
 sudor
 sudoral
 sudoriferous
@@ -166163,7 +164126,6 @@ sup
 supawn
 supawns
 super
-super so here we have a constructor
 superable
 superably
 superabound
@@ -166847,7 +164809,6 @@ surd
 surdity
 surds
 sure
-sure how to do this on Windows but that
 surefooted
 surefootedly
 surely
@@ -168455,7 +166416,6 @@ syntagmatic
 syntan
 syntans
 syntax
-syntax for describing the UI you learned
 syntaxes
 syntectic
 syntenoses
@@ -168649,8 +166609,6 @@ t
 ta
 taal
 tab
-tab open let's look at one of our
-tab you can see we have an object this
 tabanid
 tabanidae
 tabanids
@@ -168964,8 +166922,6 @@ tagore
 tagrag
 tagrags
 tags
-tags that length equals 0 we got a
-tags this is an array so here we have a
 taguan
 taguans
 tagus
@@ -169074,8 +167030,6 @@ takamaka
 takamakas
 takas
 take
-take this JSX syntax and convert it to
-take this to the next level we can also
 takeable
 takeaway
 takeaways
@@ -169087,7 +167041,6 @@ takeovers
 taker
 takers
 takes
-takes care of rendering the view and
 takin
 taking
 takingly
@@ -169164,8 +167117,6 @@ talkatively
 talkativeness
 talkback
 talked
-talked about this div div with the ID
-talked about virtual Dom which is a
 talkee
 talker
 talkers
@@ -170366,8 +168317,6 @@ technicolour
 technicoloured
 technics
 technique
-technique for conditionally rendering
-technique we could have multiple
 techniques
 techno
 technobabble
@@ -170824,7 +168773,6 @@ tellings
 tellinoid
 tellins
 tells
-tells react that we're updating the
 telltale
 telltales
 tellural
@@ -170934,8 +168882,8 @@ temping
 templar
 templars
 template
-template that is generated by this
 templates
+templating
 temple
 templed
 temples
@@ -170955,7 +168903,6 @@ temporalty
 temporaneous
 temporaries
 temporarily
-temporarily let's go back to the public
 temporariness
 temporary
 tempore
@@ -171395,7 +169342,6 @@ terminable
 terminableness
 terminably
 terminal
-terminal on Mac the shortcut is ctrl +
 terminalia
 terminally
 terminals
@@ -171624,7 +169570,6 @@ tesseral
 tessitura
 tessituras
 test
-test the application and make sure
 testa
 testability
 testable
@@ -171919,9 +169864,6 @@ texas
 texases
 texel
 text
-text in this demo you want to set the
-text is a little bit smaller and bold to
-text or another JSX expression
 textbook
 textbookish
 textbooks
@@ -172072,51 +170014,7 @@ thannas
 thar
 thars
 that
-that Dom element so we call document
-that ID dynamically and here's the
-that SVG which is the logo of our
-that case our JavaScript engine will
-that case you can use react dot fragment
-that could have a street property like
-that counters we use the map method to
-that fragment and then we close it here
-that function called the event handler
-that get element by ID and here we pass
-that handle increment and then we pass
-that in a list here's a new requirement
-that is better save the changes and
-that it will bring the Dom in sync with
-that later in this section one more
-that list ok now save the changes back
-that looks better now similarly let's
-that need to be modified one isn't get
-that now you can see vs code
-that object so let's say font size 30
-that on increment basically what is
-that on reset because that's the name of
-that phase happens whenever the state or
-that product and the shopping cart we
-that selection now if you have more
-that set state has an object we want to
-that should be returned from the render
-that so here in our elements panel let's
-that that's why it's not updating the
-that to zero let's see what happens when
-that virtual Dom so whenever the state
-that we have navbar profile trends and
-that we have on the top this react
-that we're setting here these attributes
-that when rendered returns an h1 element
-that when there is no parent-child
-that works instead of adding this
-that you need to go to the settings page
 that's
-that's much better now finally let's
-that's several times so we can use
-that's similar to handle increment we're
-that's the continuation of this crash
-that's the render method we don't have
-that's the topic for the next lecture
 thataway
 thatch
 thatched
@@ -172157,121 +170055,6 @@ thaws
 thawy
 thaxted
 the
-the Dom but as I told you before every
-the ID that is root so this react Dom
-the JSX extension instead of just j/s
-the LMS tab and select this element here
-the UI it's not the real browser Dom
-the actual browser Dom and then our
-the app component we're gonna render our
-the array using ul and Li elements so
-the base class otherwise this the props
-the bind method we use that method to
-the browser click this button see
-the browser here's our button let's
-the browser here's our delete button
-the browser this time inside of our root
-the browser we get this error that you
-the button select that you can see we've
-the changes and go back to Chrome you
-the changes and now it's yellow perfect
-the changes back in the browser
-the changes back in the browser so here
-the changes let's test the application
-the changes we get the labels 0 now to
-the code here's our button class name we
-the code is rendered as plain static
-the code let me use the badge primary
-the component class with the render
-the component is rendered and the render
-the console now we can see in the
-the constructor let's see what is the
-the corresponding handlers that belong
-the counter component let's import
-the counter component which is
-the counters component not the counter
-the counters so let's go back to our
-the counters so we're cloning this array
-the course but we are not done yet
-the data from the server
-the data that we want to display when
-the data via props and raises events
-the dump
-the element we want to render so here's
-the entire page you could have multiple
-the exact same version I'm gonna use in
-the existing counters this that state
-the files inside of the source folder
-the first component
-the first counter and increment its
-the first counter to 4 we still get a
-the first glance you may think this is
-the first thing I want you to install is
-the future it may happen 5 milliseconds
-the future we add a new property to our
-the increment button of the first
-the initial value here and we can
-the inter counter object and let the
-the internet that's why I decided to
-the last operand so we get one so back
-the last section so we can do structure
-the list of movies from the server and
-the next lecture
-the next line javascript is not gonna
-the number of counters with value
-the output of this render method is a
-the pass that list to our set state
-the product that we're currently
-the properties in that instance for
-the properties of that props object key
-the properties of the props object so
-the property that we set on the prop
-the props here we have an object with
-the quantity in a yellow badge so you
-the react module this component class
-the reason is because we don't have a
-the reason react is yelling at us here
-the reason when
-the reason why we have to import react
-the render method I want to add a
-the render method just before the return
-the render method so we need to wrap
-the render method we no longer need this
-the render method which you have seen
-the result of this expression which is a
-the result of this expression will be
-the root component for our application
-the screen here also I wanted to let you
-the second operand is not a boolean true
-the second value is a string in
-the span element is highlighted and
-the spread operator to clone this
-the state and that's what we're going to
-the state changes
-the state directly and this is a no-no
-the state first let's just display
-the state or the props of a component
-the state property next we need to find
-the strict mode is enabled this will
-the syntax here looks a little bit funny
-the terminal on Mac or command prompt on
-the text that we want to put in between
-the top I'm going to bring back the app
-the top and below that we have the
-the top where we initialize our state
-the total number of counters on our
-the type div and inside of that element
-the unclick attribute also note that the
-the update phase and this happens when
-the value of the count property is being
-the value of the second counter now we
-the value of this counter now let's find
-the value property of our state object
-the value property of this counter
-the view react doesn't work that way we
-the virtual Dom so that means when
-the virtual Dom this is different from
-the whole point of using objects is to
 thea
 theaceae
 theaceous
@@ -172369,15 +170152,11 @@ thelma
 thelytokous
 thelytoky
 them
-them where counter
-them with a react dot fragment so react
 thema
 themata
 thematic
 thematically
 theme
-theme I'm using here because that's a
-theme this is the theme I'm using so are
 themed
 themeless
 themes
@@ -172385,15 +170164,6 @@ themis
 themistocles
 themselves
 then
-then and and then whatever we want to
-then call the set State method of our
-then call the set state with new data
-then exporting it separately on line 9
-then handle increment so earlier you
-then preferences and finally settings
-then put them together to build complex
-then the component is rendered which
-then we're going to jump in and build a
 thenabouts
 thenar
 thenars
@@ -172575,12 +170345,6 @@ theravada
 therblig
 therbligs
 there
-there are no tags or if you don't want
-there are no tags there is also another
-there are times that you may want to
-there is a reference to react that's why
-there is a tiny issue here that I would
-there is no parent-child relationship
 there's
 thereabout
 thereabouts
@@ -172756,15 +170520,6 @@ thesauri
 thesaurus
 thesauruses
 these
-these JSX expressions get compiled to a
-these are the properties of the prop
-these counters you can see it's value is
-these curly braces we can write any
-these from this dot props now anywhere
-these shortcuts one is IM RC for
-these three properties we could simply
-these two components but as you can see
-these two methods are called in order
 theses
 theseus
 thesis
@@ -172802,9 +170557,6 @@ thewless
 thews
 thewy
 they
-they already exist so here I'm gonna
-they are not contained by another div
-they inherited so we can set this to an
 they'd
 they'll
 they're
@@ -172892,9 +170644,6 @@ thimerosal
 thin
 thine
 thing
-thing before we finish this here we're
-thing is that whenever you're dealing
-thing you need to know about props
 thingamies
 thingamy
 thingamybob
@@ -172907,7 +170656,6 @@ thinginess
 thingliness
 thingness
 things
-things like routing or calling HTTP
 thingumabob
 thingumabobs
 thingumajig
@@ -172922,7 +170670,6 @@ thingummyjig
 thingummyjigs
 thingy
 think
-think we're gonna get we get hi here is
 thinkable
 thinkably
 thinker
@@ -172962,7 +170709,7 @@ thiourea
 thir
 thiram
 third
-third-party libraries as well as react
+third-party
 thirdborough
 thirdboroughs
 thirded
@@ -173009,103 +170756,6 @@ thirtyish
 thirtysomething
 thirtysomethings
 this
-this again here's our first counter find
-this anymore
-this application is automatically
-this argument and pick the total
-this button we get the message event
-this button you can see our count is
-this case let's add a property in this
-this code here cut it go back to AB
-this component by our props and with
-this component is entirely controlled by
-this component itself adding a new
-this component needs we refer to this
-this component now in the last lecture
-this component the state is local and
-this component we need to pass the list
-this components we are extending the
-this constructor we won't be able to
-this counter component with a capital C
-this counter components here let's add
-this counters component has its own
-this counters constant also as I told
-this course because in the future there
-this date
-this date based on the props that we
-this date that is the list of counters
-this day we have our react element h1
-this dot handle increment let's test the
-this dot props we can simplify this code
-this error each child in an array or
-this event in other words we should
-this expression down to something like
-this expression will continue the second
-this in JavaScript behaves differently
-this in our code okay so let's delete
-this in that function will always return
-this in the body of this error function
-this is because this key attribute is
-this is currently experimental and it
-this is different from what I showed you
-this is how we lift the state now let's
-this is not gonna change it's always
-this is our count if I change this to 1
-this is rendered only if our array is
-this is the container for the content
-this is the module and this is the
-this is the output of our app component
-this is undefined so currently we don't
-this is when using dialog boxes imagine
-this is where we have placed our delete
-this is where we have this state so we
-this line and log this dot props here
-this line so we have a simple component
-this list now to make sure that all the
-this makes our code cleaner
-this method can only be called when a
-this method directly right here
-this method is called after a component
-this method is going to be called we
-this now back in vs code we should
-this object and pick the count property
-this object are CSS properties in
-this on there the components folder and
-this one is developed by s-pen Peterson
-this other div which we added a minute
-this page if you scroll down you can see
-this page you have seen this pattern
-this particular example this piece of
-this prettier extension would
-this props now back in the browser so
-this react element inside of that
-this react has a child called fragment
-this save the changes now back in our
-this scenario we can add a separate
-this separate variable here we can call
-this so basically this state object
-this so we'll have a react element with
-this state directly instead we should
-this state in this case our counter
-this state object call it image URL and
-this structure to something like this so
-this technique we have multiple
-this that handle increment and on delete
-this that handle reset but this method
-this that props that counter here is the
-this that set state and give it this new
-this that state dot count now before
-this that state that counters that legs
-this the props that value I'm gonna set
-this title we can do something like this
-this to a function that takes a counter
-this to set the initial value for each
-this to something like this so it will
-this to this that handle reset just like
-this value and use that to initialize
-this video I'm gonna use a couple of
-this we can remove props dot and this
-this will schedule a call to the render
 thisbe
 thisness
 thistle
@@ -173199,13 +170849,9 @@ thorpe
 thorpes
 thorps
 those
-those standard Dom events that you are
-those up before this component is
 thoth
 thou
 though
-though we have several counters when I
-though we're not going to directly use
 thought
 thoughted
 thoughten
@@ -173295,10 +170941,6 @@ threatful
 threating
 threats
 three
-three counter components so with this we
-three counters but only the first one
-three elements a react element on the
-three tags so we see them here now back
 threefold
 threefoldness
 threeness
@@ -173444,7 +171086,6 @@ throttlings
 through
 throughly
 throughout
-throughout this course may appear simple
 throughput
 throughs
 throughway
@@ -173507,7 +171148,6 @@ thulia
 thulite
 thulium
 thumb
-thumb in react applications the
 thumbed
 thumbikins
 thumbing
@@ -173947,9 +171587,6 @@ timbrophily
 timbuctoo
 timbuktu
 time
-time I click the increment button you
-time this is going to get messy and ugly
-time you're going to use only the
 timed
 timeframe
 timeframes
@@ -174341,7 +171978,6 @@ titivators
 titlark
 titlarks
 title
-title like this a real world example of
 titled
 titleless
 titler
@@ -174438,63 +172074,6 @@ tmeses
 tmesis
 tnt
 to
-to a new object and once again we use
-to a render method to conditionally
-to a string in this string we're going
-to add a new button
-to add a span with a few classes like
-to add props as a parameter here
-to allow the consumer of that component
-to an error function and in this method
-to as the virtual Dom unlike the browser
-to be consistent with the property that
-to be your instructor in this react
-to build an application like Twitter we
-to choose the libraries that you prefer
-to clear the console and click the
-to clone the counter at the given
-to counter that value and also select it
-to counters component so we should
-to describe what the UI looks like is
-to directly use this object in our code
-to display anything is simply return no
-to expand them all here you can simply
-to expand your job opportunities as a
-to figure out what elements and the
-to go to our render method so earlier we
-to import react and the component class
-to include all the classes that we're
-to inherit in this counter class okay
-to install bootstrap we need to go back
-to install the same version I'm gonna
-to make Ajax calls to get data from the
-to match that state and that's exactly
-to our component using a single
-to our image element let's replace the
-to our state object tags we set it to an
-to pass an arrow function tag goes to
-to pass an h4 here with some kind of
-to pass content to be rendered on the
-to prefix this with counter similarly on
-to react that create element and this is
-to reformat our code now one thing I
-to refresh your memory what we have here
-to remove the local state and only rely
-to rename this count property to value
-to render this inside of the real gun
-to render values dynamically so here we
-to set attributes on these elements for
-to set the source attribute if you have
-to share data between them you need to
-to the app component now let's go back
-to the next level instead of hard-coding
-to the set state method and have react
-to these stock drops unless we pass
-to update the state we need to add a
-to use lifecycle hooks you can only use
-to use some modern JavaScript features
-to zero and finally we have this badge
-to zero and the value that we set here
 toad
 toadflax
 toadflaxes
@@ -174697,7 +172276,6 @@ tolbooth
 tolbooths
 tolbutamide
 told
-told you before the link to my course is
 tole
 toled
 toledo
@@ -175038,10 +172616,6 @@ tootsie
 tootsies
 tootsy
 top
-top and is our div with two children
-top below that we want to have a
-top is now gone now open up the console
-top we need to import the counter
 toparch
 toparchies
 toparchs
@@ -175413,9 +172987,6 @@ tostication
 tostications
 tot
 total
-total number of counters so the navbar
-total number of items in the shopping
-total number of products in a shopping
 totaled
 totaling
 totalisation
@@ -176830,8 +174401,6 @@ tredilles
 tredrille
 tredrilles
 tree
-tree so on the top we have app and below
-tree we have the counters component on
 treed
 treeing
 treeless
@@ -178230,9 +175799,6 @@ trudging
 trudgings
 trudy
 true
-true and a string like hi what do you
-true and finally let me show you what
-true if I exclude the value
 trued
 trueing
 trueman
@@ -178335,7 +175901,6 @@ trustworthiness
 trustworthy
 trusty
 truth
-truth each of our components have their
 truthful
 truthfully
 truthfulness
@@ -179080,8 +176645,6 @@ tutored
 tutoress
 tutoresses
 tutorial
-tutorial for react developers you can
-tutorial over the next section we're
 tutorially
 tutorials
 tutoring
@@ -179401,9 +176964,6 @@ twizzled
 twizzles
 twizzling
 two
-two different object references in
-two elements side by side Babel doesn't
-two properties value which is for an ID
 twofold
 twofoldness
 twomo
@@ -179491,9 +177051,6 @@ tyning
 tynwald
 typal
 type
-type it by hand or let me show you a
-type of the element that we want to
-type property is set to h1 and we have a
 typecast
 typecasting
 typecasts
@@ -179745,6 +177302,7 @@ ukrainian
 ukrainians
 ukulele
 ukuleles
+ul
 ulan
 ulcer
 ulcerate
@@ -180910,6 +178468,7 @@ unclew
 unclewed
 unclewing
 unclews
+unclick
 unclimbable
 unclimbed
 unclinched
@@ -181407,8 +178966,6 @@ undefied
 undefiled
 undefinable
 undefined
-undefined here so we have access to the
-undefined so back in the code this is
 undeflected
 undefrayed
 undefused
@@ -181423,6 +178980,7 @@ undelayed
 undelaying
 undelectable
 undelegated
+undelete
 undeleted
 undeliberate
 undeliberated
@@ -181469,8 +179027,6 @@ undepreciated
 undepressed
 undeprived
 under
-under administrative privileges let's
-under props to receive the data that
 underachieve
 underachieved
 underachievement
@@ -181891,14 +179447,12 @@ underspends
 underspent
 understaffed
 understand
-understand let me give you a quick demo
 understandable
 understandably
 understanded
 understander
 understanders
 understanding
-understanding of react fundamentals
 understandingly
 understandings
 understands
@@ -183524,8 +181078,6 @@ unipods
 unipolar
 unipolarity
 unique
-unique in the entire application or on
-unique items in our imaginary shopping
 uniquely
 uniqueness
 uniques
@@ -183809,7 +181361,6 @@ unlighted
 unlightened
 unlikable
 unlike
-unlike angular we don't have if and else
 unlikeable
 unlikelihood
 unlikelihoods
@@ -184146,7 +181697,6 @@ unmoulded
 unmoulding
 unmoulds
 unmount
-unmount so this method is called just
 unmounted
 unmounting
 unmounts
@@ -184214,7 +181764,6 @@ unneatened
 unnecessarily
 unnecessariness
 unnecessary
-unnecessary repetition the reason for
 unneeded
 unneedful
 unneedfully
@@ -186775,10 +184324,6 @@ unzipping
 unzips
 unzoned
 up
-up Chrome or our default browser
-up index j s here on top we need to add
-up our development environment
-up the refactoring menu so here we have
 upadaisies
 upadaisy
 upaithric
@@ -186866,19 +184411,9 @@ upcurling
 upcurls
 upcurved
 update
-update so whenever we change the state
-update the reference to handle delete
-update the state directly so we can have
-update the state so let's create a new
-update the value of the count property
-update them accordingly the first
 updated
-updated so click see you can see only
-updated so how can we fix this problem
 updates
 updating
-updating the state of AB component so
-updating the state of components in the
 updike
 updrag
 updragged
@@ -187577,8 +185112,6 @@ uruses
 urva
 urvas
 us
-us focus only on a single thing I'm
-us to a couple of different elements so
 usa
 usability
 usable
@@ -187591,26 +185124,15 @@ usages
 usance
 usances
 use
-use object destructuring to pick the
-use one of the methods that we inherit
-use the same because it's a beautiful
-use this syntax which looks very
 useable
 used
-used internally by react so we won't be
 useful
-useful well let's go on the top and
 usefully
 usefulness
 useless
 uselessly
 uselessness
 user
-user interface so when building
-user interfaces and that's what we're
-user interfaces as you can see on Google
-user interfaces so I'll see you in the
-user interfaces the other two players
 users
 uses
 ushant
@@ -187625,10 +185147,6 @@ ushers
 ushership
 usherships
 using
-using an example so here on the top I
-using props to initialize the state one
-using the map method so here let's add
-using ul and Li elements now if you've
 usk
 usnea
 usneas
@@ -188057,7 +185575,6 @@ valiancy
 valiant
 valiantly
 valid
-valid JavaScript expressions an
 validate
 validated
 validates
@@ -188127,21 +185644,6 @@ valuations
 valuator
 valuators
 value
-value and our state object has a value
-value are the same we can simplify this
-value dynamically so here in the counter
-value for example we can write something
-value for the key attribute now in a
-value from this the props got counter so
-value of the count property if it's zero
-value of the count property is zero we
-value of the source attribute
-value of this save the changes back in
-value of this so I'm going to use this
-value prop is for now if we go to the
-value save the changes back in chrome
-value this is going to directly modify
-value which was set to four and selected
 valued
 valueless
 valuer
@@ -188239,9 +185741,6 @@ vanguard
 vanguardism
 vanguards
 vanilla
-vanilla JavaScript in vanilla JavaScript
-vanilla JavaScript or jQuery we no
-vanilla JavaScript to get a reference to
 vanillas
 vanillin
 vanish
@@ -188376,7 +185875,6 @@ vargueno
 varguenos
 variability
 variable
-variable so save the changes initially
 variableness
 variables
 variably
@@ -188448,7 +185946,6 @@ variometers
 variorum
 variorums
 various
-various templates I'm gonna pick a very
 variously
 variousness
 variscite
@@ -189394,7 +186891,6 @@ versos
 verst
 versts
 versus
-versus state is that props is read-only
 versute
 versy
 vert
@@ -189448,8 +186944,6 @@ verves
 vervet
 vervets
 very
-very enthusiastic about learning react I
-very simple application in a real world
 vesica
 vesicae
 vesical
@@ -189785,7 +187279,6 @@ videlicet
 videnda
 videndum
 video
-video rental application with react from
 videocassette
 videocassettes
 videoconference
@@ -189839,8 +187332,6 @@ vietnam
 vietnamese
 vieux
 view
-view menu on the top developer and
-view to solve this problem we need to
 viewability
 viewable
 viewdata
@@ -190223,9 +187714,6 @@ virosis
 virous
 virtu
 virtual
-virtual Dom are modified in this case it
-virtual Dom changes react needs to
-virtual Dom that's why we should not
 virtualism
 virtualist
 virtualists
@@ -191184,6 +188672,7 @@ vrouw
 vrouws
 vrow
 vrows
+vs
 vu
 vug
 vuggy
@@ -191796,20 +189285,6 @@ wannish
 wans
 wanstead
 want
-want a complex navigation bar like this
-want to add a button for resetting all
-want to apply a class to this span
-want to create a new area of counters
-want to lift the state of the counters
-want to modify this to raise events such
-want to next we're going to create our
-want to pass a reference to this
-want to pass content in between the
-want to render a separate message based
-want to render something dynamically to
-want to render this as yellow to
-want to render this dot state dot image
-want to render we add that here
 wantage
 wanted
 wanter
@@ -191957,8 +189432,6 @@ warned
 warner
 warners
 warning
-warning or batch primary to this string
-warning otherwise we're gonna append
 warningly
 warnings
 warns
@@ -192048,7 +189521,6 @@ warwolf
 warwolves
 wary
 was
-was the first step now back in counters
 wasdale
 wase
 wases
@@ -192409,72 +189881,10 @@ wazir
 wazirs
 wc
 we
-we are setting from the outside this
-we call the target function when setting
-we can also make this dynamic so here in
-we can change all instances in one go so
-we can get that function and reset
-we can simplify this code we don't need
-we can simply pass this arrow function
-we click the increment button so here
-we click the reset button the local
-we copied from bootstrap we just need to
-we delete this variable now we can see
-we don't call this the set state in fact
-we don't have any state we're getting
-we don't need this markup anymore
-we go to get bootstrap calm under
-we have a fully working react app let's
-we have a new array so let's call this
-we have an issue in our current team
-we have here in the render method is the
-we have in the virtual Dom so nowhere
-we have our counters now we want to
-we have this style attribute that we
-we have this the props dot we can
-we have to import it on the top now
-we need to get that input and put it in
-we need to go back to our counter
-we need to pass a function reference so
-we need to pass a plain JavaScript
-we need to prefix it with counter save
-we need to remove the local state in our
-we need to specify where in the real
-we only have a single method here
-we only have a single render method also
-we return a react element so basically
-we set the innertext to increment now it
-we should pass the list of counters
-we take our return statement from here
-we told you before JSX expressions get
-we use to name those events so the
-we want to have the app component on the
-we want to render it as blue so back in
-we want to render that array in a list
-we want to return zero as a string
 we'd
 we'll
-we'll be able to update the state
-we'll fix that in the next lecture
-we'll get a new array of counters let's
-we'll get double curly braces now back
-we'll get the total number of those
-we'll have two other elements an h1 and
 we're
-we're applying the logical and operator
-we're calling this that set state this
-we're done with the removing of the
-we're going to build this application at
-we're going to use this to uniquely
-we're gonna use this package to create a
-we're in sync you also learn about
-we're modifying this so we cannot use a
-we're not done yet look at our render
-we're only gonna use the classes so I'm
-we're passing three props to our child
-we're picking the count property of this
 we've
-we've got this public folder where we
 wea
 weak
 weaken
@@ -192595,7 +190005,6 @@ weazened
 weazening
 weazens
 web
-web pack from bundling our files Babel
 webb
 webbed
 webber
@@ -192740,7 +190149,6 @@ weighing
 weighings
 weighs
 weight
-weight so the first letter of the first
 weighted
 weightier
 weightiest
@@ -192822,9 +190230,6 @@ welking
 welkins
 welks
 well
-well as functional components and
-well as the new virtual Dom they only
-well earlier you learned that in unclick
 welladay
 welladays
 wellanear
@@ -193071,16 +190476,9 @@ wharton
 wharve
 wharves
 what
-what I mean so I'm gonna open up the
-what are we handling here increment so
-what classes are and how to use them if
-what is the state of each component and
-what is the type of the react element
-what we call hot module reloading so
-what we're doing is taking a string and
+what's
 whatabouts
 whatever
-whatever that parameter is representing
 whatna
 whatness
 whatnesses
@@ -193185,9 +190583,6 @@ whelped
 whelping
 whelps
 when
-when I say our entire component tree is
-when the state changes react essentially
-when we set up the wiggly project but
 whenas
 whence
 whenceforth
@@ -193195,16 +190590,9 @@ whences
 whencesoever
 whencever
 whenever
-whenever data needs to be changed so
-whenever you are using the map method to
-whenever you have code like this that's
 whens
 whensoever
 where
-where so put the cursor here press f2
-where we have a basic component that is
-where we have our counters component we
-where we have this state the list of
 whereabout
 whereabouts
 whereafter
@@ -193259,15 +190647,6 @@ wheyish
 wheyishness
 wheys
 which
-which counter we need to remove from
-which includes all the CSS for our app
-which is a new es6 feature call it
-which is one so with this daughter R we
-which is the argument to the handle
-which means all is children are going to
-which stands for JavaScript XML so we
-which was set to true so now we can read
-which we set to this that handle delete
 whichever
 whichsoever
 whicker
@@ -193747,8 +191126,6 @@ whummling
 whunstane
 whunstanes
 why
-why is that well earlier I told you that
-why this library is called react because
 whydah
 whyever
 whymper
@@ -193952,12 +191329,6 @@ wilkes
 wilkins
 wilkinson
 will
-will get a reference to this and render
-will learn how to render content
-will not be part of that because this is
-will return undefined let me show you
-will see that only the span element is
-will see you in the next section
 willable
 willed
 willemite
@@ -194118,7 +191489,6 @@ windowless
 windowpane
 windowpanes
 windows
-windows to find another occurrence of
 windowsill
 windpipe
 windpipes
@@ -194403,22 +191773,6 @@ witenagemot
 witenagemots
 wites
 with
-with a basic bootstrap template I showed
-with a long JSX expression as soon as
-with a span and a button now why is this
-with classes or modules don't worry for
-with me we'll get to them in the next
-with several components you don't have
-with the ID 1 now we can modify handle
-with the ID root this is coming from our
-with the state let's all react does
-with the tanks hello world this is a
-with the virtual Dom so back in the code
-with this change our component tree will
-with this method component in update we
-with this we'll get a new array of
-with using classes to define components
-with what we have in the state object or
 withal
 withdraw
 withdrawal
@@ -194889,7 +192243,6 @@ wops
 worcester
 worcestershire
 word
-word is lowercase but the first letter
 wordage
 wordages
 wordbook
@@ -194942,10 +192295,7 @@ workboxes
 workday
 workdays
 worked
-worked with a single component so if you
-worked with angular you have seen the ng
 worker
-worker that jas this is some code that
 workers
 workfare
 workfolk
@@ -194958,8 +192308,6 @@ workhorses
 workhouse
 workhouses
 working
-working let me change this to let's say
-working with input fields you have on
 workingman
 workings
 workington
@@ -195163,7 +192511,6 @@ wranglesome
 wrangling
 wranglings
 wrap
-wrap this with a div so let's add a div
 wraparound
 wraparounds
 wrapover
@@ -195174,7 +192521,6 @@ wrapped
 wrapper
 wrappers
 wrapping
-wrapping the content of our counter with
 wrappings
 wrapround
 wraprounds
@@ -195962,7 +193308,6 @@ yelloched
 yelloching
 yellochs
 yellow
-yellow badge but if we go back here and
 yellowback
 yellowbacks
 yellowbellies
@@ -196258,65 +193603,9 @@ yorubas
 yos
 yosemite
 you
-you are not familiar with bootstrap it's
-you before here because the key and
-you before in react we do not update the
-you before these JSX expressions get
-you can do that using alt command an eye
-you can expand each counter component to
-you can find all the shortcuts below in
-you can see I didn't refresh the page
-you can see a single div with the ID
-you can see in this state object we only
-you can see our first counter is
-you can see the key is set to one our
-you can see the type of this element the
-you can see we have a navigation bar and
-you can set that here counter that ID
-you counter components save the changes
-you don't have it we can download it
-you don't want to define multiple
-you go we get these messages here
-you have to write code like this there
-you here we add a couple parameters
-you how to do this in the last section
-you install this you will see a new tab
-you learn about JSX or JavaScript XML
-you learned how to use props to pass
-you learned that the state is something
-you learned that we can use this braces
-you look at the state of this component
-you made it this far and you seem to be
-you might have is why do we have to pass
-you need to notice here is that you
-you or a you me Raj so I leave it up to
-you save the changes this extension will
-you save the file
-you see a div and below that you will
-you see here are the frequently used
-you see in a lot of real world
-you see on a shopping cart page so
-you so here you want to render something
-you so you don't have to do it manually
-you to a very useful tool for debugging
-you to download and install this if you
-you to install an extension called
-you want to keep them in sync you want
-you want to render the tag dynamically
-you want to render the value of the
-you watching this video use the former
-you will have a good and in-depth
-you will see shortly now back to our
-you with too much details that you're
-you you need to look at bootstrap
 you'd
 you'll
-you'll be able to build reusable
 you're
-you're going to write everything from
-you're not familiar with these classes I
-you're on Mac and you haven't configured
-you're simply
 you've
 youk
 youked
@@ -196337,8 +193626,6 @@ youngsters
 younker
 younkers
 your
-your code this makes it easier for other
-your machine head over to node J s that
 yourn
 yours
 yourself
@@ -196707,10 +193994,6 @@ zeriba
 zeribas
 zermatt
 zero
-zero and then return it so with this
-zero and this returns that button
-zero is considered true C so once again
-zero let's increment the second counter
 zeroed
 zeroes
 zeroing
