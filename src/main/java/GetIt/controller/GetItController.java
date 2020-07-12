@@ -20,7 +20,7 @@ public class GetItController {
     private GetItService getItService;
 
     @PostMapping(consumes = "application/json", produces = "application/json")
-    public List<Float> getOccurrences(@RequestBody GetOccurrencesRequest getOccurrencesRequest) {
+    public List<Integer> getOccurrences(@RequestBody GetOccurrencesRequest getOccurrencesRequest) {
         return getItService.getOccurrences(getOccurrencesRequest.getWord(), getOccurrencesRequest.getYoutubeUrl());
     }
 

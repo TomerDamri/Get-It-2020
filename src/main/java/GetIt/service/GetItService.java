@@ -27,7 +27,7 @@ public class GetItService {
 
     private static final int suggestionsNumber = 10;
 
-    public List<Float> getOccurrences(String keyword, String youtubeUrl) {
+    public List<Integer> getOccurrences(String keyword, String youtubeUrl) {
         LOGGER.info(String.format("getting occurrences from %s for %s", youtubeUrl, keyword));
         Map<String, String> map = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
         List<Float> captions = new ArrayList<>();
@@ -36,8 +36,14 @@ public class GetItService {
                 captions.add(Float.valueOf(map.get(key)));
             }
         }
-        Collections.sort(captions);
-        return captions;
+        Set<Integer> occurrences = new HashSet<>();
+        for (Float time :captions) { {
+            occurrences.add(time.intValue());
+            }
+        }
+        List<Integer> res = new ArrayList<>(occurrences);
+        Collections.sort(res);
+        return res;
     }
 
     public List<String> getTypos(String word, String youtubeUrl) throws IOException {
