@@ -29,7 +29,6 @@ public class GetItService {
 
     public List<Float> getOccurrences(String keyword, String youtubeUrl) {
         LOGGER.info(String.format("getting occurrences from %s for %s", youtubeUrl, keyword));
-        String path = userDirectory + "/scripts/youtube_api.py";
         Map<String, String> map = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
         List<Float> captions = new ArrayList<>();
         for (String key : map.keySet()) {
