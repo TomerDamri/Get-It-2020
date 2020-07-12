@@ -10,8 +10,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 public class YoutubeTranscriptService {
+    private final static Logger LOGGER = Logger.getLogger(Logger.class.getName());
     private static final String userDirectory = Paths.get("")
             .toAbsolutePath()
             .toString();
@@ -27,7 +29,12 @@ public class YoutubeTranscriptService {
                     transcript = new HashMap<>();
                 }
                 String[] arrOfStr = line.split("&&&", 2);
-                transcript.put(arrOfStr[0], arrOfStr[1]);
+                if( arrOfStr.length == 2){
+                    transcript.put(arrOfStr[0], arrOfStr[1]);
+                }
+                else{
+                    LOGGER.warning("the bad line was:" + line);
+                }
             }
         } catch (IOException e) {
             System.err.println("Exception in reading output" + e.toString());
