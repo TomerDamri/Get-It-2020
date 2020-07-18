@@ -41,7 +41,7 @@ public class GetItService {
             transcribedYoutubeUrl = youtubeUrl;
         }
 
-        List<Integer> occurrences = getOccurrencesInTranscript(word);
+        List<Integer> occurrences = getOccurrencesInTranscript(word.toLowerCase());
         return new GetOccurrencesResponse(occurrences);
     }
 
@@ -70,9 +70,9 @@ public class GetItService {
             transcribedYoutubeUrl = youtubeUrl;
             createDictionaryWithTranscript();
         }
-        List<String> typos = null;
-        if (!dictionaryWithTranscript.contains(word)) {
-            typos = getTyposFromDictionary(word);
+        List<String> typos = new ArrayList<>();
+        if (!dictionaryWithTranscript.contains(word.toLowerCase())) {
+            typos = getTyposFromDictionary(word.toLowerCase());
         }
         return new GetTyposResponse(typos);
     }

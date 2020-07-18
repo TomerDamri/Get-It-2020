@@ -20,6 +20,8 @@ public class YoutubeTranscriptService {
     private static final String scriptPath = userDirectory + "/scripts/youtube_api.py";
 
     public Map<String, String> getYoutubeTranscript(String youtubeUrl) {
+        String[] arrOfStr;
+        String transcriptSentence = "";
         HashMap<String, String> transcript = null;
         BufferedReader reader = PythonExecuter.runScript(scriptPath, youtubeUrl);
         String line;
@@ -28,12 +30,11 @@ public class YoutubeTranscriptService {
                 if (transcript == null) {
                     transcript = new HashMap<>();
                 }
-                String[] arrOfStr = line.split("&&&", 2);
+                arrOfStr = line.split("&&&", 2);
+                transcriptSentence = transcriptSentence.concat(arrOfStr[0]);
                 if( arrOfStr.length == 2){
-                    transcript.put(arrOfStr[0], arrOfStr[1]);
-                }
-                else{
-                    LOGGER.warning("the bad line was:" + line);
+                    transcript.put(transcriptSentence, arrOfStr[1]);
+                    transcriptSentence = "";
                 }
             }
         } catch (IOException e) {
