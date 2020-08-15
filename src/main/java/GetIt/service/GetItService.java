@@ -24,9 +24,12 @@ public class GetItService {
             .toAbsolutePath()
             .toString();
     private static final YoutubeTranscriptService YOUTUBE_TRANSCRIPT_SERVICE = new YoutubeTranscriptService();
-    private static final String dictionaryWithTranscriptPath = userDirectory + "/scripts/newDictionary.txt";
+    private static final String dictionaryWithTranscriptPath = (userDirectory.contains("\\")) ? userDirectory + "\\scripts\\newDictionary.txt" : userDirectory + "/scripts/newDictionary.txt";
+    private static final String dictionaryWithoutTranscriptPath = (userDirectory.contains("\\")) ? userDirectory + "\\scripts\\dictionary" : userDirectory + "/scripts/dictionary";
+
 
     private static final int suggestionsNumber = 3;
+    public static final String DELIMETER = " ";
 
     List<String> dictionaryWithTranscript;
 
@@ -36,7 +39,7 @@ public class GetItService {
 
     public GetOccurrencesResponse getOccurrences(String word, String youtubeUrl) {
         LOGGER.info(String.format("getting occurrences from %s for %s", youtubeUrl, word));
-        if (!youtubeUrl.equals( transcribedYoutubeUrl)) {
+        if (!youtubeUrl.equals(transcribedYoutubeUrl)) {
             transcript = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
             transcribedYoutubeUrl = youtubeUrl;
         }
@@ -65,7 +68,7 @@ public class GetItService {
 
     public GetTyposResponse getTypos(String word, String youtubeUrl) throws IOException {
         LOGGER.info(String.format("getting typos from %s for %s", youtubeUrl, word));
-        if (!youtubeUrl.equals( transcribedYoutubeUrl)|| transcript == null || dictionaryWithTranscript == null) {
+        if (!youtubeUrl.equals(transcribedYoutubeUrl) || transcript == null || dictionaryWithTranscript == null) {
             transcript = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
             transcribedYoutubeUrl = youtubeUrl;
             createDictionaryWithTranscript();
@@ -94,7 +97,7 @@ public class GetItService {
 
     }
 
-    private void createDictionaryWithTranscript() throws IOException { ;
+    private void createDictionaryWithTranscript() throws IOException {
         //using set in order to avoid duplicates
         Set<String> dictionaryAsSet = getOriginalDictionary();
         dictionaryAsSet.addAll(convertYoutubeTranscriptToWords(transcript.keySet()));
@@ -117,14 +120,13 @@ public class GetItService {
     private Set<String> convertYoutubeTranscriptToWords(Set<String> youtubeTranscriptSentences) {
         Set<String> youtubeTranscriptWords = new HashSet<>();
         for (String sentence : youtubeTranscriptSentences) {
-            youtubeTranscriptWords.addAll(Arrays.asList(sentence.split(" ")));
+            youtubeTranscriptWords.addAll(Arrays.asList(sentence.split(DELIMETER)));
         }
         return youtubeTranscriptWords;
     }
 
     private Set<String> getOriginalDictionary() throws FileNotFoundException {
-        String dictionaryPath = userDirectory + "/scripts/dictionary";
-        File pathFile = new File(dictionaryPath);
+        File pathFile = new File(dictionaryWithoutTranscriptPath);
         Scanner s = new Scanner(pathFile);
         Set<String> dictionary = new HashSet<>();
         while (s.hasNext()) {
@@ -133,26 +135,4 @@ public class GetItService {
         s.close();
         return dictionary;
     }
-
-//    public List<String> getWordSuggestions(String word) throws IOException {
-//
-//        String dictPath = userDirectory + "/scripts/dictionary";
-//
-//        File dir = new File("c:/spellchecker/");
-//
-//        Directory directory = FSDirectory.open(dir.toPath());
-//
-//        File pathFile = new File(dictPath);
-//
-//        SpellChecker spellChecker = new SpellChecker(directory);
-//
-//        spellChecker.indexDictionary(
-//                new PlainTextDictionary(pathFile.toPath()), new IndexWriterConfig(), false);
-//
-//        int suggestionsNumber = 10;
-//
-//        return Arrays.asList(spellChecker.
-//                suggestSimilar(word, suggestionsNumber));
-//    }
-
 }

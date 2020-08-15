@@ -2,22 +2,15 @@ package GetIt.service;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.logging.Logger;
 
 public class YoutubeTranscriptService {
-    private final static Logger LOGGER = Logger.getLogger(Logger.class.getName());
     private static final String userDirectory = Paths.get("")
             .toAbsolutePath()
             .toString();
-    private static final String scriptPath = userDirectory + "/scripts/youtube_api.py";
+    private static final String scriptPath = (userDirectory.contains("\\")) ? userDirectory + "\\scripts\\youtube_api.py" : userDirectory + "/scripts/youtube_api.py";
 
     public Map<String, String> getYoutubeTranscript(String youtubeUrl) {
         String[] arrOfStr;
@@ -32,7 +25,7 @@ public class YoutubeTranscriptService {
                 }
                 arrOfStr = line.split("&&&", 2);
                 transcriptSentence = transcriptSentence.concat(arrOfStr[0]);
-                if( arrOfStr.length == 2){
+                if (arrOfStr.length == 2) {
                     transcript.put(transcriptSentence, arrOfStr[1]);
                     transcriptSentence = "";
                 }
