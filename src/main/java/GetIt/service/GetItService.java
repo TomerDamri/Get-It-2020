@@ -45,9 +45,13 @@ public class GetItService {
     private ObjectMapper objectMapper = new ObjectMapper();
 
     public void updateTranscript(String youtubeUrl, Integer timeSlots, String oldSentence, String fixedSentence) {
+        LOGGER.info(String.format("updating the transcript of the %s youtube video", youtubeUrl));
         createTranscript(youtubeUrl);
+        LOGGER.info("transcript created successfully");
         putNewSentenceInTranscript(timeSlots, oldSentence, fixedSentence);
+        LOGGER.info("transcript object updated successfully");
         saveTranscriptAsFile(youtubeUrl);
+        LOGGER.info(String.format("Finish updating the transcript of the %s youtube video", youtubeUrl));
     }
 
     private void saveTranscriptAsFile(String youtubeUrl) {
@@ -78,11 +82,14 @@ public class GetItService {
 
         createTranscript(youtubeUrl);
         List<Integer> occurrences = getOccurrencesInTranscriptV2(word.toLowerCase());
+        LOGGER.info("finish the 'getOccurrences' operation");
         return new GetOccurrencesResponse(occurrences);
     }
 
     public GetTranscriptResponse getTranscript2(String youtubeUrl) {
+        LOGGER.info("Start the  'getTranscriptV2' Operation");
         createTranscript(youtubeUrl);
+        LOGGER.info("Finish the 'getTranscriptV2' Operation");
         return new GetTranscriptResponse(transcriptV2);
     }
 
@@ -277,6 +284,7 @@ public class GetItService {
         if (!dictionaryWithTranscript.contains(word.toLowerCase())) {
             typos = getTyposFromDictionary(word.toLowerCase());
         }
+        LOGGER.info("finish the 'getTyposV2' operation");
         return new GetTyposResponse(typos);
     }
 
