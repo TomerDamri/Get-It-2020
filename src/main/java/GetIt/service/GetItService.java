@@ -3,6 +3,8 @@ package GetIt.service;
 import GetIt.model.response.GetOccurrencesResponse;
 import GetIt.model.response.GetTranscriptResponse;
 import GetIt.model.response.GetTyposResponse;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.search.spell.PlainTextDictionary;
 import org.apache.lucene.search.spell.SpellChecker;
@@ -28,6 +30,7 @@ public class GetItService {
     private static final YoutubeTranscriptService YOUTUBE_TRANSCRIPT_SERVICE = new YoutubeTranscriptService();
     private static final String dictionaryWithTranscriptPath = (userDirectory.contains("\\")) ? userDirectory + "\\scripts\\newDictionary.txt" : userDirectory + "/scripts/newDictionary.txt";
     private static final String dictionaryWithoutTranscriptPath = (userDirectory.contains("\\")) ? userDirectory + "\\scripts\\dictionary" : userDirectory + "/scripts/dictionary";
+    private static final String customTranscriptsDirectoryPath = (userDirectory.contains("\\")) ? userDirectory + "\\customTranscripts" : userDirectory + "/customTranscripts";
 
 
     private static final int suggestionsNumber = 3;
@@ -38,38 +41,37 @@ public class GetItService {
     private List<String> dictionaryWithTranscript;
     private Map<String, String> transcript;
     private Map<Integer, String> transcriptV2;
+    private String transcribedYoutubeUrl;
+    private ObjectMapper objectMapper = new ObjectMapper();
 
-    String transcribedYoutubeUrl;
-
-    public GetOccurrencesResponse getOccurrences(String word, String youtubeUrl) {
-        LOGGER.info(String.format("getting occurrences from %s for %s", youtubeUrl, word));
-        if (!youtubeUrl.equals(transcribedYoutubeUrl)) {
-            transcript = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
-            transcribedYoutubeUrl = youtubeUrl;
-        }
-
-        List<Integer> occurrences = getOccurrencesInTranscript(word.toLowerCase());
-        return new GetOccurrencesResponse(occurrences);
+    public void updateTranscript(String youtubeUrl, Integer timeSlots, String oldSentence, String fixedSentence) {
+        createTranscript(youtubeUrl);
+        putNewSentenceInTranscript(timeSlots, oldSentence, fixedSentence);
+        saveTranscriptAsFile(youtubeUrl);
     }
 
-    private List<Integer> getOccurrencesInTranscript(String word) {
-        List<Float> occurrencesAsFloat = new ArrayList<>();
-        for (String key : transcript.keySet()) {
-            if (key.contains(word)) {
-                occurrencesAsFloat.add(Float.valueOf(transcript.get(key)));
-            }
+    private void saveTranscriptAsFile(String youtubeUrl) {
+        try {
+            File newCustomTranscriptFile = new File(getCustomTranscriptFileName(youtubeUrl));
+            objectMapper.writeValue(newCustomTranscriptFile, transcriptV2);
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to update the transcript.\n An unexpected error occur while saving the transcript to file.");
         }
-        //use HashSet to avoid duplicates
-        Set<Integer> occurrencesAsInteger = new HashSet<>();
-        for (Float time : occurrencesAsFloat) {
-            occurrencesAsInteger.add(time.intValue());
-        }
-
-        List<Integer> sortedOccurrences = new ArrayList<>(occurrencesAsInteger);
-        Collections.sort(sortedOccurrences);
-        return sortedOccurrences;
     }
 
+    private String getCustomTranscriptFileName(String youtubeUrl) {
+        String fileNameTemplate = (userDirectory.contains("\\")) ? "\\%s.json" : "/%s.json";
+        String[] split = youtubeUrl.split("v=");
+        String videoId = split.length == 2 ? split[1] : youtubeUrl;
+        return new StringBuilder(customTranscriptsDirectoryPath).append(String.format(fileNameTemplate, videoId)).toString();
+    }
+
+    private void putNewSentenceInTranscript(Integer timeSlots, String oldSentence, String fixedSentence) {
+        if (!transcriptV2.containsKey(timeSlots) || !transcriptV2.get(timeSlots).equals(oldSentence)) {
+            throw new RuntimeException(String.format("Failed to update the transcript.\n There is not a sentence like %s in the transcript.", oldSentence));
+        }
+        transcriptV2.put(timeSlots, fixedSentence);
+    }
 
     public GetOccurrencesResponse getOccurrencesV2(String word, String youtubeUrl) {
         LOGGER.info(String.format("getting occurrences from %s for %s", youtubeUrl, word));
@@ -87,9 +89,29 @@ public class GetItService {
 
     public void createTranscript(String youtubeUrl) {
         if (!youtubeUrl.equals(transcribedYoutubeUrl)) {
-            transcriptV2 = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscriptV2(youtubeUrl);
+            transcriptV2 = isTranscriptFileExist(youtubeUrl) ? getTranscriptFromFile(youtubeUrl) :
+                    YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscriptV2(youtubeUrl);
             transcribedYoutubeUrl = youtubeUrl;
         }
+    }
+
+    private boolean isTranscriptFileExist(String youtubeUrl) {
+        File file = new File(getCustomTranscriptFileName(youtubeUrl));
+        return file.exists();
+    }
+
+    private Map<Integer, String> getTranscriptFromFile(String youtubeUrl) {
+        Map<Integer, String> transcript;
+        try {
+            File transcriptFile = new File(getCustomTranscriptFileName(youtubeUrl));
+            transcript = objectMapper.readValue(transcriptFile, new TypeReference<Map<Integer, String>>() {
+            });
+        } catch (Exception e) {
+            LOGGER.info("Failed reading the transcript from file.\n An unexpected error occur while reading the transcript FROM file.\nWill be calculated from from scratch.");
+            transcript = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscriptV2(youtubeUrl);
+        }
+
+        return transcript;
     }
 
 
@@ -243,20 +265,6 @@ public class GetItService {
         return new LinkedList<>(occurrences);
     }
 
-    public GetTyposResponse getTypos(String word, String youtubeUrl) throws IOException {
-        LOGGER.info(String.format("getting typos from %s for %s", youtubeUrl, word));
-        if (!youtubeUrl.equals(transcribedYoutubeUrl) || transcript == null || dictionaryWithTranscript == null) {
-            transcript = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
-            transcribedYoutubeUrl = youtubeUrl;
-            createDictionaryWithTranscript();
-        }
-        List<String> typos = new ArrayList<>();
-        if (!dictionaryWithTranscript.contains(word.toLowerCase())) {
-            typos = getTyposFromDictionary(word.toLowerCase());
-        }
-        return new GetTyposResponse(typos);
-    }
-
     public GetTyposResponse getTyposV2(String word, String youtubeUrl) throws IOException {
         LOGGER.info(String.format("getting typos from %s for %s", youtubeUrl, word));
         createTranscript(youtubeUrl);
@@ -309,6 +317,71 @@ public class GetItService {
         outputStream.close();
     }
 
+    private Set<String> convertYoutubeTranscriptToWords(Collection<String> youtubeTranscriptSentences) {
+        Set<String> youtubeTranscriptWords = new HashSet<>();
+        for (String sentence : youtubeTranscriptSentences) {
+            youtubeTranscriptWords.addAll(Arrays.asList(sentence.split(DELIMETER)));
+        }
+        return youtubeTranscriptWords;
+    }
+
+    private Set<String> getOriginalDictionary() throws FileNotFoundException {
+        File pathFile = new File(dictionaryWithoutTranscriptPath);
+        Scanner s = new Scanner(pathFile);
+        Set<String> dictionary = new HashSet<>();
+        while (s.hasNext()) {
+            dictionary.add(s.next());
+        }
+        s.close();
+        return dictionary;
+    }
+
+
+    /*Old APIs*/
+
+    public GetOccurrencesResponse getOccurrences(String word, String youtubeUrl) {
+        LOGGER.info(String.format("getting occurrences from %s for %s", youtubeUrl, word));
+        if (!youtubeUrl.equals(transcribedYoutubeUrl)) {
+            transcript = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
+            transcribedYoutubeUrl = youtubeUrl;
+        }
+
+        List<Integer> occurrences = getOccurrencesInTranscript(word.toLowerCase());
+        return new GetOccurrencesResponse(occurrences);
+    }
+
+    private List<Integer> getOccurrencesInTranscript(String word) {
+        List<Float> occurrencesAsFloat = new ArrayList<>();
+        for (String key : transcript.keySet()) {
+            if (key.contains(word)) {
+                occurrencesAsFloat.add(Float.valueOf(transcript.get(key)));
+            }
+        }
+        //use HashSet to avoid duplicates
+        Set<Integer> occurrencesAsInteger = new HashSet<>();
+        for (Float time : occurrencesAsFloat) {
+            occurrencesAsInteger.add(time.intValue());
+        }
+
+        List<Integer> sortedOccurrences = new ArrayList<>(occurrencesAsInteger);
+        Collections.sort(sortedOccurrences);
+        return sortedOccurrences;
+    }
+
+    public GetTyposResponse getTypos(String word, String youtubeUrl) throws IOException {
+        LOGGER.info(String.format("getting typos from %s for %s", youtubeUrl, word));
+        if (!youtubeUrl.equals(transcribedYoutubeUrl) || transcript == null || dictionaryWithTranscript == null) {
+            transcript = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscript(youtubeUrl);
+            transcribedYoutubeUrl = youtubeUrl;
+            createDictionaryWithTranscript();
+        }
+        List<String> typos = new ArrayList<>();
+        if (!dictionaryWithTranscript.contains(word.toLowerCase())) {
+            typos = getTyposFromDictionary(word.toLowerCase());
+        }
+        return new GetTyposResponse(typos);
+    }
+
     private void createDictionaryWithTranscript() throws IOException {
         //using set in order to avoid duplicates
         Set<String> dictionaryAsSet = getOriginalDictionary();
@@ -327,24 +400,5 @@ public class GetItService {
             outputStream.write(strToBytes);
         }
         outputStream.close();
-    }
-
-    private Set<String> convertYoutubeTranscriptToWords(Collection<String> youtubeTranscriptSentences) {
-        Set<String> youtubeTranscriptWords = new HashSet<>();
-        for (String sentence : youtubeTranscriptSentences) {
-            youtubeTranscriptWords.addAll(Arrays.asList(sentence.split(DELIMETER)));
-        }
-        return youtubeTranscriptWords;
-    }
-
-    private Set<String> getOriginalDictionary() throws FileNotFoundException {
-        File pathFile = new File(dictionaryWithoutTranscriptPath);
-        Scanner s = new Scanner(pathFile);
-        Set<String> dictionary = new HashSet<>();
-        while (s.hasNext()) {
-            dictionary.add(s.next());
-        }
-        s.close();
-        return dictionary;
     }
 }
