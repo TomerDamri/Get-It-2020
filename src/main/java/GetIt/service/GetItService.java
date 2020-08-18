@@ -47,11 +47,13 @@ public class GetItService {
     }
 
     private void saveTranscriptAsFile(String youtubeUrl) {
+        LOGGER.info(String.format("Trying to save the transcript of video : %s", youtubeUrl));
         String fileName = getTranscriptFileName(youtubeUrl);
         try (FileOutputStream fos =
                      new FileOutputStream(fileName);
              ObjectOutputStream oos = new ObjectOutputStream(fos)) {
             oos.writeObject(transcriptV2);
+            LOGGER.info(String.format("Transcript of video : %s was stored successfully", youtubeUrl));
         } catch (Exception e) {
             throw new RuntimeException("Failed to update the transcript.\n An unexpected error occur while saving the transcript to file.");
         }
@@ -98,6 +100,7 @@ public class GetItService {
     }
 
     private Map<Integer, String> tryReadTranscriptFile(String youtubeUrl) {
+        LOGGER.info(String.format("Reading the transcript of video : %s", youtubeUrl));
         Map<Integer, String> map = null;
         String transcriptFileName = getTranscriptFileName(youtubeUrl);
         try (
@@ -105,6 +108,7 @@ public class GetItService {
                 ObjectInputStream ois = new ObjectInputStream(fis)) {
 
             map = (Map<Integer, String>) ois.readObject();
+            LOGGER.info(String.format("Transcript of video : %s was read successfully", youtubeUrl));
 
         } catch (Exception c) {
             LOGGER.info(String.format("A transcript file for video: %s doesn't exist", youtubeUrl));
