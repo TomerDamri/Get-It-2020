@@ -3,18 +3,13 @@ package GetIt.service;
 import GetIt.model.response.GetOccurrencesResponse;
 import GetIt.model.response.GetTranscriptResponse;
 import GetIt.model.response.GetTyposResponse;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.search.spell.PlainTextDictionary;
 import org.apache.lucene.search.spell.SpellChecker;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.logging.Logger;
@@ -30,8 +25,6 @@ public class GetItService {
     private static final YoutubeTranscriptService YOUTUBE_TRANSCRIPT_SERVICE = new YoutubeTranscriptService();
     private static final String dictionaryWithTranscriptPath = (userDirectory.contains("\\")) ? userDirectory + "\\scripts\\newDictionary.txt" : userDirectory + "/scripts/newDictionary.txt";
     private static final String dictionaryWithoutTranscriptPath = (userDirectory.contains("\\")) ? userDirectory + "\\scripts\\dictionary" : userDirectory + "/scripts/dictionary";
-    private static final String customTranscriptsDirectoryPath = (userDirectory.contains("\\")) ? userDirectory + "\\customTranscripts" : userDirectory + "/customTranscripts";
-
 
     private static final int suggestionsNumber = 3;
     public static final String DELIMETER = " ";
@@ -42,7 +35,6 @@ public class GetItService {
     private Map<String, String> transcript;
     private Map<Integer, String> transcriptV2;
     private String transcribedYoutubeUrl;
-    private ObjectMapper objectMapper = new ObjectMapper();
 
     public void updateTranscript(String youtubeUrl, Integer timeSlots, String oldSentence, String fixedSentence) {
         LOGGER.info(String.format("updating the transcript of the %s youtube video", youtubeUrl));
@@ -55,19 +47,21 @@ public class GetItService {
     }
 
     private void saveTranscriptAsFile(String youtubeUrl) {
-        try {
-            File newCustomTranscriptFile = new File(getCustomTranscriptFileName(youtubeUrl));
-            objectMapper.writeValue(newCustomTranscriptFile, transcriptV2);
+        String fileName = getTranscriptFileName(youtubeUrl);
+        try (FileOutputStream fos =
+                     new FileOutputStream(fileName);
+             ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+            oos.writeObject(transcriptV2);
         } catch (Exception e) {
             throw new RuntimeException("Failed to update the transcript.\n An unexpected error occur while saving the transcript to file.");
         }
     }
 
-    private String getCustomTranscriptFileName(String youtubeUrl) {
-        String fileNameTemplate = (userDirectory.contains("\\")) ? "\\%s.json" : "/%s.json";
+    private String getTranscriptFileName(String youtubeUrl) {
         String[] split = youtubeUrl.split("v=");
         String videoId = split.length == 2 ? split[1] : youtubeUrl;
-        return new StringBuilder(customTranscriptsDirectoryPath).append(String.format(fileNameTemplate, videoId)).toString();
+        String fileName = String.format("%s.ser", videoId);
+        return fileName;
     }
 
     private void putNewSentenceInTranscript(Integer timeSlots, String oldSentence, String fixedSentence) {
@@ -96,29 +90,26 @@ public class GetItService {
 
     public void createTranscript(String youtubeUrl) {
         if (!youtubeUrl.equals(transcribedYoutubeUrl)) {
-            transcriptV2 = isTranscriptFileExist(youtubeUrl) ? getTranscriptFromFile(youtubeUrl) :
+            Map<Integer, String> tempTranscript = tryReadTranscriptFile(youtubeUrl);
+            transcriptV2 = (tempTranscript != null) ? tempTranscript :
                     YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscriptV2(youtubeUrl);
             transcribedYoutubeUrl = youtubeUrl;
         }
     }
 
-    private boolean isTranscriptFileExist(String youtubeUrl) {
-        File file = new File(getCustomTranscriptFileName(youtubeUrl));
-        return file.exists();
-    }
+    private Map<Integer, String> tryReadTranscriptFile(String youtubeUrl) {
+        Map<Integer, String> map = null;
+        String transcriptFileName = getTranscriptFileName(youtubeUrl);
+        try (
+                FileInputStream fis = new FileInputStream(transcriptFileName);
+                ObjectInputStream ois = new ObjectInputStream(fis)) {
 
-    private Map<Integer, String> getTranscriptFromFile(String youtubeUrl) {
-        Map<Integer, String> transcript;
-        try {
-            File transcriptFile = new File(getCustomTranscriptFileName(youtubeUrl));
-            transcript = objectMapper.readValue(transcriptFile, new TypeReference<Map<Integer, String>>() {
-            });
-        } catch (Exception e) {
-            LOGGER.info("Failed reading the transcript from file.\n An unexpected error occur while reading the transcript FROM file.\nWill be calculated from from scratch.");
-            transcript = YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscriptV2(youtubeUrl);
+            map = (Map<Integer, String>) ois.readObject();
+
+        } catch (Exception c) {
+            LOGGER.info(String.format("A transcript file for video: %s doesn't exist", youtubeUrl));
         }
-
-        return transcript;
+        return map;
     }
 
 
