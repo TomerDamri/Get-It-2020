@@ -1,15 +1,21 @@
 package GetIt.service;
 
+import GetIt.model.TranscriptEntity;
 import GetIt.model.response.GetOccurrencesResponse;
 import GetIt.model.response.GetTranscriptResponse;
 import GetIt.model.response.GetTyposResponse;
+import GetIt.repositories.TranscriptRepository;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.search.spell.PlainTextDictionary;
 import org.apache.lucene.search.spell.SpellChecker;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.logging.Logger;
@@ -35,6 +41,9 @@ public class GetItService {
     private Map<String, String> transcript;
     private Map<Integer, String> transcriptV2;
     private String transcribedYoutubeUrl;
+    private Map<String, Long> youtubeUrlToId = new HashMap<>();
+    @Autowired
+    private TranscriptRepository transcriptRepository;
 
     public void updateTranscript(String youtubeUrl, Integer timeSlots, String oldSentence, String fixedSentence) {
         LOGGER.info(String.format("updating the transcript of the %s youtube video", youtubeUrl));
@@ -42,28 +51,36 @@ public class GetItService {
         LOGGER.info("transcript created successfully");
         putNewSentenceInTranscript(timeSlots, oldSentence, fixedSentence);
         LOGGER.info("transcript object updated successfully");
-        saveTranscriptAsFile(youtubeUrl);
+        saveTranscriptInRepository(youtubeUrl);
         LOGGER.info(String.format("Finish updating the transcript of the %s youtube video", youtubeUrl));
     }
 
-    private void saveTranscriptAsFile(String youtubeUrl) {
-        LOGGER.info(String.format("Trying to save the transcript of video : %s", youtubeUrl));
-        String fileName = getTranscriptFileName(youtubeUrl);
-        try (FileOutputStream fos =
-                     new FileOutputStream(fileName);
-             ObjectOutputStream oos = new ObjectOutputStream(fos)) {
-            oos.writeObject(transcriptV2);
-            LOGGER.info(String.format("Transcript of video : %s was stored successfully", youtubeUrl));
-        } catch (Exception e) {
-            throw new RuntimeException("Failed to update the transcript.\n An unexpected error occur while saving the transcript to file.");
+    private void saveTranscriptInRepository(String youtubeUrl) {
+        TranscriptEntity transcript;
+        Optional<TranscriptEntity> transcriptFromRepository = getTranscriptFromRepository(youtubeUrl);
+
+        if (transcriptFromRepository.isPresent()) {
+            transcript = transcriptFromRepository.get();
+            transcript.setTranscript(transcriptV2);
+            LOGGER.info("update transcript from repository");
+        } else {
+            transcript = new TranscriptEntity(transcriptV2);
+            LOGGER.info("first entry to transcript repository");
         }
+
+        TranscriptEntity save = transcriptRepository.save(transcript);
+        youtubeUrlToId.put(youtubeUrl, save.getId());
     }
 
-    private String getTranscriptFileName(String youtubeUrl) {
+    private Optional<TranscriptEntity> getTranscriptFromRepository(String youtubeUrl) {
+        Long id = youtubeUrlToId.get(youtubeUrl);
+
+        return (id != null) ? transcriptRepository.findById(id) : Optional.empty();
+    }
+
+    private String getVideoId(String youtubeUrl) {
         String[] split = youtubeUrl.split("v=");
-        String videoId = split.length == 2 ? split[1] : youtubeUrl;
-        String fileName = String.format("%s.ser", videoId);
-        return fileName;
+        return split.length == 2 ? split[1] : youtubeUrl;
     }
 
     private void putNewSentenceInTranscript(Integer timeSlots, String oldSentence, String fixedSentence) {
@@ -92,30 +109,12 @@ public class GetItService {
 
     public void createTranscript(String youtubeUrl) {
         if (!youtubeUrl.equals(transcribedYoutubeUrl)) {
-            Map<Integer, String> tempTranscript = tryReadTranscriptFile(youtubeUrl);
-            transcriptV2 = (tempTranscript != null) ? tempTranscript :
+            Optional<TranscriptEntity> transcriptOpt = getTranscriptFromRepository(youtubeUrl);
+            transcriptV2 = (transcriptOpt.isPresent()) ? transcriptOpt.get().getTranscript() :
                     YOUTUBE_TRANSCRIPT_SERVICE.getYoutubeTranscriptV2(youtubeUrl);
             transcribedYoutubeUrl = youtubeUrl;
         }
     }
-
-    private Map<Integer, String> tryReadTranscriptFile(String youtubeUrl) {
-        LOGGER.info(String.format("Reading the transcript of video : %s", youtubeUrl));
-        Map<Integer, String> map = null;
-        String transcriptFileName = getTranscriptFileName(youtubeUrl);
-        try (
-                FileInputStream fis = new FileInputStream(transcriptFileName);
-                ObjectInputStream ois = new ObjectInputStream(fis)) {
-
-            map = (Map<Integer, String>) ois.readObject();
-            LOGGER.info(String.format("Transcript of video : %s was read successfully", youtubeUrl));
-
-        } catch (Exception c) {
-            LOGGER.info(String.format("A transcript file for video: %s doesn't exist", youtubeUrl));
-        }
-        return map;
-    }
-
 
     private List<Integer> getOccurrencesInTranscriptV2(String word) {
         List<Integer> allOccurrences;
@@ -238,6 +237,7 @@ public class GetItService {
     private Integer addPervSentence(Map<Integer, List<String>> wordsOccurrencesMap, List<Integer> sortedTimeSlots, int i, Integer time, Set<String> allThreeSentencesWords) {
         Integer occurTime = time;
         if (i > 0) {
+
             Integer prevTime = sortedTimeSlots.get(i - 1);
             if (time - prevTime <= MAX_DIFF) {
                 allThreeSentencesWords.addAll(wordsOccurrencesMap.get(prevTime));
