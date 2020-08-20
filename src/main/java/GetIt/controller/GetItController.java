@@ -27,34 +27,22 @@ public class GetItController {
 
     @PostMapping(path = "/transcript", consumes = "application/json", produces = "application/json")
     public GetTranscriptResponse getTranscript(@RequestBody GetTranscriptRequest getTranscriptRequest) {
-        return getItService.getTranscript2(getTranscriptRequest.getYoutubeUrl());
+        return getItService.getTranscript(getTranscriptRequest.getYoutubeUrl());
     }
 
     @PostMapping(consumes = "application/json", produces = "application/json")
     public GetOccurrencesResponse getOccurrences(@RequestBody GetOccurrencesRequest getOccurrencesRequest) {
-        return getItService.getOccurrencesV2(getOccurrencesRequest.getWord(), getOccurrencesRequest.getYoutubeUrl());
+        return getItService.getOccurrences(getOccurrencesRequest.getWord(), getOccurrencesRequest.getYoutubeUrl());
     }
 
     @PostMapping("/word/typos")
     public GetTyposResponse getWordTypos(@RequestBody GetTyposRequest getTyposRequest) throws IOException {
-        return getItService.getTyposV2(getTyposRequest.getWord(), getTyposRequest.getYoutubeUrl());
+        return getItService.getTypos(getTyposRequest.getWord(), getTyposRequest.getYoutubeUrl());
     }
 
     @PostMapping("/transcript/update")
     public ResponseEntity<Void> updateTranscript(@RequestBody UpdateTranscriptRequest updateTranscriptRequest) {
         getItService.updateTranscript(updateTranscriptRequest.getYoutubeUrl(), updateTranscriptRequest.getTimeSlots(), updateTranscriptRequest.getOldSentence(), updateTranscriptRequest.getFixedSentence());
         return new ResponseEntity<>(HttpStatus.OK);
-    }
-
-    /* Old APIs*/
-
-    @PostMapping(path = "/v1/getOccurrences", consumes = "application/json", produces = "application/json")
-    public GetOccurrencesResponse getOccurrencesV1(@RequestBody GetOccurrencesRequest getOccurrencesRequest) {
-        return getItService.getOccurrences(getOccurrencesRequest.getWord(), getOccurrencesRequest.getYoutubeUrl());
-    }
-
-    @PostMapping("/v1/word/typos")
-    public GetTyposResponse getWordTyposV1(@RequestBody GetTyposRequest getTyposRequest) throws IOException {
-        return getItService.getTypos(getTyposRequest.getWord(), getTyposRequest.getYoutubeUrl());
     }
 }
