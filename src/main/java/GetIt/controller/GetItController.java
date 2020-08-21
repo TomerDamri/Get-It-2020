@@ -13,8 +13,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
-
 @RestController
 @RequestMapping(path = "/Ctrl_F_App")
 public class GetItController {
@@ -33,7 +31,7 @@ public class GetItController {
     }
 
     @PostMapping("/word/typos")
-    public GetTyposResponse getWordTypos(@RequestBody GetTyposRequest getTyposRequest) throws IOException {
+    public GetTyposResponse getWordTypos(@RequestBody GetTyposRequest getTyposRequest) {
         return getItService.getTypos(getTyposRequest.getWord(), getTyposRequest.getYoutubeUrl());
     }
 

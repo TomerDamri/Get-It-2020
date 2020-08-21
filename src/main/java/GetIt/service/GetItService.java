@@ -5,7 +5,6 @@ import GetIt.model.response.GetTranscriptResponse;
 import GetIt.model.response.GetTyposResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
@@ -41,7 +40,7 @@ public class GetItService {
         return new GetOccurrencesResponse(occurrences);
     }
 
-    public GetTyposResponse getTypos(String word, String youtubeUrl) throws IOException {
+    public GetTyposResponse getTypos(String word, String youtubeUrl) {
         LOGGER.info("Start the 'getTypos' Operation");
 
         Map<Integer, String> transcript = transcriptService.getTranscript(youtubeUrl);

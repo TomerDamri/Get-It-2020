@@ -1,5 +1,8 @@
 package GetIt.service;
 
+import GetIt.exceptions.base.BadRequestException;
+import GetIt.exceptions.base.InternalServerErrorException;
+import GetIt.exceptions.base.NotFoundException;
 import GetIt.model.repositoriesModels.TranscriptEntity;
 import GetIt.repositories.TranscriptRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,12 +58,14 @@ public class TranscriptService {
     public Map<Integer, String> getTranscriptFromYoutube(String youtubeUrl) {
         String[] arrOfStr;
         String transcriptSentence = "";
+        boolean hasTranscript = false;
         String line;
         HashMap<Integer, String> transcript = null;
 
         BufferedReader reader = PythonExecuter.runScript(scriptPath, youtubeUrl);
         try {
             while ((line = reader.readLine()) != null) {
+                hasTranscript = true;
                 if (transcript == null) {
                     transcript = new HashMap<>();
                 }
@@ -72,8 +77,12 @@ public class TranscriptService {
                     transcriptSentence = "";
                 }
             }
+
+            if (!hasTranscript) {
+                throw new NotFoundException(String.format("There is no transcript for this video : %s", youtubeUrl));
+            }
         } catch (IOException e) {
-            System.err.println("Exception in reading output" + e.toString());
+            throw new InternalServerErrorException(e);
         }
 
         return new TreeMap<>(transcript);
@@ -121,38 +130,9 @@ public class TranscriptService {
 
     private void updateSentenceInTranscript(Map<Integer, String> transcript, Integer timeSlots, String oldSentence, String fixedSentence) {
         if (!transcript.containsKey(timeSlots) || !transcript.get(timeSlots).equals(oldSentence)) {
-            throw new RuntimeException(String.format("Failed to update the transcript.\n There is not a sentence like %s in the transcript.", oldSentence));
+            throw new BadRequestException(String.format("Failed to update the transcript.\n There is not a sentence like %s at the time slot you requested in the transcript.", oldSentence));
         }
         transcript.put(timeSlots, fixedSentence);
         LOGGER.info("transcript object updated successfully");
-    }
-
-    /*
-    To be deleted -
-     Old APIs
-     */
-
-    public Map<String, String> getYoutubeTranscript(String youtubeUrl) {
-        String[] arrOfStr;
-        String transcriptSentence = "";
-        HashMap<String, String> transcript = null;
-        BufferedReader reader = PythonExecuter.runScript(scriptPath, youtubeUrl);
-        String line;
-        try {
-            while ((line = reader.readLine()) != null) {
-                if (transcript == null) {
-                    transcript = new HashMap<>();
-                }
-                arrOfStr = line.split("&&&", 2);
-                transcriptSentence = transcriptSentence.concat(arrOfStr[0]);
-                if (arrOfStr.length == 2) {
-                    transcript.put(transcriptSentence, arrOfStr[1]);
-                    transcriptSentence = "";
-                }
-            }
-        } catch (IOException e) {
-            System.err.println("Exception in reading output" + e.toString());
-        }
-        return transcript;
     }
 }

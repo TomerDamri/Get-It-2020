@@ -1,5 +1,7 @@
 package GetIt.service;
 
+import GetIt.exceptions.base.BadRequestException;
+import GetIt.exceptions.base.InternalServerErrorException;
 import GetIt.model.repositoriesModels.DictionaryEntity;
 import GetIt.repositories.DictionariesRepository;
 import org.apache.lucene.index.IndexWriterConfig;
@@ -39,7 +41,7 @@ public class TyposService {
 
     public List<String> getTyposV2(String youtubeUrl, Map<Integer, String> transcript, String expression) {
         if (expression.isEmpty()) {
-            throw new RuntimeException("You should send an expression.");
+            throw new BadRequestException("You have to request a non-empty expression");
         }
 
         Set<String> dictionaryWithTranscript = getDictionaryWithTranscript(youtubeUrl, transcript);
@@ -52,25 +54,21 @@ public class TyposService {
         List<String> words = Arrays.asList(expression.toLowerCase().split(DELIMETER));
         List<StringBuilder> returnTypos = Arrays.stream(new StringBuilder[suggestionsNumber]).map(stringBuilder -> new StringBuilder()).collect(Collectors.toList());
 
-        try {
-            Iterator<String> iterator = words.iterator();
-            while (iterator.hasNext()) {
-                String currWord = iterator.next();
-                boolean isLastWordInExpression = !iterator.hasNext();
+        Iterator<String> iterator = words.iterator();
+        while (iterator.hasNext()) {
+            String currWord = iterator.next();
+            boolean isLastWordInExpression = !iterator.hasNext();
 
-                if (!dictionaryWithTranscript.contains(currWord)) {
-                    //the creation of the dictionary file will be created once for all typos
-                    createDictionaryFile(youtubeUrl, dictionaryWithTranscript);
-                    wasFoundTypo = tryHandleTypo(isLastWordInExpression, currWord, returnTypos);
-                } else {
-                    returnTypos = handleValidWord(returnTypos, currWord, isLastWordInExpression);
-                }
+            if (!dictionaryWithTranscript.contains(currWord)) {
+                //the creation of the dictionary file will be created once for all typos
+                createDictionaryFile(youtubeUrl, dictionaryWithTranscript);
+                wasFoundTypo = tryHandleTypo(isLastWordInExpression, currWord, returnTypos);
+            } else {
+                returnTypos = handleValidWord(returnTypos, currWord, isLastWordInExpression);
             }
-
-            return wasFoundTypo ? returnTypos.stream().map(StringBuilder::toString).collect(Collectors.toList()) : new ArrayList<>();
-        } catch (IOException ex) {
-            throw new RuntimeException(ex);
         }
+
+        return wasFoundTypo ? returnTypos.stream().map(StringBuilder::toString).collect(Collectors.toList()) : new ArrayList<>();
     }
 
     private List<StringBuilder> handleValidWord(List<StringBuilder> returnTypos, String currWord, boolean isLastWordInExpression) {
@@ -79,7 +77,7 @@ public class TyposService {
         return returnTypos;
     }
 
-    private boolean tryHandleTypo(boolean isLastWordInExpression, String word, List<StringBuilder> returnTypos) throws IOException {
+    private boolean tryHandleTypo(boolean isLastWordInExpression, String word, List<StringBuilder> returnTypos) {
         boolean wasFoundTypo = false;
 
         List<String> typos = getTyposFromDictionary(word);
@@ -137,8 +135,7 @@ public class TyposService {
             new Thread(() -> saveDictionaryInRepository(youtubeUrl, dictionaryAsSet)).start();
             return dictionaryAsSet;
         } catch (IOException ex) {
-            // TODO: 21/08/2020
-            throw new RuntimeException();
+            throw new InternalServerErrorException(ex);
         }
     }
 
@@ -162,26 +159,34 @@ public class TyposService {
         return youtubeTranscriptWords;
     }
 
-    private List<String> getTyposFromDictionary(String word) throws IOException {
-        File dictionaryFile = new File(dictionaryWithTranscriptPath);
-        File dir = new File("c:/spellchecker/");
-        Directory directory = FSDirectory.open(dir.toPath());
+    private List<String> getTyposFromDictionary(String word) {
+        try {
+            File dictionaryFile = new File(dictionaryWithTranscriptPath);
+            File dir = new File("c:/spellchecker/");
+            Directory directory = FSDirectory.open(dir.toPath());
 
-        SpellChecker spellChecker = new SpellChecker(directory);
+            SpellChecker spellChecker = new SpellChecker(directory);
 
-        spellChecker.indexDictionary(
-                new PlainTextDictionary(dictionaryFile.toPath()), new IndexWriterConfig(), false);
+            spellChecker.indexDictionary(
+                    new PlainTextDictionary(dictionaryFile.toPath()), new IndexWriterConfig(), false);
 
-        return Arrays.asList(spellChecker.
-                suggestSimilar(word, suggestionsNumber));
+            return Arrays.asList(spellChecker.
+                    suggestSimilar(word, suggestionsNumber));
+        } catch (IOException ex) {
+            throw new RuntimeException("internalServerError");
+        }
 
     }
 
-    private void createDictionaryFile(String youtubeUrl, Set<String> dictionaryWithTranscriptAsSet) throws IOException {
-        if (!youtubeUrl.equals(lastYoutubeUrl)) {
-            File newDictionaryFile = new File(dictionaryWithTranscriptPath);
-            writeDictionaryToFile(newDictionaryFile, dictionaryWithTranscriptAsSet);
-            lastYoutubeUrl = youtubeUrl;
+    private void createDictionaryFile(String youtubeUrl, Set<String> dictionaryWithTranscriptAsSet) {
+        try {
+            if (!youtubeUrl.equals(lastYoutubeUrl)) {
+                File newDictionaryFile = new File(dictionaryWithTranscriptPath);
+                writeDictionaryToFile(newDictionaryFile, dictionaryWithTranscriptAsSet);
+                lastYoutubeUrl = youtubeUrl;
+            }
+        } catch (IOException ex) {
+            throw new InternalServerErrorException(ex);
         }
     }
 

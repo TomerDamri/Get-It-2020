@@ -138,25 +138,27 @@ public class OccurrencesService {
     }
 
     private List<Integer> filterCloseTimeSlotsFromAllOccurrences(List<Integer> allOccurrences) {
-        Collections.sort(allOccurrences);
         List<Integer> filteredList = new LinkedList<>();
-        Integer prevTime = null;
-        boolean isHasToRemove;
+        if (allOccurrences.size() > 0) {
+            Collections.sort(allOccurrences);
+            Integer prevTime = null;
+            boolean isHasToRemove;
 
-        for (Integer currTime : allOccurrences) {
-            isHasToRemove = false;
-            if (prevTime == null) {
-                prevTime = currTime;
-            } else {
-                if (currTime - prevTime > MIN_DIFF) {
+            for (Integer currTime : allOccurrences) {
+                isHasToRemove = false;
+                if (prevTime == null) {
                     prevTime = currTime;
                 } else {
-                    isHasToRemove = true;
+                    if (currTime - prevTime > MIN_DIFF) {
+                        prevTime = currTime;
+                    } else {
+                        isHasToRemove = true;
+                    }
                 }
-            }
 
-            if (!isHasToRemove) {
-                filteredList.add(currTime);
+                if (!isHasToRemove) {
+                    filteredList.add(currTime);
+                }
             }
         }
 

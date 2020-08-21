@@ -1,5 +1,7 @@
 package GetIt.service;
 
+import GetIt.exceptions.base.InternalServerErrorException;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -13,7 +15,7 @@ public class PythonExecuter {
         try {
             process = Runtime.getRuntime().exec(String.format("python %s %s", scriptPath, youtubeUrl));
         } catch (Exception e) {
-            System.err.println("Exception Raised" + e.toString());
+            throw new InternalServerErrorException(e);
         }
         mProcess = process;
         InputStream stdout = mProcess.getInputStream();
