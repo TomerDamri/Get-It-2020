@@ -23,7 +23,7 @@ public class MyConfiguration implements WebMvcConfigurer {
 
     @Bean
     public CacheManager cacheManager() {
-        return new ConcurrentMapCacheManager("transcripts");
+        return new ConcurrentMapCacheManager("transcripts", "dictionaries");
     }
 
 }

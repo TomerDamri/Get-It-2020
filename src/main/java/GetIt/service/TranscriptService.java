@@ -1,6 +1,6 @@
 package GetIt.service;
 
-import GetIt.model.TranscriptEntity;
+import GetIt.model.repositoriesModels.TranscriptEntity;
 import GetIt.repositories.TranscriptRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
@@ -96,9 +96,10 @@ public class TranscriptService {
     private TranscriptEntity getTranscriptFromRepository(String youtubeUrl) {
         Long id = youtubeUrlToId.get(youtubeUrl);
 
-        return (id != null) ? transcriptRepository.findById(id).get() : null;
+        return (id != null) ? transcriptRepository.findById(id).orElse(null) : null;
     }
 
+    @Cacheable(value = "transcripts", key = "#youtubeUrl")
     private TranscriptEntity saveTranscriptInRepository(String youtubeUrl, Map<Integer, String> newTranscript) {
         TranscriptEntity transcriptEntity;
         TranscriptEntity transcriptFromRepository = getTranscriptFromRepository(youtubeUrl);

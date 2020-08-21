@@ -1,4 +1,4 @@
-package GetIt.model;
+package GetIt.model.repositoriesModels;
 
 import javax.persistence.*;
 import java.util.Map;
@@ -8,7 +8,7 @@ public class TranscriptEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
+    private Long id;
 
     @ElementCollection
     private Map<Integer, String> transcript;

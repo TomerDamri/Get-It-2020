@@ -6,7 +6,6 @@ import GetIt.model.response.GetTyposResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
-import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
@@ -15,9 +14,6 @@ import java.util.logging.Logger;
 public class GetItService {
 
     private final static Logger LOGGER = Logger.getLogger(Logger.class.getName());
-    private static final String userDirectory = Paths.get("")
-            .toAbsolutePath()
-            .toString();
 
     @Autowired
     private TranscriptService transcriptService;
@@ -49,7 +45,7 @@ public class GetItService {
         LOGGER.info("Start the 'getTypos' Operation");
 
         Map<Integer, String> transcript = transcriptService.getTranscript(youtubeUrl);
-        List<String> typos = typosService.getTyposV2(transcript, word);
+        List<String> typos = typosService.getTyposV2(youtubeUrl, transcript, word);
 
         LOGGER.info("finish the 'getTypos' operation");
         return new GetTyposResponse(typos);
