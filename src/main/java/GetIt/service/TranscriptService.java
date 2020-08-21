@@ -40,7 +40,7 @@ public class TranscriptService {
             saveTranscriptInRepository(youtubeUrl, transcript);
         }
 
-        return transcript;
+        return new TreeMap<>(transcript);
     }
 
     public void updateTranscript(String youtubeUrl, Integer timeSlots, String oldSentence, String fixedSentence) {

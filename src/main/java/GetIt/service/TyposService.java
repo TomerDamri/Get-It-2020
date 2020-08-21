@@ -180,18 +180,16 @@ public class TyposService {
     private void createDictionaryFile(String youtubeUrl, Set<String> dictionaryWithTranscriptAsSet) throws IOException {
         if (!youtubeUrl.equals(lastYoutubeUrl)) {
             File newDictionaryFile = new File(dictionaryWithTranscriptPath);
-            //convert to list in order to sort the dictionary (ABC order)
-            List<String> dictionaryAsList = new ArrayList<>(dictionaryWithTranscriptAsSet);
-            Collections.sort(dictionaryAsList);
-
-            writeDictionaryToFile(newDictionaryFile, dictionaryAsList);
+            writeDictionaryToFile(newDictionaryFile, dictionaryWithTranscriptAsSet);
             lastYoutubeUrl = youtubeUrl;
         }
     }
 
-    private void writeDictionaryToFile(File newDictionaryFile, List<String> dictionaryAsList) throws IOException {
+    private void writeDictionaryToFile(File newDictionaryFile, Set<String> dictionary) throws IOException {
+        //convert to list in order to sort the dictionary (ABC order)
+        dictionary = new TreeSet<>(dictionary);
         FileOutputStream outputStream = new FileOutputStream(newDictionaryFile);
-        for (String dictionaryWord : dictionaryAsList) {
+        for (String dictionaryWord : dictionary) {
             dictionaryWord = dictionaryWord + '\n';
             byte[] strToBytes = dictionaryWord.getBytes();
             outputStream.write(strToBytes);
