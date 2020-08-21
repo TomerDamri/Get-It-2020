@@ -18,11 +18,12 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 @Service
 public class TyposService {
 
-    public static final String DELIMETER = " ";
+    private static final String DELIMETER = " ";
     private final static Logger LOGGER = Logger.getLogger(Logger.class.getName());
     private static final String userDirectory = Paths.get("")
             .toAbsolutePath()
@@ -36,16 +37,89 @@ public class TyposService {
     @Autowired
     private DictionariesRepository dictionariesRepository;
 
-    public List<String> getTyposV2(String youtubeUrl, Map<Integer, String> transcript, String word) throws IOException {
-        String fixedWord = word.toLowerCase();
-        Set<String> dictionaryWithTranscript = getDictionaryWithTranscript(youtubeUrl, transcript);
-
-        List<String> typos = new ArrayList<>();
-        if (!dictionaryWithTranscript.contains(fixedWord)) {
-            typos = getTyposFromDictionary(youtubeUrl, dictionaryWithTranscript, fixedWord);
+    public List<String> getTyposV2(String youtubeUrl, Map<Integer, String> transcript, String expression) {
+        if (expression.isEmpty()) {
+            throw new RuntimeException("You should send an expression.");
         }
 
-        return typos;
+        Set<String> dictionaryWithTranscript = getDictionaryWithTranscript(youtubeUrl, transcript);
+        return getTyposFromDictionary(youtubeUrl, expression, dictionaryWithTranscript);
+    }
+
+    private List<String> getTyposFromDictionary(String youtubeUrl, String expression, Set<String> dictionaryWithTranscript) {
+        boolean wasFoundTypo = false;
+
+        List<String> words = Arrays.asList(expression.toLowerCase().split(DELIMETER));
+        List<StringBuilder> returnTypos = Arrays.stream(new StringBuilder[suggestionsNumber]).map(stringBuilder -> new StringBuilder()).collect(Collectors.toList());
+
+        try {
+            Iterator<String> iterator = words.iterator();
+            while (iterator.hasNext()) {
+                String currWord = iterator.next();
+                boolean isLastWordInExpression = !iterator.hasNext();
+
+                if (!dictionaryWithTranscript.contains(currWord)) {
+                    //the creation of the dictionary file will be created once for all typos
+                    createDictionaryFile(youtubeUrl, dictionaryWithTranscript);
+                    wasFoundTypo = tryHandleTypo(isLastWordInExpression, currWord, returnTypos);
+                } else {
+                    returnTypos = handleValidWord(returnTypos, currWord, isLastWordInExpression);
+                }
+            }
+
+            return wasFoundTypo ? returnTypos.stream().map(StringBuilder::toString).collect(Collectors.toList()) : new ArrayList<>();
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
+
+    private List<StringBuilder> handleValidWord(List<StringBuilder> returnTypos, String currWord, boolean isLastWordInExpression) {
+        String wordToAppend = prepareWordToAppending(isLastWordInExpression, currWord);
+        returnTypos = returnTypos.stream().map(builder -> builder.append(wordToAppend)).collect(Collectors.toList());
+        return returnTypos;
+    }
+
+    private boolean tryHandleTypo(boolean isLastWordInExpression, String word, List<StringBuilder> returnTypos) throws IOException {
+        boolean wasFoundTypo = false;
+
+        List<String> typos = getTyposFromDictionary(word);
+        if (typos.size() > 0) {
+            appendFixedWordsToSuggestions(isLastWordInExpression, returnTypos, typos);
+            wasFoundTypo = true;
+        } else {
+            // in case the "getTyposFromDictionary" don't return any suggestion word
+            handleValidWord(returnTypos, word, isLastWordInExpression);
+        }
+
+        return wasFoundTypo;
+    }
+
+    private void appendFixedWordsToSuggestions(boolean isLastWordInExpression, List<StringBuilder> returnTypos, List<String> typos) {
+        String wordToAppend;
+        for (int i = 0; i < typos.size(); i++) {
+            wordToAppend = prepareWordToAppending(isLastWordInExpression, typos.get(i));
+            returnTypos.get(i).append(wordToAppend);
+        }
+        // if the typos (size < suggestionsNumber) we need to append the suggestion word to the remaining stringBuilders
+        appendToRemainingSuggestionsTheFixedWord(isLastWordInExpression, returnTypos, typos);
+    }
+
+    private void appendToRemainingSuggestionsTheFixedWord(boolean isLastWordInExpression, List<StringBuilder> returnTypos, List<String> typos) {
+        String wordToAppend;
+        if (typos.size() < suggestionsNumber) {
+            wordToAppend = prepareWordToAppending(isLastWordInExpression, typos.get(0));
+            for (int i = typos.size(); i < suggestionsNumber; i++) {
+                returnTypos.get(i).append(wordToAppend);
+            }
+        }
+    }
+
+    private String prepareWordToAppending(boolean isLastWordInExpression, String wordToAppend) {
+        String str = wordToAppend;
+        if (!isLastWordInExpression) {
+            str += DELIMETER;
+        }
+        return str;
     }
 
     private Set<String> getDictionaryWithTranscript(String youtubeUrl, Map<Integer, String> transcript) {
@@ -88,13 +162,10 @@ public class TyposService {
         return youtubeTranscriptWords;
     }
 
-    private List<String> getTyposFromDictionary(String youtubeUrl, Set<String> dictionaryWithTranscript, String word) throws IOException {
-        File dir = new File("c:/spellchecker/");
+    private List<String> getTyposFromDictionary(String word) throws IOException {
         File dictionaryFile = new File(dictionaryWithTranscriptPath);
-
+        File dir = new File("c:/spellchecker/");
         Directory directory = FSDirectory.open(dir.toPath());
-
-        createDictionaryFile(youtubeUrl, dictionaryWithTranscript, dictionaryFile);
 
         SpellChecker spellChecker = new SpellChecker(directory);
 
@@ -106,8 +177,9 @@ public class TyposService {
 
     }
 
-    private void createDictionaryFile(String youtubeUrl, Set<String> dictionaryWithTranscriptAsSet, File newDictionaryFile) throws IOException {
+    private void createDictionaryFile(String youtubeUrl, Set<String> dictionaryWithTranscriptAsSet) throws IOException {
         if (!youtubeUrl.equals(lastYoutubeUrl)) {
+            File newDictionaryFile = new File(dictionaryWithTranscriptPath);
             //convert to list in order to sort the dictionary (ABC order)
             List<String> dictionaryAsList = new ArrayList<>(dictionaryWithTranscriptAsSet);
             Collections.sort(dictionaryAsList);
