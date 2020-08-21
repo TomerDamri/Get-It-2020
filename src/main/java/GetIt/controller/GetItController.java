@@ -11,10 +11,7 @@ import GetIt.service.GetItService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 
@@ -43,6 +40,11 @@ public class GetItController {
     @PostMapping("/transcript/update")
     public ResponseEntity<Void> updateTranscript(@RequestBody UpdateTranscriptRequest updateTranscriptRequest) {
         getItService.updateTranscript(updateTranscriptRequest.getYoutubeUrl(), updateTranscriptRequest.getTimeSlots(), updateTranscriptRequest.getOldSentence(), updateTranscriptRequest.getFixedSentence());
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @GetMapping("/home")
+    public ResponseEntity<Void> keepAlive() {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

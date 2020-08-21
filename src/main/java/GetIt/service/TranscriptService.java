@@ -3,6 +3,7 @@ package GetIt.service;
 import GetIt.model.TranscriptEntity;
 import GetIt.repositories.TranscriptRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
@@ -10,7 +11,6 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 import java.util.TreeMap;
 import java.util.logging.Logger;
 
@@ -31,10 +31,10 @@ public class TranscriptService {
 
     public Map<Integer, String> getTranscript(String youtubeUrl) {
         Map<Integer, String> transcript;
-        Optional<TranscriptEntity> transcriptOpt = getTranscriptFromRepository(youtubeUrl);
+        TranscriptEntity transcriptEntity = getTranscriptFromRepository(youtubeUrl);
 
-        if (transcriptOpt.isPresent()) {
-            transcript = transcriptOpt.get().getTranscript();
+        if (transcriptEntity != null) {
+            transcript = transcriptEntity.getTranscript();
         } else {
             transcript = getTranscriptFromYoutube(youtubeUrl);
             saveTranscriptInRepository(youtubeUrl, transcript);
@@ -92,18 +92,19 @@ public class TranscriptService {
         transcript.put(key, transcriptSentence);
     }
 
-    private Optional<TranscriptEntity> getTranscriptFromRepository(String youtubeUrl) {
+    @Cacheable(value = "transcripts", key = "#youtubeUrl")
+    private TranscriptEntity getTranscriptFromRepository(String youtubeUrl) {
         Long id = youtubeUrlToId.get(youtubeUrl);
 
-        return (id != null) ? transcriptRepository.findById(id) : Optional.empty();
+        return (id != null) ? transcriptRepository.findById(id).get() : null;
     }
 
-    private void saveTranscriptInRepository(String youtubeUrl, Map<Integer, String> newTranscript) {
+    private TranscriptEntity saveTranscriptInRepository(String youtubeUrl, Map<Integer, String> newTranscript) {
         TranscriptEntity transcriptEntity;
-        Optional<TranscriptEntity> transcriptFromRepository = getTranscriptFromRepository(youtubeUrl);
+        TranscriptEntity transcriptFromRepository = getTranscriptFromRepository(youtubeUrl);
 
-        if (transcriptFromRepository.isPresent()) {
-            transcriptEntity = transcriptFromRepository.get();
+        if (transcriptFromRepository != null) {
+            transcriptEntity = transcriptFromRepository;
             transcriptEntity.setTranscript(newTranscript);
             LOGGER.info("update transcriptEntity from repository");
         } else {
@@ -114,6 +115,7 @@ public class TranscriptService {
         TranscriptEntity save = transcriptRepository.save(transcriptEntity);
         youtubeUrlToId.put(youtubeUrl, save.getId());
         LOGGER.info("The transcript saved successfully");
+        return save;
     }
 
     private void updateSentenceInTranscript(Map<Integer, String> transcript, Integer timeSlots, String oldSentence, String fixedSentence) {
