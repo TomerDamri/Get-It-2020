@@ -127,14 +127,14 @@ public class TyposService {
         outputStream.close();
     }
 
-    @Cacheable(value = "dictionaries", key = "#youtubeUrl")
+    @Cacheable(value = "dictionaries", key = "#youtubeUrl", cacheManager = "dictionariesCacheManager")
     private DictionaryEntity getDictionaryFromRepository(String youtubeUrl) {
         Long id = youtubeUrlToId.get(youtubeUrl);
 
         return (id != null) ? dictionariesRepository.findById(id).orElse(null) : null;
     }
 
-    @Cacheable(value = "dictionaries", key = "#youtubeUrl")
+    @Cacheable(value = "dictionaries", key = "#youtubeUrl", cacheManager = "dictionariesCacheManager")
     private DictionaryEntity saveDictionaryInRepository(String youtubeUrl, Set<String> newDictionary) {
         DictionaryEntity dictionaryEntity = new DictionaryEntity(newDictionary);
         DictionaryEntity save = dictionariesRepository.save(dictionaryEntity);
