@@ -135,7 +135,9 @@ public class TyposService {
             new Thread(() -> saveDictionaryInRepository(youtubeUrl, dictionaryAsSet)).start();
             return dictionaryAsSet;
         } catch (FileNotFoundException ex) {
-            throw new InternalServerErrorException(ex);
+            String errorMessage = "Failed to find the original dictionary file.";
+            LOGGER.warning(errorMessage);
+            throw new InternalServerErrorException(errorMessage, ex);
         }
     }
 
@@ -186,7 +188,9 @@ public class TyposService {
                 lastYoutubeUrl = youtubeUrl;
             }
         } catch (IOException ex) {
-            throw new InternalServerErrorException(ex);
+            String errorMessage = "Failed writing to new dictionary file.";
+            LOGGER.warning(errorMessage);
+            throw new InternalServerErrorException(errorMessage, ex);
         }
     }
 

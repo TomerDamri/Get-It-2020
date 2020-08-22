@@ -83,7 +83,9 @@ public class TranscriptService {
                 throw new TranscriptNotFoundException(String.format("There is no transcript for this video : %s", youtubeUrl));
             }
         } catch (IOException e) {
-            throw new InternalServerErrorException(e);
+            String errorMessage = "Failed to read the output of the python transcript script.";
+            LOGGER.warning(errorMessage);
+            throw new InternalServerErrorException(errorMessage, e);
         }
 
         return new TreeMap<>(transcript);
