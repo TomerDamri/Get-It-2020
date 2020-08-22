@@ -1,7 +1,7 @@
 package GetIt.service;
 
-import GetIt.exceptions.base.BadRequestException;
-import GetIt.exceptions.base.InternalServerErrorException;
+import GetIt.exceptions.EmptyExpressionException;
+import GetIt.exceptions.InternalServerErrorException;
 import GetIt.model.repositoriesModels.DictionaryEntity;
 import GetIt.repositories.DictionariesRepository;
 import org.apache.lucene.index.IndexWriterConfig;
@@ -41,7 +41,7 @@ public class TyposService {
 
     public List<String> getTyposV2(String youtubeUrl, Map<Integer, String> transcript, String expression) {
         if (expression.isEmpty()) {
-            throw new BadRequestException("You have to request a non-empty expression");
+            throw new EmptyExpressionException("You have to request a non-empty expression");
         }
 
         Set<String> dictionaryWithTranscript = getDictionaryWithTranscript(youtubeUrl, transcript);
@@ -134,7 +134,7 @@ public class TyposService {
 
             new Thread(() -> saveDictionaryInRepository(youtubeUrl, dictionaryAsSet)).start();
             return dictionaryAsSet;
-        } catch (IOException ex) {
+        } catch (FileNotFoundException ex) {
             throw new InternalServerErrorException(ex);
         }
     }

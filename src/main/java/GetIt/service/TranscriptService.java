@@ -1,8 +1,8 @@
 package GetIt.service;
 
-import GetIt.exceptions.base.BadRequestException;
-import GetIt.exceptions.base.InternalServerErrorException;
-import GetIt.exceptions.base.NotFoundException;
+import GetIt.exceptions.InternalServerErrorException;
+import GetIt.exceptions.TranscriptNotFoundException;
+import GetIt.exceptions.UpdateTranscriptException;
 import GetIt.model.repositoriesModels.TranscriptEntity;
 import GetIt.repositories.TranscriptRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +33,7 @@ public class TranscriptService {
     private TranscriptRepository transcriptRepository;
 
     public Map<Integer, String> getTranscript(String youtubeUrl) {
+
         Map<Integer, String> transcript;
         TranscriptEntity transcriptEntity = getTranscriptFromRepository(youtubeUrl);
 
@@ -79,7 +80,7 @@ public class TranscriptService {
             }
 
             if (!hasTranscript) {
-                throw new NotFoundException(String.format("There is no transcript for this video : %s", youtubeUrl));
+                throw new TranscriptNotFoundException(String.format("There is no transcript for this video : %s", youtubeUrl));
             }
         } catch (IOException e) {
             throw new InternalServerErrorException(e);
@@ -130,7 +131,7 @@ public class TranscriptService {
 
     private void updateSentenceInTranscript(Map<Integer, String> transcript, Integer timeSlots, String oldSentence, String fixedSentence) {
         if (!transcript.containsKey(timeSlots) || !transcript.get(timeSlots).equals(oldSentence)) {
-            throw new BadRequestException(String.format("Failed to update the transcript.\n There is not a sentence like %s at the time slot you requested in the transcript.", oldSentence));
+            throw new UpdateTranscriptException(String.format("Failed to update the transcript.\n There is not a sentence like %s at the time slot you requested in the transcript.", oldSentence));
         }
         transcript.put(timeSlots, fixedSentence);
         LOGGER.info("transcript object updated successfully");
