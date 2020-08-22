@@ -33,18 +33,22 @@ public class TranscriptService {
     private TranscriptRepository transcriptRepository;
 
     public Map<Integer, String> getTranscript(String youtubeUrl) {
+        try {
+            Map<Integer, String> transcript;
+            TranscriptEntity transcriptEntity = getTranscriptFromRepository(youtubeUrl);
 
-        Map<Integer, String> transcript;
-        TranscriptEntity transcriptEntity = getTranscriptFromRepository(youtubeUrl);
+            if (transcriptEntity != null) {
+                transcript = transcriptEntity.getTranscript();
+            } else {
+                transcript = getTranscriptFromYoutube(youtubeUrl);
+                saveTranscriptInRepository(youtubeUrl, transcript);
+            }
 
-        if (transcriptEntity != null) {
-            transcript = transcriptEntity.getTranscript();
-        } else {
-            transcript = getTranscriptFromYoutube(youtubeUrl);
-            saveTranscriptInRepository(youtubeUrl, transcript);
+            return new TreeMap<>(transcript);
+        } catch (Exception ex) {
+            LOGGER.info(ex.getMessage());
+            return null;
         }
-
-        return new TreeMap<>(transcript);
     }
 
     public void updateTranscript(String youtubeUrl, Integer timeSlots, String oldSentence, String fixedSentence) {
