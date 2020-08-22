@@ -175,7 +175,9 @@ public class TyposService {
             return Arrays.asList(spellChecker.
                     suggestSimilar(word, suggestionsNumber));
         } catch (IOException ex) {
-            throw new RuntimeException("internalServerError");
+            String errorMessage = String.format("An error occured when trying to get suggustion for word : %s", word);
+            LOGGER.warning(errorMessage);
+            throw new InternalServerErrorException(errorMessage, ex);
         }
 
     }
