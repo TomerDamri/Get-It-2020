@@ -36,9 +36,13 @@ public class GetItController {
     }
 
     @PostMapping("/transcript/update")
-    public ResponseEntity<Void> updateTranscript(@RequestBody UpdateTranscriptRequest updateTranscriptRequest) {
-        getItService.updateTranscript(updateTranscriptRequest.getYoutubeUrl(), updateTranscriptRequest.getTimeSlots(), updateTranscriptRequest.getOldSentence(), updateTranscriptRequest.getFixedSentence());
-        return new ResponseEntity<>(HttpStatus.OK);
+    public boolean updateTranscript(@RequestBody UpdateTranscriptRequest updateTranscriptRequest) {
+        try {
+            getItService.updateTranscript(updateTranscriptRequest.getYoutubeUrl(), updateTranscriptRequest.getTimeSlots(), updateTranscriptRequest.getOldSentence(), updateTranscriptRequest.getFixedSentence());
+            return true;
+        } catch (Exception ex) {
+            return false;
+        }
     }
 
     @GetMapping("/home")
