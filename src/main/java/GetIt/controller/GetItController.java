@@ -36,13 +36,8 @@ public class GetItController {
     }
 
     @PostMapping("/transcript/update")
-    public boolean updateTranscript(@RequestBody UpdateTranscriptRequest updateTranscriptRequest) {
-        try {
-            getItService.updateTranscript(updateTranscriptRequest.getYoutubeUrl(), updateTranscriptRequest.getTimeSlots(), updateTranscriptRequest.getOldSentence(), updateTranscriptRequest.getFixedSentence());
-            return true;
-        } catch (Exception ex) {
-            return false;
-        }
+    public void updateTranscript(@RequestBody UpdateTranscriptRequest updateTranscriptRequest) {
+        getItService.updateTranscript(updateTranscriptRequest.getYoutubeUrl(), updateTranscriptRequest.getTimeSlots(), updateTranscriptRequest.getOldSentence(), updateTranscriptRequest.getFixedSentence());
     }
 
     @GetMapping("/home")
