@@ -33,22 +33,17 @@ public class TranscriptService {
     private TranscriptRepository transcriptRepository;
 
     public Map<Integer, String> getTranscript(String youtubeUrl) {
-        try {
-            Map<Integer, String> transcript;
-            TranscriptEntity transcriptEntity = getTranscriptFromRepository(youtubeUrl);
+        Map<Integer, String> transcript;
+        TranscriptEntity transcriptEntity = getTranscriptFromRepository(youtubeUrl);
 
-            if (transcriptEntity != null) {
-                transcript = transcriptEntity.getTranscript();
-            } else {
-                transcript = getTranscriptFromYoutube(youtubeUrl);
-                saveTranscriptInRepository(youtubeUrl, transcript);
-            }
-
-            return new TreeMap<>(transcript);
-        } catch (Exception ex) {
-            LOGGER.info(ex.getMessage());
-            return null;
+        if (transcriptEntity != null) {
+            transcript = transcriptEntity.getTranscript();
+        } else {
+            transcript = getTranscriptFromYoutube(youtubeUrl);
+            saveTranscriptInRepository(youtubeUrl, transcript);
         }
+
+        return new TreeMap<>(transcript);
     }
 
     public void updateTranscript(String youtubeUrl, Integer timeSlots, String oldSentence, String fixedSentence) {
@@ -63,14 +58,12 @@ public class TranscriptService {
     public Map<Integer, String> getTranscriptFromYoutube(String youtubeUrl) {
         String[] arrOfStr;
         String transcriptSentence = "";
-        boolean hasTranscript = false;
         String line;
         HashMap<Integer, String> transcript = null;
 
         BufferedReader reader = PythonExecuter.runScript(scriptPath, youtubeUrl);
         try {
             while ((line = reader.readLine()) != null) {
-                hasTranscript = true;
                 if (transcript == null) {
                     transcript = new HashMap<>();
                 }
@@ -83,8 +76,8 @@ public class TranscriptService {
                 }
             }
 
-            if (!hasTranscript) {
-                throw new TranscriptNotFoundException(String.format("There is no transcript for this video : %s", youtubeUrl));
+            if (transcript == null) {
+                throw new TranscriptNotFoundException(youtubeUrl);
             }
         } catch (IOException e) {
             String errorMessage = "Failed to read the output of the python transcript script.";
@@ -137,7 +130,7 @@ public class TranscriptService {
 
     private void updateSentenceInTranscript(Map<Integer, String> transcript, Integer timeSlots, String oldSentence, String fixedSentence) {
         if (!transcript.containsKey(timeSlots) || !transcript.get(timeSlots).equals(oldSentence)) {
-            throw new UpdateTranscriptException(String.format("Failed to update the transcript.\n There is not a sentence like %s at the time slot you requested in the transcript.", oldSentence));
+            throw new UpdateTranscriptException(String.format("Failed to update the transcript. There is not a sentence like '%s' at the time slot you requested in the transcript.", oldSentence));
         }
         transcript.put(timeSlots, fixedSentence);
         LOGGER.info("transcript object updated successfully");

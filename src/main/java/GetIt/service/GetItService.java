@@ -2,7 +2,7 @@ package GetIt.service;
 
 import GetIt.exceptions.EmptyExpressionException;
 import GetIt.exceptions.EmptyYoutubeUrlException;
-import GetIt.exceptions.NegativeTimeSlotException;
+import GetIt.exceptions.InvalidTimeSlotException;
 import GetIt.model.response.GetOccurrencesResponse;
 import GetIt.model.response.GetTranscriptResponse;
 import GetIt.model.response.GetTyposResponse;
@@ -85,8 +85,9 @@ public class GetItService {
 
     private void validateInputForUpdateTranscript(String youtubeUrl, Integer timeSlots, String oldSentence, String fixedSentence) {
         validateBaseRequest(oldSentence, youtubeUrl);
-        if (timeSlots < 0) {
-            throw new NegativeTimeSlotException("You have to request a positive time slot");
+
+        if (timeSlots == null || timeSlots < 0) {
+            throw new InvalidTimeSlotException("You have to request a positive time slot");
         }
         validateExpression(fixedSentence);
     }
@@ -107,5 +108,4 @@ public class GetItService {
     private boolean isEmpty(String str) {
         return str == null || str.isEmpty();
     }
-
 }
