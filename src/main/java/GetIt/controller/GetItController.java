@@ -22,22 +22,22 @@ public class GetItController {
 
     @PostMapping(path = "/transcript", consumes = "application/json", produces = "application/json")
     public GetTranscriptResponse getTranscript(@RequestBody GetTranscriptRequest getTranscriptRequest) {
-        return getItService.getTranscript(getTranscriptRequest.getYoutubeUrl());
+        return getItService.getTranscript(getTranscriptRequest);
     }
 
     @PostMapping(consumes = "application/json", produces = "application/json")
     public GetOccurrencesResponse getOccurrences(@RequestBody GetOccurrencesRequest getOccurrencesRequest) {
-        return getItService.getOccurrences(getOccurrencesRequest.getWord(), getOccurrencesRequest.getYoutubeUrl());
+        return getItService.getOccurrences(getOccurrencesRequest);
     }
 
     @PostMapping("/word/typos")
     public GetTyposResponse getWordTypos(@RequestBody GetTyposRequest getTyposRequest) {
-        return getItService.getTypos(getTyposRequest.getWord(), getTyposRequest.getYoutubeUrl());
+        return getItService.getTypos(getTyposRequest);
     }
 
     @PostMapping("/transcript/update")
     public void updateTranscript(@RequestBody UpdateTranscriptRequest updateTranscriptRequest) {
-        getItService.updateTranscript(updateTranscriptRequest.getYoutubeUrl(), updateTranscriptRequest.getTimeSlots(), updateTranscriptRequest.getOldSentence(), updateTranscriptRequest.getFixedSentence());
+        getItService.updateTranscript(updateTranscriptRequest);
     }
 
     @GetMapping("/home")

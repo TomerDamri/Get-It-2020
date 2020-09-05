@@ -1,6 +1,5 @@
 package GetIt.service;
 
-import GetIt.exceptions.EmptyExpressionException;
 import GetIt.exceptions.InternalServerErrorException;
 import GetIt.model.repositoriesModels.DictionaryEntity;
 import GetIt.repositories.DictionariesRepository;
@@ -39,11 +38,7 @@ public class TyposService {
     @Autowired
     private DictionariesRepository dictionariesRepository;
 
-    public List<String> getTyposV2(String youtubeUrl, Map<Integer, String> transcript, String expression) {
-        if (expression.isEmpty()) {
-            throw new EmptyExpressionException("You have to request a non-empty expression");
-        }
-
+    public List<String> getTypos(String youtubeUrl, Map<Integer, String> transcript, String expression) {
         Set<String> dictionaryWithTranscript = getDictionaryWithTranscript(youtubeUrl, transcript);
         return getTyposFromDictionary(youtubeUrl, expression, dictionaryWithTranscript);
     }
@@ -123,16 +118,16 @@ public class TyposService {
     private Set<String> getDictionaryWithTranscript(String youtubeUrl, Map<Integer, String> transcript) {
         DictionaryEntity dictionaryFromRepository = getDictionaryFromRepository(youtubeUrl);
 
-        return (dictionaryFromRepository != null) ? dictionaryFromRepository.getDictionary() : createDictionaryWithTranscriptV2(youtubeUrl, transcript);
+        return (dictionaryFromRepository != null) ? dictionaryFromRepository.getDictionary() : createDictionaryWithTranscript(youtubeUrl, transcript);
     }
 
-    private Set<String> createDictionaryWithTranscriptV2(String youtubeUrl, Map<Integer, String> transcript) {
+    private Set<String> createDictionaryWithTranscript(String youtubeUrl, Map<Integer, String> transcript) {
         try {
             //using set in order to avoid duplicates
             Set<String> dictionaryAsSet = getOriginalDictionary();
             dictionaryAsSet.addAll(convertYoutubeTranscriptToWords(transcript.values()));
 
-            new Thread(() -> saveDictionaryInRepository(youtubeUrl, dictionaryAsSet)).start();
+            new Thread(() -> saveDictionaryToRepository(youtubeUrl, dictionaryAsSet)).start();
             return dictionaryAsSet;
         } catch (FileNotFoundException ex) {
             String errorMessage = "Failed to find the original dictionary file.";
@@ -175,7 +170,7 @@ public class TyposService {
             return Arrays.asList(spellChecker.
                     suggestSimilar(word, suggestionsNumber));
         } catch (IOException ex) {
-            String errorMessage = String.format("An error occured when trying to get suggustion for word : %s", word);
+            String errorMessage = String.format("An error occurred while trying to get suggestion for: %s", word);
             LOGGER.warning(errorMessage);
             throw new InternalServerErrorException(errorMessage, ex);
         }
@@ -216,12 +211,12 @@ public class TyposService {
     }
 
     @Cacheable(value = "dictionaries", key = "#youtubeUrl", cacheManager = "dictionariesCacheManager")
-    private DictionaryEntity saveDictionaryInRepository(String youtubeUrl, Set<String> newDictionary) {
+    private DictionaryEntity saveDictionaryToRepository(String youtubeUrl, Set<String> newDictionary) {
         DictionaryEntity dictionaryEntity = new DictionaryEntity(newDictionary);
         DictionaryEntity save = dictionariesRepository.save(dictionaryEntity);
         youtubeUrlToId.put(youtubeUrl, save.getId());
 
-        LOGGER.info("The dictionary saved successfully in dictionaryEntity repository");
+        LOGGER.info("The dictionary is saved to dictionaryEntity repository successfully");
         return save;
     }
 }

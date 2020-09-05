@@ -25,7 +25,7 @@ public class TranscriptService {
             .toAbsolutePath()
             .toString();
     private static final String scriptPath = (userDirectory.contains("\\")) ? userDirectory + "\\scripts\\youtube_api.py" : userDirectory + "/scripts/youtube_api.py";
-    public static final String TRANSCRIPT_DELIMETER = "&&&";
+    public static final String TRANSCRIPT_DELIMITER = "&&&";
 
     private Map<String, Long> youtubeUrlToId = new HashMap<>();
 
@@ -40,20 +40,19 @@ public class TranscriptService {
             transcript = transcriptEntity.getTranscript();
         } else {
             transcript = getTranscriptFromYoutube(youtubeUrl);
-            saveTranscriptInRepository(youtubeUrl, transcript);
+            saveTranscriptToRepository(youtubeUrl, transcript);
         }
 
         return new TreeMap<>(transcript);
     }
 
     public void updateTranscript(String youtubeUrl, Integer timeSlots, String oldSentence, String fixedSentence) {
-        LOGGER.info(String.format("updating the transcript of the %s youtube video", youtubeUrl));
+        LOGGER.info(String.format("Updating the transcript of %s", youtubeUrl));
         Map<Integer, String> transcript = getTranscript(youtubeUrl);
         updateSentenceInTranscript(transcript, timeSlots, oldSentence, fixedSentence);
-        saveTranscriptInRepository(youtubeUrl, transcript);
-        LOGGER.info(String.format("Finish updating the transcript of the %s youtube video", youtubeUrl));
+        saveTranscriptToRepository(youtubeUrl, transcript);
+        LOGGER.info(String.format("Done updating the transcript of %s", youtubeUrl));
     }
-
 
     public Map<Integer, String> getTranscriptFromYoutube(String youtubeUrl) {
         String[] arrOfStr;
@@ -67,7 +66,7 @@ public class TranscriptService {
                 if (transcript == null) {
                     transcript = new HashMap<>();
                 }
-                arrOfStr = line.split(TRANSCRIPT_DELIMETER, 2);
+                arrOfStr = line.split(TRANSCRIPT_DELIMITER, 2);
                 transcriptSentence = transcriptSentence.concat(arrOfStr[0]);
                 //check if all the data included in "line" or maybe it last to the next line too
                 if (arrOfStr.length == 2) {
@@ -109,7 +108,7 @@ public class TranscriptService {
     }
 
     @Cacheable(value = "transcripts", key = "#youtubeUrl")
-    private TranscriptEntity saveTranscriptInRepository(String youtubeUrl, Map<Integer, String> newTranscript) {
+    private TranscriptEntity saveTranscriptToRepository(String youtubeUrl, Map<Integer, String> newTranscript) {
         TranscriptEntity transcriptEntity;
         TranscriptEntity transcriptFromRepository = getTranscriptFromRepository(youtubeUrl);
 
@@ -119,20 +118,20 @@ public class TranscriptService {
             LOGGER.info("update transcriptEntity from repository");
         } else {
             transcriptEntity = new TranscriptEntity(newTranscript);
-            LOGGER.info("first entry to transcriptEntity repository");
+            LOGGER.info("First entry to transcriptEntity repository");
         }
 
         TranscriptEntity save = transcriptRepository.save(transcriptEntity);
         youtubeUrlToId.put(youtubeUrl, save.getId());
-        LOGGER.info("The transcript saved successfully");
+        LOGGER.info("Transcript saved successfully");
         return save;
     }
 
     private void updateSentenceInTranscript(Map<Integer, String> transcript, Integer timeSlots, String oldSentence, String fixedSentence) {
         if (!transcript.containsKey(timeSlots) || !transcript.get(timeSlots).equals(oldSentence)) {
-            throw new UpdateTranscriptException(String.format("Failed to update the transcript. There is not a sentence like '%s' at the time slot you requested in the transcript.", oldSentence));
+            throw new UpdateTranscriptException(String.format("Failed to update the transcript. There is not a sentence like '%s' in the given time slot.", oldSentence));
         }
         transcript.put(timeSlots, fixedSentence);
-        LOGGER.info("transcript object updated successfully");
+        LOGGER.info("Transcript updated successfully");
     }
 }

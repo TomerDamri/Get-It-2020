@@ -10,19 +10,20 @@ public class OccurrencesService {
 
     public static final Integer MAX_DIFF = 5;
     public static final Integer MIN_DIFF = 3;
-    public static final String DELIMETER = " ";
+    public static final String DELIMITER = " ";
 
-    public List<Integer> getOccurrencesInTranscriptV2(Map<Integer, String> transcript, String word) {
+    public List<Integer> getOccurrencesInTranscript(Map<Integer, String> transcript, String expression) {
         List<Integer> allOccurrences;
-        List<String> words = Arrays.asList(word.split(DELIMETER));
+        List<String> splitExpression = Arrays.asList(expression.split(DELIMITER));
 
-        if (words.size() > 1) {
-            allOccurrences = getExpressionOccurrences(transcript, words);
+        // different methods to handle a single word expression vs an expression with more than one word
+        if (splitExpression.size() > 1) {
+            allOccurrences = getExpressionOccurrences(transcript, splitExpression);
         } else {
-            allOccurrences = getWordOccurrences(transcript, word);
+            allOccurrences = getWordOccurrences(transcript, expression);
         }
 
-        return filterCloseTimeSlotsFromAllOccurrences(allOccurrences);
+        return concatenateAdjacentOccurrences(allOccurrences);
     }
 
     private List<Integer> getWordOccurrences(Map<Integer, String> transcript, String word) {
@@ -48,7 +49,7 @@ public class OccurrencesService {
         return expressionOccurrences;
     }
 
-    //create hashMap of : key = time slot, value = list of words form desired words list that are included in the "key" time slot
+    //create hashMap of : key = time slot, value = list of words from desired words list that are included in the "key" time slot
     private Map<Integer, List<String>> createWordsOccurrencesMap(Map<Integer, String> transcript, List<String> words) {
         Map<Integer, List<String>> searchWordOccurrences = new HashMap<>();
 
@@ -137,26 +138,26 @@ public class OccurrencesService {
         }
     }
 
-    private List<Integer> filterCloseTimeSlotsFromAllOccurrences(List<Integer> allOccurrences) {
+    private List<Integer> concatenateAdjacentOccurrences(List<Integer> allOccurrences) {
         List<Integer> filteredList = new LinkedList<>();
         if (allOccurrences.size() > 0) {
             Collections.sort(allOccurrences);
             Integer prevTime = null;
-            boolean isHasToRemove;
+            boolean hasToRemove;
 
             for (Integer currTime : allOccurrences) {
-                isHasToRemove = false;
+                hasToRemove = false;
                 if (prevTime == null) {
                     prevTime = currTime;
                 } else {
                     if (currTime - prevTime > MIN_DIFF) {
                         prevTime = currTime;
                     } else {
-                        isHasToRemove = true;
+                        hasToRemove = true;
                     }
                 }
 
-                if (!isHasToRemove) {
+                if (!hasToRemove) {
                     filteredList.add(currTime);
                 }
             }

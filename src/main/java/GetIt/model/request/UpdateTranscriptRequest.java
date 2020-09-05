@@ -1,41 +1,23 @@
 package GetIt.model.request;
 
-public class UpdateTranscriptRequest {
-    private String youtubeUrl;
-    private Integer timeSlots;
-    private String oldSentence;
-    private String fixedSentence;
+public class UpdateTranscriptRequest extends BaseRequest {
+    private Integer timeSlot;
+    private String fixedExpression;
 
-    public void setYoutubeUrl(String youtubeUrl) {
-        this.youtubeUrl = youtubeUrl;
+    public void setTimeSlot(Integer timeSlot) {
+        this.timeSlot = timeSlot;
     }
 
-    public void setTimeSlots(Integer timeSlots) {
-        this.timeSlots = timeSlots;
+    public void setFixedExpression(String fixedExpression) {
+        this.fixedExpression = fixedExpression;
     }
 
-    public void setOldSentence(String oldSentence) {
-        this.oldSentence = oldSentence;
+    public Integer getTimeSlot() {
+        return timeSlot;
     }
 
-    public void setFixedSentence(String fixedSentence) {
-        this.fixedSentence = fixedSentence;
-    }
-
-    public String getYoutubeUrl() {
-        return youtubeUrl;
-    }
-
-    public Integer getTimeSlots() {
-        return timeSlots;
-    }
-
-    public String getOldSentence() {
-        return oldSentence;
-    }
-
-    public String getFixedSentence() {
-        return fixedSentence;
+    public String getFixedExpression() {
+        return fixedExpression;
     }
 
 }

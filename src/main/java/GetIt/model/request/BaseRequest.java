@@ -1,11 +1,11 @@
 package GetIt.model.request;
 
 public abstract class BaseRequest {
-    private String word;
+    private String expression;
     private String youtubeUrl;
 
-    public String getWord() {
-        return word;
+    public String getExpression() {
+        return expression;
     }
 
     public String getYoutubeUrl() {
