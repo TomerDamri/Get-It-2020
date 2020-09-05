@@ -4,7 +4,9 @@ import GetIt.exceptions.EmptyExpressionException;
 import GetIt.exceptions.EmptyYoutubeUrlException;
 import GetIt.exceptions.InvalidTimeSlotException;
 import GetIt.model.request.*;
+import org.springframework.stereotype.Component;
 
+@Component
 public class GetItValidator {
 
     public void validateGetTyposRequest(GetTyposRequest request) {

@@ -23,7 +23,7 @@ public class OccurrencesService {
             allOccurrences = getWordOccurrences(transcript, expression);
         }
 
-        return concatenateAdjacentOccurrences(allOccurrences);
+        return filterAdjacentOccurrences(allOccurrences);
     }
 
     private List<Integer> getWordOccurrences(Map<Integer, String> transcript, String word) {
@@ -138,7 +138,7 @@ public class OccurrencesService {
         }
     }
 
-    private List<Integer> concatenateAdjacentOccurrences(List<Integer> allOccurrences) {
+    private List<Integer> filterAdjacentOccurrences(List<Integer> allOccurrences) {
         List<Integer> filteredList = new LinkedList<>();
         if (allOccurrences.size() > 0) {
             Collections.sort(allOccurrences);
