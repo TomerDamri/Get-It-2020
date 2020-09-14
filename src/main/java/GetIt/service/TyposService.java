@@ -29,8 +29,8 @@ public class TyposService {
     private static final String userDirectory = Paths.get("")
             .toAbsolutePath()
             .toString();
-    private static final String dictionaryWithTranscriptPath = (userDirectory.contains("\\")) ? userDirectory + "\\scripts\\newDictionary.txt" : userDirectory + "/scripts/newDictionary.txt";
-    private static final String dictionaryWithoutTranscriptPath = (userDirectory.contains("\\")) ? userDirectory + "\\scripts\\dictionary" : userDirectory + "/scripts/dictionary";
+    private static final String dictionaryWithTranscriptPath = (userDirectory.contains("\\")) ? userDirectory + "\\dictionary\\newDictionary.txt" : userDirectory + "/dictionary/newDictionary.txt";
+    private static final String dictionaryWithoutTranscriptPath = (userDirectory.contains("\\")) ? userDirectory + "\\dictionary\\dictionary" : userDirectory + "/dictionary/dictionary";
     private static final int suggestionsNumber = 3;
     private String lastYoutubeUrl;
     private Map<String, Long> youtubeUrlToId = new HashMap<>();
